@@ -1,4 +1,4 @@
-- var url = '/ezfiles/766/1766/img/242/'
+- var url = '/ezfiles/772/1772/img/264/'
 include ../custom_module/title.pug
 <!DOCTYPE html>
 html(lang="zh-hant")
@@ -11,7 +11,7 @@ html(lang="zh-hant")
 		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css")
 		link(rel="stylesheet", href="https://fonts.googleapis.com/earlyaccess/notosanstc.css")
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-		link(rel="stylesheet", href="/ezfiles/766/1766/img/243/usercss.css")
+		link(rel="stylesheet", href="/ezfiles/772/1772/img/266/usercss.css")
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js")
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js")
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.0/masonry.pkgd.min.js"></script>
@@ -19,29 +19,43 @@ html(lang="zh-hant")
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js")
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.2/axios.min.js")
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-		script(src="/ezfiles/766/1766/img/244/userjs.js")
+		script(src="/ezfiles/772/1772/img/265/")
 		title Document
 	body
 		include ../custom_module/navbar3.pug
 		include ../custom_module/owlcarousel.pug
 
-		.idx.section.section-1.container-fluid.text-center
-			.col-xs-12
-				ul.nav.nav-tabs
-					li.active
-						a(href="#tab-1", data-toggle="tab") 芽莊
-					li
-						a(href="#tab-2", data-toggle="tab") 芽莊高爾夫球場
-					li
-						a(href="#tab-3", data-toggle="tab") 富國島行程
-				.tab-content
-		.tab-pane.fade.in.active#tab-1
-				| ===MODULE===
-		.tab-content
-			.tab-pane.fade#tab-2
-				| ===MODULE===
-		.tab-content
-			.tab-pane.fade#tab-3
-				| ===MODULE===
+		.idx.section.section-1.container-fluid
+			.row
+				.col-xs-12
+					.owl-carousel
+						.item
+							a(href="")
+								img(src=url+"owl-icon-1.png", alt="")
+						.item
+							a(href="")
+								img(src=url+"owl-icon-2.png", alt="")
+						.item
+							a(href="")
+								img(src=url+"owl-icon-3.png", alt="")
+						.item
+							a(href="")
+								img(src=url+"owl-icon-4.png", alt="")
+						.item
+							a(href="")
+								img(src=url+"owl-icon-5.png", alt="")
+						.item
+							a(href="")
+								img(src=url+"owl-icon-6.png", alt="")
+		.idx.section.section-2.container-fluid
+			.row
+				.col-sm-6.t-news
+					h4.title
+						span 最新消息 
+						span TWAEA News
+				.col-sm-6.e-news
+					h4.title
+						span 評鑑新聞
+						span Evaluation’s News
 		include ../custom_module/footer.pug
 		include ../custom_module/gotop.pug

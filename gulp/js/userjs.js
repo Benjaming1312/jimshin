@@ -23,10 +23,19 @@ function isENG (lang) {
 
 
 $(function () {
-  if (is('.page_mobilehome')) {
-    $('.tab-pane').appendTo('.tab-content')
+  if (is('.append-e-news')) {
+    $('.append-e-news').appendTo('.section-2 .e-news')
   }
-  $('.hdmenu .nav.navbar-nav').appendTo('.navbar .social')
+  if (is('.append-t-news')) {
+    $('.append-t-news').appendTo('.section-2 .t-news')
+  }
+  if (is('.append-form')) {
+    $('.append-form').appendTo('.message')
+  }
+  // if (is('.page_mobilehome')) {
+  //   $('.tab-pane').appendTo('.tab-content')
+  // }
+  // $('.hdmenu .nav.navbar-nav').appendTo('.navbar .social')
 
   // if (is('.table-responsive') && is('.module-rcglist')) {
   //   const isSupportPage = is('.support')

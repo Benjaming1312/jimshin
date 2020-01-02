@@ -6,11 +6,13 @@
   border: 0
   box-shadow: none
   border-radius: 0
-  background: white
-  padding: 15px 0
+  background: rgba(#fff, .79)
+  padding: 30px 0 15px
   border-bottom: 1px solid rgba(#d3a500, .31)
+  +box-shadow
   @media #{$mobile}
     padding-top: 0
+    padding-bottom: 5px
   .social
     padding: 0px 0 15px
     position: absolute
@@ -18,60 +20,46 @@
     right: 15px
     display: flex
     flex-wrap: nowrap
+    list-style: none
+    padding-left: 0
     @media #{$mobile}
-      width: 90%
-      max-width: 100%
-      right: 0
       position: static
-      margin-top: 10px
-      margin-left: auto
-      margin-right: auto
-      flex-direction: column-reverse
-      flex-wrap: wrap
-      margin: 0
-      padding: 0
-      width: 100%
-    ul
-      margin-top: 0
-      margin-left: 15px
+      margin-top: 5px
+      padding-bottom: 0
+      margin-bottom: 0
+      // width: 90%
+      // max-width: 100%
+      // right: 0
+      // margin-top: 10px
+      // margin-left: auto
+      // margin-right: auto
+      // flex-direction: column-reverse
+      // flex-wrap: nowrap
+      // margin: 0
+      // padding: 0
+      // width: 100%
+    li
       @media #{$mobile}
-        width: 100%
+        float: left
+        width: 33.3333%
         display: flex
-        flex-wrap: nowrap
-        margin: 0
-        border-bottom: 1px solid rgba(#413b38, .2)
-      li
-        margin: 0
-        @media #{$mobile}
-          width: calc(100% / 3)
+        align-items: center
+        justify-content: center
+      a
+        display: inline-flex
+        align-items: center
+        img
+          margin-right: 5px
+      &.global
+        @media screen and (min-width: 768px)
+          margin-left: 20px
         a
-          padding: 0 8px
-          font-size: 14px
-          color: #413b38
-          position: relative
-          border-bottom: 0
-          +trans
-          @media #{$mobile}
-            display: block
-            border-right: 1px solid rgba(#413b38, .2)
-            text-align: center
-            padding: 5px
-          &:hover
-            color: $color-gorden
           &::after
-            content: ''
-            position: absolute
-            width: 1px
-            height: 13px
-            background: #413b38
-            right: 0
-            top: 5px
-            @media #{$mobile}
-              display: none
-        &:last-child
-          border-right: 0
-          a::after
-            display: none
+            @media screen and (min-width: 768px)
+              content: ''
+              border-right: 2px solid #253048
+              height: 1.5rem
+              margin: 0 7.5px
   .formBS
     width: 138px
     @media #{$mobile}
@@ -104,8 +92,9 @@
         height: 13px
         border: 0
   .container-fluid
-    width: calc(100% - 160px)
-    margin: 0 autom
+    // width: calc(100% - 160px)
+    padding: 0 30px
+    margin: 0 auto
     @media #{$mobile}
       padding: 0
       width: 100%
@@ -123,9 +112,10 @@
       margin-bottom: 0px
       padding: 0
       background-position: left center!important
+      max-width: 65%
   .navbar-toggle
     border: 0
-    margin-top: 80px
+    margin-top: 45px
     background: none
     border-radius: 0
     .sr-only
@@ -134,7 +124,7 @@
     //   &::after
     //     background: #000
     .icon-bar
-      background: $color-gorden
+      background: $color-blue
       width: 30px
       margin-bottom: .5rem
       &::before,
@@ -149,14 +139,15 @@
   // .navbar-header
   #navbar
     padding: 0
-    @media screen and (min-width: 768px)
-      margin-right: 60px
+    // @media screen and (min-width: 768px)
+    //   margin-right: 60px
     @media #{$mobile}
       width: 100%
       margin: 0
       // background: #000
       padding-bottom: 15px
       box-shadow: none
+      background: #fff
       a
         border: 0
         color: white
@@ -168,8 +159,9 @@
         display: flex
         justify-content: space-around
         align-items: center
-        margin-top: 30px
         padding-left: 0px
+        margin-left: 35px
+        margin-top: 5px
       @media #{$mobile}
         margin: 0
         float: left
@@ -184,20 +176,22 @@
         letter-spacing: 0.05rem
       >li
         @media screen and (min-width: 768px)
-          margin-left: 5vw
+          margin-left: 35px
         >a
           position: relative
           overflow: hidden
           text-transform: uppercase
-          color: #666665
+          color: #444243
           padding-bottom: 0
           font-weight: normal
           padding-left: 8px
+          font-size: 16px
+          font-weight: normal
           +trans
           @media screen and (min-width: 768px)
             margin-right: 0px
           &:hover
-            color: $color-gorden
+            color: $color-blue
         &.facebook
           @media screen and (min-width: 768px)
             margin-left: 2vw
@@ -232,7 +226,7 @@
             z-index: 99999999
           .dropdown-menu
             left: 0
-            background: rgba($color-gorden, .7)
+            background: rgba(#fff, .7)
             border: 0
             width: 100%
             overflow: initial
@@ -252,6 +246,8 @@
               @media screen and (min-width: 768px)
                 display: flex
                 flex-wrap: wrap
+              @media #{$mobile}
+                padding-left: 15px
               li
                 padding-bottom: 0
                 @media screen and (min-width: 768px)
@@ -263,10 +259,10 @@
                   white-space: nowrap
                   font-weight: normal
                   transition: $trans
-                  color: white
+                  color: #444243
                   padding-left: 15px
                   &:hover
-                    color: $color-gorden
+                    color: $color-blue
   .navbar
     &+.search.search.search
       margin-left: 0px

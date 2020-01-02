@@ -1,138 +1,171 @@
 footer.foot
-  background: url(#{$url}footer-bg.png)center center no-repeat
-  background-size: cover
-  padding-top: 60px
-  padding-bottom: 60px
+  background: #f0efef
+  margin-top: 28px
+  padding-bottom: 50px
   @media #{$mobile}
-    padding-left: 15px
-    padding-right: 15px
-    padding-top: 30px
-    padding-bottom: 30px
-  .title,
-  .sub-title
-    text-align: center
-    color: #42403f
-  .col-xs-12
-    .svg
-      margin-left: auto
-      margin-right: auto
-      display: block
-      margin-top: 15px
-      margin-bottom: 60px
-      @media #{$mobile}
-        max-width: 100%
-        margin-bottom: 30px
+    padding-bottom: 25px
+  &::before
+    content: ''
+    display: block
+    margin: 0 auto
+    background: url(#{$url}foot-trangle.png) center center no-repeat
+    width: 158px
+    height: 37px
+    position: relative
+    top: -4px
+    margin-bottom: 25px
   .title
-    font-size: 27px
-    font-weight: bold
-    margin-bottom: 15px
-  .sub-title
-    font-size: 18px
-    font-weight: bold
+    +title
   .row
     +max-width
-    margin-left:  auto
-    margin-right: auto
-    .info
-      float: left
-      display: flex
-      flex-wrap: nowrap
-      margin-left: auto
-      margin-right: auto
-      width: 800px
-      padding-left: 60px
-      @media #{$mobile}
-        width: 100%
-        padding-left: 0
-        flex-wrap: wrap
-      p
-        display: block
-        float: left
-        width: 50%
-        font-size: 19px
-        color: #413b38
-        position: relative
-        @media screen and (min-width: 768px)
-          white-space: nowrap
-          margin-bottom: 30px
-        @media #{$mobile}
-          width: 100%
-          margin-bottom: 15px
-        &:first-child
-          @media screen and (min-width: 768px)
-            padding-left: 100px
-        .social
-          margin-left: 15px
-          @media screen and (min-width: 768px)
-            position: absolute
-            right: -140px
-            top: -10px
-
-          .svg
-            margin-left: 15px
-            @media #{$mobile}
-              position: relative
-              top: 7.5px
-      a
-        font-size: 19px
-        color: #413b38
-        +trans
-        &:hover
-          color: $color-gorden
-  .list .col-xs-12
-    @media #{$mobile}
-      padding: 0
-  .list-inline
-    margin-top: 50px
-    max-width: 750px
     margin-left: auto
     margin-right: auto
-    display: flex
-    flex-wrap: nowrap
-    justify-content: space-around
+    padding: 0 20px
     @media #{$mobile}
-      margin-top: 30px
-      margin-left: -20px
-      margin-right: -20px
-      flex-wrap: wrap
-    li
-      width: 100%
       padding: 0
-      position: relative
+  .info
+    .svg
+      margin-bottom: 43px
+    p
+      display: flex
+      flex-wrap: nowrap
+      margin-bottom: 18px
+      font-size: 19px
+      color: #404041
       @media #{$mobile}
-        margin-bottom: 15px
-        width: calc(100% / 3)
-        text-align: center
-      &:last-child
-        a::after
-          display: none!important
+        flex-wrap: wrap
       a
-        display: block
-        width: 100%
-        text-align: center
-        +trans
-        @media #{$mobile}
-          text-align: center
-        &:hover
-          color: #70b8a4
-        &::after
-          content: '|'
-          font-size: 16px
-          color: white
-          position: absolute
-          right: 0px
+        font-size: 19px
+        color: #404041
+      span
+        display: inline-flex
+        flex-wrap: nowrap
+        align-items: center
+        white-space: nowrap
+        font-size: 19px
+        color: #404041
+        &+span,
+        &+a
           @media #{$mobile}
-            display: none
+            display: block
+            width: 100%
+            margin-top: 5px
+        .img
+          width: 45px
   .map
-    max-width: 900px
-    @media screen and (min-width: 768px)
-      margin-top: 60px
-    @media #{$mobile}
-      margin-top: 30px
+    margin-top: 25px
     iframe
-      height: 170px
+      width: 100%
+      height: 210px
+  .message
+    @media screen and (min-width: 768px)
+      padding-left: 50px
+    @media #{$mobile}
+      margin-top: 60px
+    .title
+      border-bottom: 0
+      text-align: center
+      margin: 0
+      padding-bottom: 20px
+    .form-section
+      background: white
+      padding: 27px 50px
+      padding-bottom: 25px
+      +box-shadow
+      @media #{$mobile}
+        padding: 15px
+    .formBS,
+    .form-group,
+    .col-sm-3,
+    .col-sm-9
+      border: 0!important
+      white-space: nowrap
+    .col-sm-3
+      color: #221e1f
+    .required
+      .col-sm-3
+        &::before
+          color: #ed1f23
+    .form-group
+      margin-bottom: 28px
+      padding: 0
+      @media #{$mobile}
+        margin-bottom: 14px
+    input,
+    textarea
+      border-color: #ceccca
+      border-radius: 15px
+    .form-btn
+      text-align: center
+      padding: 0
+      .btn
+        margin-top: 30px
+        display: block
+        margin: 0 auto
+        color: #221e1f
+        font-size: 16px
+        align-items: center
+        justify-content: center
+        border-radius: 0
+        border-color: #221e1f
+        border-width: 2px
+        background: none
+        +trans
+        width: initial
+        height: initial
+        text-align: center
+        letter-spacing: 15px
+        padding: 30px
+        padding-left: 30px
+        padding-right: 15px
+        padding-top: 5px
+        padding-bottom: 5px
+        // padding: 15px 30px
+        &:hover
+          background: #221e1f
+          color: white
+.foot-link
+  padding: 0
+  padding-top: 77px
+  background: url(#{$url}foot-bg.png)center center no-repeat
+  background-size: cover
+  .list-inline
+    margin-bottom: 50px
+    display: flex
+    flex-wrap: wrap
+    +max-width
+    margin-left: auto
+    margin-right: auto
+    @media #{$mobile}
+      margin-bottom: 25px
+    a
+      color: #221e1f
+      font-weight: 500
+    >li
+      width: calc(100% / 7)
+      border-right: 1px solid rgba(#221e1f, .7)
+      padding-left: 15px
+      @media #{$mobile}
+        width: 100%
+        margin-bottom: 15px
+      >a
+        font-size: 20px
+      ul
+        list-style: none
+        padding-left: 0
+        margin-top: 30px
+        @media #{$mobile}
+          margin-top: 25px
+        li
+          margin-bottom: 10px
+          @media #{$mobile}
+            margin-bottom: 10px
+          >a
+            font-size: 18px
+            font-weight: 400
+
 div.design
-  background: #bd7a11
+  background: none
   p
     margin: 0
     padding: 10px 0
@@ -140,13 +173,14 @@ div.design
     font-size: 12px
     color: white
     span
-      float: left!important
-      display: block
-      width: 100%
-      text-align: center
+      @media #{$mobile}
+        float: left!important
+        display: block
+        width: 100%
+        text-align: center
     span, a
       font-size: 12px
-      color: #white
+      color: #3c4757
     a
       position: absolute
       right: 30px

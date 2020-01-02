@@ -1,49 +1,139 @@
 .idx.section-2
+  margin-top: 40px
   +max-width
-  padding-top: 60px
-  padding-bottom: 60px
+  margin-left: auto
+  margin-right: auto
   @media #{$mobile}
-    padding-left: 15px
-    padding-right: 15px
-    padding-top: 15px
-    padding-bottom: 15px
-  .row
-    margin: 0 -15px
-    @media screen and (min-width: 768px)
-      display: flex
-      flex-wrap: wrap
-    @media #{$mobile}
-      margin: 0
-  a
-    &:hover
-      .box
-        +box-shadow
-        transform: translateY(-10px)
-  .col-sm-4
-    padding: 15px
-    @media #{$mobile}
-      padding-left: 0
-      padding-right: 0
-    &:nth-child(odd)
-      .box
-        background: rgba(#5d9381, .7)
-    &:nth-child(even)
-      .box
-        background: rgba(#1d96b2, .7)
-    .box
-      border-radius: 30px
-      padding-top: 30px
-      padding-bottom: 60px
-      height: 100%
-      +trans
-      *
-        color: white
-    .title
-      font-size: 24px
+    margin-top: 20px
+  .title
+    +title
+  .more
+    text-align: center
+    a
       margin-top: 30px
-    p
-      margin-bottom: 0
-      padding: 36px 30px 0
-      margin-bottom: 0
-      line-height: 2.5rem
+      color: #221e1f
       font-size: 16px
+      display: inline-block
+      border-radius: 0
+      border-color: #221e1f
+      border-width: 2px
+      +trans
+      &::before,
+      &::after
+        font-size: 16px
+        content: '-'
+        color: #221e1f
+        margin: 0 5px
+        +trans
+      &:hover
+        background: #221e1f
+        color: white
+        &::after,
+        &::before
+          color: white
+
+  .row
+    .col-sm-6
+      @media #{$mobile}
+        padding: 0!important
+        margin-bottom: 60px
+    .t-news
+      padding-right: 20px
+      .mbox
+        padding-bottom: 0
+      h5
+        background: none
+        padding-left: 12px
+        margin: 0
+        @media #{$mobile}
+          padding-left: 0
+        .mdate
+          display: inline-block
+          background: #3c4757
+          color: white
+          padding: 0.5rem 15px
+          font-size: 16px
+          margin-bottom: 14px
+        a
+          display: block
+          font-size: 18px
+      .d-item
+        margin-bottom: 30px
+        position: relative
+        @media #{$mobile}
+          padding-right: 30px
+        &::before
+          content: ''
+          display: inline-block
+          width: 7px
+          height: 11px
+          background: url(#{$url}news-arrow.png)center center no-repeat
+          background-size: contain
+          position: absolute
+          bottom: 15px
+          right: 15px
+          @media #{$mobile}
+            right: 0
+            bottom: initial
+            top: 60px
+      .mb
+        .listBS
+          &:nth-last-of-type(1)
+            .d-item
+              margin-bottom: 0
+    .e-news
+      padding-left: 40px
+      .mbox
+        margin-bottom: 73px
+        display: flex
+        align-items: center
+        flex-wrap: nowrap
+        @media #{$mobile}
+          margin-bottom: 20px
+          flex-wrap: wrap
+        .d-img
+          @media screen and (min-width: 768px)
+            width: 163px
+          @media #{$mobile}
+            width: 100%
+            padding: 0
+          img
+            width: 100%
+        .d-txt
+          padding-left: 15px
+          position: relative
+          padding-right: 30px
+          @media screen and (min-width: 768px)
+            width: calc(100% - 163px)
+          @media #{$mobile}
+            width: 100%
+            padding: 0
+            padding-right: 30px
+          &::before
+            content: ''
+            display: inline-block
+            width: 7px
+            height: 11px
+            background: url(#{$url}news-arrow.png)center center no-repeat
+            background-size: contain
+            position: absolute
+            top: 30px
+            right: 0px
+            @media #{$mobile}
+              right: 0
+              bottom: initial
+              top: 60px
+          .mdate
+            color: #b7b6b6
+            font-size: 16px
+          a
+            display: block
+            font-size: 18px
+            color: #221e1f
+            margin-top: 17px
+      .mb
+        .row.listBS
+          &:nth-last-of-type(1)
+            .mbox
+              margin-bottom: 0
+              

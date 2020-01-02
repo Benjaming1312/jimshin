@@ -14,11 +14,11 @@ function owlcarouselfn(target,nav,dot) {
     })
 }
 $(function () {
-    $('.banner .owl-carousel').owlCarousel({
+    $('.idx.section-1 .owl-carousel').owlCarousel({
         items: 1,
         autoplay:true,
         nav: false,
-        dots: true,
+        dots: false,
         loop: true,
         animateOut: 'fadeOut',
         animateIn: 'fadeIn',
@@ -26,7 +26,25 @@ $(function () {
         autoPlayTimeout: 5000,
         navText: [],
         smartSpeed: 1500,
-        autoplayHoverPause: false
+        autoplayHoverPause: false,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 2,
+                nav: true,
+                margin: 15
+            },
+            440: {
+                items: 2,
+                nav:true,
+                margin: 15
+            },
+            768: {
+                items: 6,
+                nav:true,
+                margin: 15
+            },
+        }
     })
     // $('.idx.section-2 .owl-carousel').owlCarousel({
     //     autoplay:true,
