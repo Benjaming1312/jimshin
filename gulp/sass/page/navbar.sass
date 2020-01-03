@@ -48,6 +48,10 @@
       a
         display: inline-flex
         align-items: center
+        font-size: 14px
+        +trans
+        &:hover
+          color: $color-blue
         img
           margin-right: 5px
       &.global
@@ -103,7 +107,7 @@
   .navbar-brand
     margin-left: 0px
     margin-top: 0px
-    max-width: 20vw
+    // max-width: 20vw
     @media #{$mobile}
       max-width: 300px
       max-height: 70px
@@ -176,7 +180,7 @@
         letter-spacing: 0.05rem
       >li
         @media screen and (min-width: 768px)
-          margin-left: 35px
+          margin-left: 25px
         >a
           position: relative
           overflow: hidden
