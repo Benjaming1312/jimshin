@@ -32,6 +32,11 @@ $(function () {
   if (is('.append-form')) {
     $('.append-form').appendTo('.message')
   }
+  if (is('.organization')) {
+    $('#pageptlist .d-item').each(function () {
+      $(this).find('.tag').prependTo($(this).find('.d-txt h5'))
+    })
+  }
   // if (is('.page_mobilehome')) {
   //   $('.tab-pane').appendTo('.tab-content')
   // }
