@@ -1,9 +1,23 @@
 .page-title.member-title
   margin-bottom: 0
+  .row
+    +max-width
+    margin-left: auto
+    margin-right: auto
+    @media screen and (min-width: 768px)
+      padding: 0 15px
+    .col-xs-12
+      border-bottom: 1px solid #ccc
+      padding-bottom: 15px
+      margin-bottom: 30px
+      padding: 0
   .title
     border: 0
     display: inline-block
     letter-spacing: 0
+    color: #444
+    padding-bottom: 0
+    margin-bottom: 0
   .sub-title
     display: inline-block
     color: $color-blue
@@ -35,11 +49,16 @@
         a
           font-size: 22px
           font-weight: normal
+          color: $color-b
       .member-info
         color: $color-b
         *
-          font-size: 14px
+          font-size: 18px
   .col-sm-3
+    .d-img
+      a
+        max-width: 126px
+        margin: 0 auto
     .d-txt
       margin-top: 15px
       text-align: center
