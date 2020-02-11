@@ -37,6 +37,26 @@ $(function () {
       $(this).find('.tag').prependTo($(this).find('.d-txt h5'))
     })
   }
+
+  if (is('.page.service')) {
+    const text = $('.module-rcglist .mb').text()
+    if (text.indexOf('未找到符合條件的資料.') >= 0) {
+      $('.module-rcglist').hide()
+    }
+    $('.module-rcglist').addClass('service')
+    
+    if (is('.book')) {
+      $('.module-rcglist').addClass('book')
+    }
+  }
+
+  if (is('.news-list')) {
+    $('.module-rcglist').addClass('news-list')
+  }
+
+  if (is('.link')) {
+    $('.module-ptlist').addClass('link')
+  }
   // if (is('.page_mobilehome')) {
   //   $('.tab-pane').appendTo('.tab-content')
   // }

@@ -1,0 +1,48 @@
+.module-rcglist.news-list
+  .mt
+    display: block
+    h3
+      text-align: center
+      margin-top: 30px
+      padding-bottom: 15px
+  .listBS
+    border-bottom: 1px dashed #ececec
+    margin-bottom: 30px
+    padding-bottom: 30px
+    h5
+      background: none
+      padding-left: 12px
+      margin: 0
+      @media #{$mobile}
+        padding-left: 0
+      .mdate
+        display: inline-block
+        background: #3c4757
+        color: white
+        padding: 0.5rem 15px
+        font-size: 16px
+        margin-bottom: 14px
+      a
+        display: block
+        font-size: 18px
+        +trans
+        &:hover
+          color: $color-blue
+    .d-item
+      position: relative
+      @media #{$mobile}
+        padding-right: 30px
+      &::before
+        content: ''
+        display: inline-block
+        width: 7px
+        height: 11px
+        background: url(#{$url}news-arrow.png)center center no-repeat
+        background-size: contain
+        position: absolute
+        bottom: 15px
+        right: 15px
+        @media #{$mobile}
+          right: 0
+          bottom: initial
+          top: 60px

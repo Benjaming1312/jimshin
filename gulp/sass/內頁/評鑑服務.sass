@@ -23,3 +23,37 @@
     h3
       +title
       padding-left: 0
+  .mbtn
+    +btn
+    padding-left: 5px
+    padding-right: 5px
+  &.service
+    .mt
+      display: block
+      h3
+        +title
+        text-align: center
+        color: #3c4757
+        @media #{$mobile}
+          padding-right: 0
+  &.service:not(.book)
+    .d-item
+      padding: 0
+    .listBS
+      margin-bottom: 15px
+      padding-bottom: 15px
+      border-bottom: 1px dashed #ececec
+      .mdetail
+        @media screen and (min-width: 768px)
+          overflow: hidden
+          text-overflow: ellipsis
+          display: -webkit-box
+          -webkit-line-clamp: 4
+          -webkit-box-orient: vertical
+      &:last-child
+        border: 0
+    h5
+      a
+        +trans
+        &:hover
+          color: $color-blue
