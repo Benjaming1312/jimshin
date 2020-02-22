@@ -1,31 +1,51 @@
-// .banner.page-banner
-//   z-index: -1
-//   margin-bottom: 55px
-//   padding-top: 113px
-//   @media #{$mobile}
-//     padding-top: 113px
-//     margin-bottom: 30px
-//     padding: 0
-//   .row
-//     min-height: 400px
-//     position: relative
-//     @media #{$mobile}
-//       min-height: 250px
-//   .col-xs-12
-//     @media #{$mobile}
-//       padding: 0
-//   .banner-img
-//     height: 100%
-//     position: absolute
-//     left: 0
-//     top: 0
-//     background-position: center!important
-//     background-repeat: no-repeat!important
-//     background-size: cover!important
-.ads-images
-  // margin-top: 89px
-  // position: relative
+.banner.page-banner
+  margin-top: 89px
   @media #{$mobile}
-    margin-top: 84px
-  img
+    margin-top: 83px
+    padding: 0
+  .row
+    position: relative
+  .img
+    padding: 0
+    @media #{$mobile}
+      background: url(#{$url}page-banner.png) center center no-repeat
+      background-size: cover
+      width: 100%
+      height: 160px
+    img
+      width: 100%
+      @media #{$mobile}
+        display: none
+  .text
+    position: absolute
+    top: 0
+    left: 0
     width: 100%
+    height: 100%
+    z-index: 1
+    .content
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 100%
+      height: 100%
+    .title
+      +title
+      // color: #3c4757
+      border-bottom: 0
+      color: white
+      font-size: 48px
+      letter-spacing: .1rem
+      @media #{$mobile}
+        font-size: 24px
+      // &::before
+      //   content: ''
+      //   display: inline-block
+      //   background: url(#{$url}page-title-icon.svg) center center no-repeat
+      //   background-size: contain
+      //   $w: 30px
+      //   width: $w
+      //   height: $w
+      //   position: relative
+      //   top: 2.5px
+      //   margin-right: 15px

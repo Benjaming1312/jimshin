@@ -21,3 +21,29 @@
     margin-bottom: 30px
     img
       +box-shadow
+
+.product-detail
+  .img-text-content
+    display: flex
+    flex-wrap: nowrap
+    @media #{$mobile}
+      display: block
+      padding: 0 15px
+  .img
+    img
+      max-height: 300px
+      margin-left: 0
+      @media #{$mobile}
+        margin-left: auto
+        margin-right: auto
+        display: block
+  .info
+    padding-left: 30px
+    @media #{$mobile}
+      padding-left: 0
+  .detail
+    border-top: 1px solid #ececec
+    padding-top: 30px
+
+.module-misc
+  display: none

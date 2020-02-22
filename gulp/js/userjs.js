@@ -57,6 +57,10 @@ $(function () {
   if (is('.link')) {
     $('.module-ptlist').addClass('link')
   }
+
+  if (is('.page-banner') && is('.page-title')) {
+    $('.page-title .title').appendTo($('.page-banner .content'))
+  }
   // if (is('.page_mobilehome')) {
   //   $('.tab-pane').appendTo('.tab-content')
   // }
