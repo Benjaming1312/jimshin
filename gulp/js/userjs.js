@@ -59,7 +59,9 @@ $(function () {
   }
 
   if (is('.page-banner') && is('.page-title')) {
-    $('.page-title .title').appendTo($('.page-banner .content'))
+    const title = $('head title').text()
+    $('.page-banner .content').append(`<h4 class="title">${title}</h4>`)
+    // $('.page-title .title').appendTo($('.page-banner .content'))
   }
   // if (is('.page_mobilehome')) {
   //   $('.tab-pane').appendTo('.tab-content')
