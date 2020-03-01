@@ -59,7 +59,7 @@ $(function () {
   }
 
   if (is('.page-banner') && is('.page-title')) {
-    const title = $('head title').text()
+    const title = $('.page-title h4').text() !== '' ? $('.page-title h4').text() : $('head title').text()
     $('.page-banner .content').append(`<h4 class="title">${title}</h4>`)
     // $('.page-title .title').appendTo($('.page-banner .content'))
   }
