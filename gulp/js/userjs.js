@@ -21,6 +21,22 @@ function isENG (lang) {
   return lang === 'ENG'
 }
 
+function readCookie (cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i <ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
 
 $(function () {
   if (is('.append-e-news')) {
@@ -59,9 +75,19 @@ $(function () {
   }
 
   if (is('.page-banner') && is('.page-title')) {
-    const title = $('.page-title h4').text() !== '' ? $('.page-title h4').text() : $('head title').text()
+    let title
+    if (is('.member-title')) {
+      title = $('.page-title').eq(0).find('h4').text()
+    }
+    else {
+      title = $('.page-title h4').text() !== '' ? $('.page-title h4').text() : $('head title').text()
+    }
     $('.page-banner .content').append(`<h4 class="title">${title}</h4>`)
     // $('.page-title .title').appendTo($('.page-banner .content'))
+  }
+
+  if (readCookie('PageLang') === 'en') {
+    $('body').addClass('en-page')
   }
   // if (is('.page_mobilehome')) {
   //   $('.tab-pane').appendTo('.tab-content')
