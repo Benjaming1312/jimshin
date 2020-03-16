@@ -37,6 +37,13 @@ function readCookie (cname) {
   return "";
 }
 
+function scrollFn (target, margin = 0) {
+  const targetTop = $(target).offset().top
+  const navbarHeight = $('.navbar').height()
+  $('html, body').stop().animate({
+    scrollTop: targetTop - navbarHeight - margin
+  }, 1000)
+}
 
 $(function () {
   if (is('.append-e-news')) {
@@ -89,6 +96,23 @@ $(function () {
   if (readCookie('PageLang') === 'en') {
     $('body').addClass('en-page')
   }
+
+  const hasHashTag = window.location.href.indexOf('#') >= 0
+  if (hasHashTag) {
+    const target = window.location.href.split('#')[1]
+    console.log('%c (／‵Д′)／~ ╧╧ target : ', 'padding: .25rem; font-size: 14px; background: #12bdba; color: #fff', target)
+    scrollFn(`#${target}`)
+  }
+
+  $('.navbar a').each(function () {
+    if ($(this).attr('href').indexOf('#') >= 0 && hasHashTag) {
+      $(this).click(function () {
+        const target = $(this).attr('href').split('#')[1]
+        console.log('%c (／‵Д′)／~ ╧╧ target : ', 'padding: .25rem; font-size: 14px; background: #12bdba; color: #fff', target)
+        scrollFn(`#${target}`, 60)
+      })
+    }
+  })
   // if (is('.page_mobilehome')) {
   //   $('.tab-pane').appendTo('.tab-content')
   // }
