@@ -1,4 +1,7 @@
 .module-ptlist
+  margin-bottom: 60px
+  @media #{$mobile}
+    margin-bottom: 30px
   .mbtn
     +btn
     padding-left: 5px
@@ -17,3 +20,8 @@
         +trans
         &:hover
           color: $color-blue
+  .d-item
+    .d-txt
+      .mdetail
+        overflow: initial
+        display: block

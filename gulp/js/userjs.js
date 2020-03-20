@@ -105,10 +105,10 @@ $(function () {
   }
 
   $('.navbar a').each(function () {
-    if ($(this).attr('href').indexOf('#') >= 0 && hasHashTag) {
+    if ($(this).attr('href').indexOf('#') > 0 && hasHashTag) {
       $(this).click(function () {
+        $('.navbar-toggle').click()
         const target = $(this).attr('href').split('#')[1]
-        console.log('%c (／‵Д′)／~ ╧╧ target : ', 'padding: .25rem; font-size: 14px; background: #12bdba; color: #fff', target)
         scrollFn(`#${target}`, 60)
       })
     }
