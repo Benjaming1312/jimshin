@@ -22,61 +22,40 @@ html
 =bg-grey
   background: #f2f2f3
 =max-width
-  max-width: 1100px
+  max-width: 1180px
+  margin-left: auto
+  margin-right: auto
 
 =box-shadow
-  box-shadow: 7px 7px 5px -2.5px rgba(#221e1f, .35)
+  box-shadow: 0px 7px 5px 0px rgba(#221e1f, .35)
 =text-shadow
   text-shadow: 1px 1px 30px rgba(#000, 1)
 =trans
   transition: $trans
 
 =btn
-  color: #221e1f
+  background: #f1ec4f
+  border-color: #f1ec4f
+  color: #231815
   font-size: 16px
-  display: inline-block
-  border-radius: 0
-  border-color: #221e1f
-  border-width: 2px
   +trans
-  span
-    +trans
-  &::before,
-  &::after
-    font-size: 16px
-    content: '-'
-    color: #221e1f
-    margin: 0 5px
-    +trans
+  height: 56px
+  display: inline-flex
+  align-items: center
+  font-weight: 400
+  border-radius: 0
   &:hover
-    background: #221e1f
+    background: $color-green
     color: white
-    &::after,
-    &::before
-      color: white
     span
       color: white
 
 =title
-  padding-bottom: 28px
-  border-bottom: 1px solid #d8d8d8
-  margin-bottom: 15px
-  color: #555
-  font-weight: 500
-  font-size: 30px
-  letter-spacing: 0.5rem
-  span
-    color: #555
-    font-weight: 500
-    font-size: 30px
-    letter-spacing: 0.5rem
-    &+span
-      font-size: 26px
-      @media screen and (min-width: 768px)
-        margin-left: 15px
-      @media #{$mobile}
-        margin-top: 7.5px
-        display: inline-block
+  color: $color-b
+  font-size: 28px
+  font-weight: 400
+  line-height: 40px
+  text-align: center
 
 =sub-title
   font-size: 23px
@@ -163,3 +142,7 @@ body:not(.page_mobilehome)
     a
       font-size: 20px
       color: $color-blue
+
+.module-title
+  h4.title
+    +title

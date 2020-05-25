@@ -45,74 +45,15 @@ function scrollFn (target, margin = 0) {
   }, 1000)
 }
 
+function calcBannerMarginTop () {
+  const navH = $('nav.navbar').innerHeight()
+  if (is('.idx')) {
+    $('.module-adv').attr('style', `margin-top: ${navH - 2}px`)
+  }
+}
+
 $(function () {
-  if (is('.append-e-news')) {
-    $('.append-e-news').appendTo('.section-2 .e-news')
-  }
-  if (is('.append-t-news')) {
-    $('.append-t-news').appendTo('.section-2 .t-news')
-  }
-  if (is('.append-form')) {
-    $('.append-form').appendTo('.message')
-  }
-  if (is('.organization')) {
-    $('#pageptlist .d-item').each(function () {
-      $(this).find('.tag').prependTo($(this).find('.d-txt h5'))
-    })
-  }
-
-  if (is('.page.service')) {
-    const text = $('.module-rcglist .mb').text()
-    if (text.indexOf('未找到符合條件的資料.') >= 0) {
-      $('.module-rcglist').hide()
-    }
-    $('.module-rcglist').addClass('service')
-    
-    if (is('.book')) {
-      $('.module-rcglist').addClass('book')
-    }
-  }
-
-  if (is('.news-list')) {
-    $('.module-rcglist').addClass('news-list')
-  }
-
-  if (is('.link')) {
-    $('.module-ptlist').addClass('link')
-  }
-
-  if (is('.page-banner') && is('.page-title')) {
-    let title
-    if (is('.member-title')) {
-      title = $('.page-title').eq(0).find('h4').text()
-    }
-    else {
-      title = $('.page-title h4').text() !== '' ? $('.page-title h4').text() : $('head title').text()
-    }
-    $('.page-banner .content').append(`<h4 class="title">${title}</h4>`)
-    // $('.page-title .title').appendTo($('.page-banner .content'))
-  }
-
-  if (readCookie('PageLang') === 'en') {
-    $('body').addClass('en-page')
-  }
-
-  const hasHashTag = window.location.href.indexOf('#') >= 0
-  if (hasHashTag) {
-    const target = window.location.href.split('#')[1]
-    console.log('%c (／‵Д′)／~ ╧╧ target : ', 'padding: .25rem; font-size: 14px; background: #12bdba; color: #fff', target)
-    scrollFn(`#${target}`)
-  }
-
-  $('.navbar a').each(function () {
-    if ($(this).attr('href').indexOf('#') > 0 && hasHashTag) {
-      $(this).click(function () {
-        $('.navbar-toggle').click()
-        const target = $(this).attr('href').split('#')[1]
-        scrollFn(`#${target}`, 60)
-      })
-    }
-  })
+  calcBannerMarginTop()
   // if (is('.page_mobilehome')) {
   //   $('.tab-pane').appendTo('.tab-content')
   // }

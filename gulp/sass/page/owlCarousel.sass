@@ -71,46 +71,39 @@
 .mads-li
   // margin-top: 112px
   position: relative
-  @media #{$mobile}
-    margin-top: 84px
   .owl-controls
     position: absolute
     width: 100%
-    width: 7px
-    top: 46%
-    right: 20px
-    @media #{$mobile}
-      right: 10px
-      top: 30%  
+    bottom: 0px
+    // width: 7px
+    // top: 46%
+    // right: 20px
+    // @media #{$mobile}
+    //   right: 10px
+    //   top: 30%  
     //   bottom: -30px
   .owl-dots
     .owl-dot
       opacity: 1
       border-radius: 0
       margin-right: 5px
-      @media #{$mobile}
-        margin-right: 0
-        margin: 0
-        line-height: 0
-        height: 4.5px
-        margin-bottom: 1px
-        float: left
-        margin-bottom: 5px
       span
         opacity: 1
         border-radius: 0
-        background: none
-        border: 1px solid #fff
+        background: rgba(white, .39)
+        border: 1px solid rgba(white, .39)
         border-radius: 50%
         // background: url(#{$url}dot.png) center center no-repeat
         // background-size: cover
         // background-position: center
-        width: 9px
-        height: 9px
+        width: 12px
+        height: 12px
+        margin-right: 6px
+        margin-left: 6px
         +trans
         @media #{$mobile}
-          width: 4.5px
-          height: 4.5px
+          width: 6px
+          height: 6px
       &.active
         span
           background: #fff

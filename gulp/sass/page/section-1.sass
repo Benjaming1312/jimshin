@@ -1,32 +1,49 @@
 .idx.section-1
-  background: url(#{$url}section-1-bg.png) center center no-repeat
-  background-size: cover
-  // padding: 21px 28px
-  padding: 10px 28px
+  +max-width
+  margin-top: 53px
+  margin-bottom: 40px
   @media #{$mobile}
-    padding: 10px 15px
-  .owl-controls
-    .owl-nav
-      div
-        top: 60%
-        +box-shadow
-        @media #{$mobile}
-          top: 70%
-        &.owl-prev
-          background: url(#{$url}owl-arrow-l.png) center center no-repeat
-          background-size: contain
-          width: 24px
-          height: 24px
-          display: inline-block
-          left: -30px
-          @media #{$mobile}
-            left: -15px
-        &.owl-next
-          background: url(#{$url}owl-arrow-r.png) center center no-repeat
-          background-size: contain
-          width: 24px
-          height: 24px
-          display: inline-block
-          right: -30px
-          @media #{$mobile}
-            right: -15px
+    margin-top: 15px
+    margin-bottom: 20px
+    padding-left: 0
+    padding-right: 0
+  .row.row
+    @media screen and (min-width: 768px)
+      margin: 0 -15px
+  .col-sm-4
+    padding: 0 15px
+    @media #{$mobile}
+      margin-bottom: 15px
+    img
+      width: 100%
+    a
+      display: block
+      position: relative
+      &:hover
+        .content
+          background: none
+        .box
+          .svg
+            transform: translateY(-100px)
+            opacity: 0
+      .content
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        z-index: 2
+        padding: 17px
+        background: rgba(#231815, .58)
+        +trans
+        .box
+          border: 1px solid white
+          width: 100%
+          height: 100%
+          display: flex
+          align-items: center
+          justify-content: center
+          .svg
+            +trans
+            @media #{$mobile}
+              max-width: 90%

@@ -1,120 +1,73 @@
 .idx.section-2
   margin-top: 40px
-  +max-width
-  margin-left: auto
-  margin-right: auto
+  margin-bottom: 40px
+  padding-top: 143px
+  padding-bottom: 143px
+  background: url(#{$url}section-2-bg.png) center center repeat-y
+  background-size: cover
+  position: relative
   @media #{$mobile}
     margin-top: 20px
-  .title
-    +title
-  .more
-    text-align: center
-    a
-      margin-top: 30px
-      +btn
-
-  .row
-    .col-sm-6
-      @media #{$mobile}
-        padding: 0!important
-        margin-bottom: 60px
-    .t-news
-      padding-right: 20px
-      .mbox
-        padding-bottom: 0
-      h5
-        background: none
-        padding-left: 12px
-        margin: 0
-        @media #{$mobile}
-          padding-left: 0
-        .mdate
-          display: inline-block
-          background: white
-          color: #555
-          padding: 0.5rem 15px
-          font-size: 16px
-          margin-bottom: 14px
-        a
-          display: block
-          font-size: 18px
-      .d-item
-        margin-bottom: 30px
-        position: relative
-        @media #{$mobile}
-          padding-right: 30px
-        &::before
-          content: ''
-          display: inline-block
-          width: 7px
-          height: 11px
-          background: url(#{$url}news-arrow.png)center center no-repeat
-          background-size: contain
-          position: absolute
-          bottom: 15px
-          right: 15px
-          @media #{$mobile}
-            right: 0
-            bottom: initial
-            top: 60px
-      .mb
-        .listBS
-          &:nth-last-of-type(1)
-            .d-item
-              margin-bottom: 0
-    .e-news
-      padding-left: 40px
-      .mbox
-        margin-bottom: 73px
+    margin-bottom: 20px
+    padding-left: 0
+    padding-right: 0
+    padding-top: 25px
+    padding-bottom: 25px
+  &::before
+    content: ''
+    display: block
+    position: absolute
+    left: 0
+    top: 7.5px
+    width: 368px
+    height: 182px
+    background: url(#{$url}section-2-text.svg) center center no-repeat
+    background-size: contain
+    z-index: 0
+    @media #{$mobile}
+      max-width: 90%
+      top: -25px
+      opacity: 0.5
+      
+  .row.row
+    +max-width
+    @media #{$mobile}
+      padding: 0 15px
+  .text
+    @media screen and (min-width: 768px)
+      padding-left: 0
+      padding: 0 7%
+    @media #{$mobile}
+      margin-bottom: 15px
+    p
+      font-size: 19px
+      color: #3e3a39
+      line-height: 40px
+      text-align: center
+      font-weight: 400
+      letter-spacing: 2px
+    p.more
+      a.btn
+        +btn
         display: flex
-        align-items: center
-        flex-wrap: nowrap
-        @media #{$mobile}
-          margin-bottom: 20px
-          flex-wrap: wrap
-        .d-img
-          @media screen and (min-width: 768px)
-            width: 163px
-          @media #{$mobile}
-            width: 100%
-            padding: 0
-          img
-            width: 100%
-        .d-txt
-          padding-left: 15px
-          position: relative
-          padding-right: 30px
-          @media screen and (min-width: 768px)
-            width: calc(100% - 163px)
-          @media #{$mobile}
-            width: 100%
-            padding: 0
-            padding-right: 30px
-          &::before
-            content: ''
-            display: inline-block
-            width: 7px
-            height: 11px
-            background: url(#{$url}news-arrow.png)center center no-repeat
-            background-size: contain
-            position: absolute
-            top: 30px
-            right: 0px
-            @media #{$mobile}
-              right: 0
-              bottom: initial
-              top: 60px
-          .mdate
-            color: #b7b6b6
-            font-size: 16px
-          a
-            display: block
-            font-size: 18px
-            color: #221e1f
-            margin-top: 17px
-      .mb
-        .row.listBS
-          &:nth-last-of-type(1)
-            .mbox
-              margin-bottom: 0
-              
+        justify-content: center
+        width: 90%
+        margin-left: auto
+        margin-right: auto
+        &:hover
+          .svg
+            transform: translateX(15px)
+        .svg
+          height: 7px
+          width: 90px
+          +trans
+  .img
+    @media screen and (min-width: 768px)
+      padding-right: 0
+  .module-title
+    margin-bottom: 52px
+    @media #{$mobile}
+      margin-bottom: 15px
+    .title
+      margin-top: 0
+      font-weight: 500
