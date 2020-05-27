@@ -1,73 +1,45 @@
 .idx.section-2
-  margin-top: 40px
-  margin-bottom: 40px
-  padding-top: 143px
-  padding-bottom: 143px
-  background: url(#{$url}section-2-bg.png) center center repeat-y
-  background-size: cover
-  position: relative
+  @media screen and (min-width: 768px)
+    margin-top: -20%
+    padding-top: 60px
   @media #{$mobile}
-    margin-top: 20px
-    margin-bottom: 20px
-    padding-left: 0
-    padding-right: 0
-    padding-top: 25px
-    padding-bottom: 25px
-  &::before
-    content: ''
-    display: block
-    position: absolute
-    left: 0
-    top: 7.5px
-    width: 368px
-    height: 182px
-    background: url(#{$url}section-2-text.svg) center center no-repeat
-    background-size: contain
-    z-index: 0
-    @media #{$mobile}
-      max-width: 90%
-      top: -25px
-      opacity: 0.5
-      
-  .row.row
+    padding: 30px 15PX 0
+  .row
     +max-width
+    .col-xs-12
+      padding: 0
+  .line
+    margin-right: 0
+    margin-left: 5px
+  .title-1
+    margin-left: 5px
+  .title-2
+    margin-top: 30px
+  .text-content
     @media #{$mobile}
-      padding: 0 15px
-  .text
-    @media screen and (min-width: 768px)
-      padding-left: 0
-      padding: 0 7%
+      margin-bottom: 30px
+  .content
+    display: inline-flex
+  .service-content
+    margin-top: 60px
+    display: flex
+    justify-content: center
     @media #{$mobile}
-      margin-bottom: 15px
-    p
-      font-size: 18px
-      color: #3e3a39
-      line-height: 40px
-      text-align: center
-      font-weight: 400
-      letter-spacing: 2px
-    p.more
-      a.btn
-        +btn
-        display: flex
+      flex-wrap: wrap
+      justify-content: space-around
+    .content
+      @media screen and (min-width: 768px)
+        width: calc(100% / 6)
+        margin: 0px
+      @media #{$mobile}
+        margin-bottom: 15px
+        width: calc(100% / 2)
+        padding: 0 7.5px
         justify-content: center
-        width: 90%
-        margin-left: auto
-        margin-right: auto
-        &:hover
-          .svg
-            transform: translateX(15px)
-        .svg
-          height: 7px
-          width: 90px
-          +trans
-  .img
-    @media screen and (min-width: 768px)
-      padding-right: 0
-  .module-title
-    margin-bottom: 52px
-    @media #{$mobile}
-      margin-bottom: 15px
-    .title
-      margin-top: 0
-      font-weight: 500
+      .svg
+        opacity: 0
+        transform: translateY(100px)
+        @media #{$mobile}
+          height: auto!important
+          padding-top: 100%
+          max-width: 180px

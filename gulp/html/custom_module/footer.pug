@@ -1,22 +1,32 @@
-- var url = '/ezfiles/800/1800/img/638/'
+- var url = '/ezfiles/802/1802/img/644/'
 
 footer.foot
 	.row
-		.col-sm-3.logo
-			.module-title
-				h4.title
-					| 聯絡我們
-					br
-					| CONTACT US
-		.col-sm-3.info
-			p 電話：
-				a(href="tel: (02)2299-3949") (02)2299-3949
-			p 傳真：(02)2299-39t30
-			p E-mail：
-				a(href="mailto:ever.bright@msa.hinet.net") ever.bright@msa.hinet.net
-			p 地址：新北市五股區五權七路九號三樓
-		.col-sm-6.col-xs-12.map
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1807.0191393842738!2d121.44711602524336!3d25.066691698670446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a89d05adcf01%3A0x42c77f82a90c5aa2!2zMjQ45paw5YyX5biC5LqU6IKh5Y2A5LqU5qyK5LiD6LevOeiZnzM!5e0!3m2!1szh-TW!2stw!4v1590415564790!5m2!1szh-TW!2stw" width="100$" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		.text-content
+			span.svg.title-1(style="background:url("+url+"foot-title-1.svg); width: 152px; height: 34px;")
+			span.svg.line(style="background:url("+url+"line.svg); width: 85px; height: 4px;")
+			br
+			span.svg.title-2(style="background:url("+url+"foot-title-2.svg); width: 313px; height: 124px;")
+		.info
+			p.info-group
+				span
+					span.svg(style="background:url("+url+"foot-icon-1.svg); width: 17px; height: 17px;")
+					span 電話：
+					a(href="tel: +886-2-345-6300") +886-2-345-6300
+				span
+					span.svg(style="background:url("+url+"foot-icon-2.svg); width: 22px; height: 20px;")
+					span 傳真：+886-2-2345-6311
+			p
+				span.svg(style="background:url("+url+"foot-icon-3.svg); width: 20px; height: 14px;")
+				a(href="mailto: E-MAIL：brook@dac.com.tw") E-MAIL：brook@dac.com.tw
+			p
+				span.svg(style="background:url("+url+"foot-icon-4.svg); width: 14px; height: 20px;")
+				span 地址：
+				span 110 台北市信義路5段150巷2號802室
+				br
+				span.indent 802, No.2, Ln. 150, Sec. 5, Xinyi Rd., Xinyi Dist., Taipei City 110, Taiwan (R.O.C.)
+
+
 //- .design
 //- 	.row
 //- 		.col-xs-12
@@ -65,8 +75,10 @@ footer.foot
 
 
 .design.container-fluid
+	.gotop-content
+		a.gotop.svg(style="background:url("+url+"go-top.svg); width: 38px; height: 38px;")
 	.row
 		.col-xs-12
 			p.text-center
-				span Copyright © e.b.t. Liquid Encapsulant All Rights Reserved. 
-				a(href="http://www.e-creation.com.tw" target="_blank") Design By 藝創媒體
+				span Copyright © 2020 Decent Actuarial Consultants Co.,Ltd. All Rights Reserved.
+				a(href="http://www.e-creation.com.tw" target="_blank") +Design By 藝創媒體

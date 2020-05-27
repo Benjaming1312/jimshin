@@ -14,38 +14,38 @@ function owlcarouselfn(target,nav,dot) {
     })
 }
 $(function () {
-    $('.idx.section-1 .owl-carousel').owlCarousel({
+    $('.banner .owl-carousel').owlCarousel({
         items: 1,
         autoplay:true,
         nav: false,
-        dots: false,
+        dots: true,
         loop: true,
         animateOut: 'fadeOut',
         animateIn: 'fadeIn',
         autoPlaySpeed: 5000,
         autoPlayTimeout: 5000,
         navText: [],
-        smartSpeed: 1500,
-        autoplayHoverPause: false,
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 2,
-                nav: true,
-                margin: 15
-            },
-            440: {
-                items: 2,
-                nav:true,
-                margin: 15
-            },
-            768: {
-                items: 6,
-                nav:true,
-                margin: 15
-            },
-        }
+        smartSpeed: 1500
     })
+    // autoplayHoverPause: false,
+    // responsiveClass: true,
+    // responsive: {
+    //     0: {
+    //         items: 2,
+    //         nav: true,
+    //         margin: 15
+    //     },
+    //     440: {
+    //         items: 2,
+    //         nav:true,
+    //         margin: 15
+    //     },
+    //     768: {
+    //         items: 6,
+    //         nav:true,
+    //         margin: 15
+    //     },
+    // }
     // $('.idx.section-2 .owl-carousel').owlCarousel({
     //     autoplay:true,
     //     nav: false,

@@ -1,4 +1,4 @@
-- var url = '/ezfiles/800/1800/img/638/'
+- var url = '/ezfiles/802/1802/img/644/'
 nav.navbar
 	.container-fluid
 		ul.social
@@ -29,21 +29,24 @@ nav.navbar
 				span.icon-bar
 				span.icon-bar
 			// LOGO放置處
-			a.navbar-brand.svg(href='/' style="background: url("+url+"logo.svg); width: 227px; height: 74px;")
+			a.navbar-brand.svg.visible-xs(href='/' style="background: url("+url+"logo.svg); width: 282px; height: 49px;")
 		#navbar.navbar-collapse.collapse
 			ul.nav.navbar-nav
 				li(data-aos="fade-in", data-aos-delay="100")
-					a(href="") 首頁
+					a(href="") 關於德慎
 				li(data-aos="fade-in", data-aos-delay="200")
-					a(href="") 關於永明泰
+					a(href="") 服務項目
 				li(data-aos="fade-in", data-aos-delay="300")
-					a(href="") 產品資訊
-				li(data-aos="fade-in", data-aos-delay="400")
-					a(href="") 技術支援
-				li(data-aos="fade-in", data-aos-delay="500")
 					a(href="") 最新消息
+				li.hidden-xs(data-aos="fade-in", data-aos-delay="400")
+					// LOGO放置處
+					a.navbar-brand.svg(href='/' style="background: url("+url+"logo.svg); width: 282px; height: 49px;")
+				li(data-aos="fade-in", data-aos-delay="500")
+					a(href="") 相關連結
 				li(data-aos="fade-in", data-aos-delay="600")
-					a(href="") 聯絡我們 
+					a(href="") 聯絡我們
+				li(data-aos="fade-in", data-aos-delay="700")
+					a(href="") 會員專區
 				//- li.dropdown(data-aos="fade-in" data-aos-delay="300")
 				//- 	a.fz16a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false') 關於協會
 				//- 	ul.dropdown-menu(role='menu')

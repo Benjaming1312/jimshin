@@ -48,12 +48,115 @@ function scrollFn (target, margin = 0) {
 function calcBannerMarginTop () {
   const navH = $('nav.navbar').innerHeight()
   if (is('.idx')) {
-    $('.module-adv').attr('style', `margin-top: ${navH - 2}px`)
+    $('.banner').attr('style', `margin-top: ${navH - 50}px`)
   }
 }
 
+function appendNewsMore () {
+  if (!is('.module-special')) {
+    return
+  }
+
+  $('.module-special .d-item').each(function () {
+    const href = $(this).find('a').attr('href')
+    $(this).find('.mbox').append(`<p class="more"><a class="btn" href="${href}"></a></p>`)
+  })
+}
+
+
+function bannerTextAnimation () {
+  if (!is('.banner')) {
+    return
+  }
+  TweenMax.staggerTo('.banner .content .svg', 0.5, {y:"0", opacity:1, delay: 1}, 0.25)
+    .then(() => {
+      console.log('%c (／‵Д′)／~ ╧╧ then : ', 'padding: .25rem; font-size: 14px; background: #12bdba; color: #fff')
+      showNav()
+    })
+}
+
+function showNav () {
+  TweenMax.to('nav.navbar', 1, {
+    transform: 'translateY(0)'
+  })
+    .then(() => {
+      calcBannerMarginTop()
+    })
+}
+
+function detectOver (target) {
+  const detectList = [
+    'section-1',
+    'section-2',
+    'section-3'
+  ]
+
+  $(window).scroll(function () {
+    setTimeout(() => {
+      const currentWinTop = $(window).scrollTop()
+      detectList.forEach(target => {
+        const targetTop = $(`.${target}`).offset().top - 500
+        if (currentWinTop > targetTop && !$(`.${target}`).hasClass('done')) {
+          $(`.${target}`).addClass('done')
+          sectionAnimation(target)
+        }
+      })
+    }, 1000)
+  })
+}
+
+function sectionAnimation (target) {
+  switch (target) {
+    case 'section-1':
+      section1Ani()
+      break
+    case 'section-2':
+      section2Ani()
+      break
+    case 'section-3':
+      section3Ani()
+      break
+    default:
+      break
+  }
+}
+
+function section1Ani () {
+  TweenMax.staggerTo('.section-1 .icon', 0.5, {y:"0", opacity:1, ease: "power4"}, 0.25)
+    .then(() => {
+      return TweenMax.to('.section-1 .title-1', 0.5, {width:"150", opacity:1, ease: "power4"})
+    })
+    .then(() => {
+      return TweenMax.to('.section-1 .title-2', 0.5, {width:"243", opacity:1, ease: "power4"})
+    })
+    .then(() => {
+      TweenMax.to('.section-1 .line', 0.5, {width:"85", opacity:1, ease: "power4"})
+    })
+}
+function section2Ani () {
+  TweenMax.to('.section-2 .title-1', 0.5, {width:"150", opacity:1, ease: "power4"})
+    .then(() => {
+      return TweenMax.to('.section-2 .title-2', 0.5, {width:"243", opacity:1, ease: "power4"})
+    })
+    .then(() => {
+      return TweenMax.to('.section-2 .line', 0.5, {width:"85", opacity:1, ease: "power4"})
+    })
+    .then(() => {
+      TweenMax.staggerTo('.section-2 .svg', 0.5, {y:"0", opacity:1, ease: "power4"}, 0.25)
+    })
+}
+function section3Ani () {
+  TweenMax.staggerTo('.section-3 .title', 0.5, {y:"0", opacity:1, ease: "power4"}, 0.25)
+    .then(() => {
+      TweenMax.staggerTo('.module-special .d-item', 0.5, {y:"0", opacity:1, ease: "power4"}, 0.25)
+    })
+}
+
+
 $(function () {
-  calcBannerMarginTop()
+  appendNewsMore()
+  bannerTextAnimation()
+  detectOver()
   // if (is('.page_mobilehome')) {
   //   $('.tab-pane').appendTo('.tab-content')
   // }
