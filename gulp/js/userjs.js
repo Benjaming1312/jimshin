@@ -95,13 +95,13 @@ function detectOver (target) {
     setTimeout(() => {
       const currentWinTop = $(window).scrollTop()
       detectList.forEach(target => {
-        const targetTop = $(`.${target}`).offset().top - 500
+        const targetTop = $(`.${target}`).offset().top - 600
         if (currentWinTop > targetTop && !$(`.${target}`).hasClass('done')) {
           $(`.${target}`).addClass('done')
           sectionAnimation(target)
         }
       })
-    }, 1000)
+    })
   })
 }
 
@@ -121,34 +121,33 @@ function sectionAnimation (target) {
   }
 }
 
+const ease = Expo.easeOut
 function section1Ani () {
-  TweenMax.staggerTo('.section-1 .icon', 0.5, {y:"0", opacity:1, ease: "power4"}, 0.25)
+  TweenMax.staggerTo('.section-1 .icon', 0.5, {y:"0", opacity:1, ease: ease}, 0.25)
     .then(() => {
-      return TweenMax.to('.section-1 .title-1', 0.5, {width:"150", opacity:1, ease: "power4"})
+      return TweenMax.to('.section-1 .title-1', 0.5, {width:"150", opacity:1, ease: ease})
     })
     .then(() => {
-      return TweenMax.to('.section-1 .title-2', 0.5, {width:"243", opacity:1, ease: "power4"})
+      return TweenMax.to('.section-1 .title-2', 0.5, {width:"243", opacity:1, ease: ease})
     })
     .then(() => {
-      TweenMax.to('.section-1 .line', 0.5, {width:"85", opacity:1, ease: "power4"})
+      TweenMax.to('.section-1 .line', 0.5, {width:"85", opacity:1, ease: ease})
     })
 }
 function section2Ani () {
-  TweenMax.to('.section-2 .title-1', 0.5, {width:"150", opacity:1, ease: "power4"})
+  TweenMax.to('.section-2 .title-1', 0.5, {width:"150", opacity:1, ease: ease})
     .then(() => {
-      return TweenMax.to('.section-2 .title-2', 0.5, {width:"243", opacity:1, ease: "power4"})
+      return TweenMax.to('.section-2 .title-2', 0.5, {width:"243", opacity:1, ease: ease})
     })
     .then(() => {
-      return TweenMax.to('.section-2 .line', 0.5, {width:"85", opacity:1, ease: "power4"})
+      TweenMax.to('.section-2 .line', 0.5, {width:"85", opacity:1, ease: ease})
     })
-    .then(() => {
-      TweenMax.staggerTo('.section-2 .svg', 0.5, {y:"0", opacity:1, ease: "power4"}, 0.25)
-    })
+  TweenMax.staggerTo('.section-2 .svg', 0.5, {y:"0", opacity:1, ease: ease}, 0.25)
 }
 function section3Ani () {
-  TweenMax.staggerTo('.section-3 .title', 0.5, {y:"0", opacity:1, ease: "power4"}, 0.25)
+  TweenMax.staggerTo('.section-3 .title', 0.5, {y:"0", opacity:1, ease: ease}, 0.25)
     .then(() => {
-      TweenMax.staggerTo('.module-special .d-item', 0.5, {y:"0", opacity:1, ease: "power4"}, 0.25)
+      TweenMax.staggerTo('.module-special .d-item', 0.5, {y:"0", opacity:1, ease: ease}, 0.25)
     })
 }
 

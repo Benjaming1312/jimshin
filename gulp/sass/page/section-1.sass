@@ -36,11 +36,10 @@
           display: block
           text-align: center
     .icon
-
+      opacity: 0
+      transform: translateY(150px)
       @media screen and (min-width: 768px)
         margin-left: 40px
-        opacity: 0
-        transform: translateY(150px)
       @media #{$mobile}
         margin-bottom: 30px
       &:hover
@@ -49,10 +48,21 @@
     margin-right: -5px
     +trans
     opacity: 0
+    @media #{$mobile}
+      opacity: 1
+      width: 150px
   .title-2
     margin-top: 30px
     +trans
     opacity: 0
+    @media #{$mobile}
+      width: 243px
+      opacity: 1
+  .line
+    @media #{$mobile}
+      width: 85px
+      opacity: 1
+
 
 
 .idx

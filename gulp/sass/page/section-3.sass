@@ -28,9 +28,12 @@
     position: absolute
     bottom: 52px
     right: 0
+    +trans
     @media #{$mobile}
       position: static
       min-width: initial
+    &:hover
+      opacity: 0.7
   .more
     @media #{$mobile}
       text-align: right
