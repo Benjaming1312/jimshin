@@ -48,7 +48,8 @@ function scrollFn (target, margin = 0) {
 function calcBannerMarginTop () {
   const navH = $('nav.navbar').innerHeight()
   if (is('.idx')) {
-    $('.banner').attr('style', `margin-top: ${navH - 50}px`)
+    const margin = $(window).width() > 768 ? 50 : 0
+    $('.banner').attr('style', `margin-top: ${navH - margin}px`)
   }
 }
 
@@ -80,7 +81,9 @@ function showNav () {
     transform: 'translateY(0)'
   })
     .then(() => {
-      calcBannerMarginTop()
+      if ($(window).width() > 768) {
+        calcBannerMarginTop()
+      }
     })
 }
 
@@ -123,7 +126,23 @@ function sectionAnimation (target) {
 
 const ease = Expo.easeOut
 function section1Ani () {
-  TweenMax.staggerTo('.section-1 .icon', 0.5, {y:"0", opacity:1, ease: ease}, 0.25)
+  let sectionObj
+
+  if ($(window).width() > 768) {
+    sectionObj = {
+      "padding-top": "7%",
+      "padding-bottom": "26%",
+      "height": "100%"
+    }
+  }
+  else {
+    sectionObj = {}
+  }
+
+  TweenMax.to('.idx.section-1', 0.5, sectionObj)
+    .then(() => {
+      return TweenMax.staggerTo('.section-1 .icon', 0.5, {y:"0", opacity:1, ease: ease}, 0.25)
+    })
     .then(() => {
       return TweenMax.to('.section-1 .title-1', 0.5, {width:"150", opacity:1, ease: ease})
     })
@@ -156,6 +175,10 @@ $(function () {
   appendNewsMore()
   bannerTextAnimation()
   detectOver()
+
+  if($(window).width() < 768) {
+    calcBannerMarginTop()
+  }
   // if (is('.page_mobilehome')) {
   //   $('.tab-pane').appendTo('.tab-content')
   // }
