@@ -1,68 +1,73 @@
 footer.foot
   background: white
-  margin-top: 35px
-  padding-top: 35px
-  padding-bottom: 40px
+  margin-top: 40px
+  padding-top: 0
+  padding-bottom: 30px
   @media #{$mobile}
     margin-top: 20px
+  .module-title
+    margin-bottom: 20px
+  .info
+    padding-top: 25px
+    @media #{$mobile}
+      padding-top: 10px
+    .logo
+      margin-bottom: 30px
+      @media #{$mobile}
+        margin-bottom: 15px
+      .svg
+        @media #{$mobile}
+          max-width: 100%
+    p
+      margin-bottom: 12.5px
+      color: #000
+      font-size: 16px
+      @media #{$mobile}
+        font-size: 14px
+        white-space: nowrap
+      *
+        font-size: 16px
+        color: #000
+        @media #{$mobile}
+          font-size: 14px
+          white-space: nowrap
+  .map
+    iframe
+      height: 227px
   .row
     +max-width
-    display: flex
-    align-items: center
-    flex-wrap: nowrap
-    @media #{$mobile}
-      padding: 0 15px
-      flex-wrap: wrap
-  .line
-    margin-left: 5px
-    margin-bottom: 14px
-  .title-1
-    margin-left: 5px
-  .title-2
-    margin-top: 30px
-    @media #{$mobile}
-      max-width: 100%
-  .text-content
-    @media screen and (min-width: 768px)
-      margin-right: 56px
-    @media #{$mobile}
-      width: 100%
-      margin-bottom: 30px
-  .info
-    width: 100%
-    p
-      margin-bottom: 15px
-    *
-      color: #1c508e
-      font-size: 18px
-      font-weight: 400
-      letter-spacing: 1px
-      line-height: 30px
-      @media #{$mobile}
-        letter-spacing: 0
-        font-size: 17px
-    .svg
-      margin-right: 15px
-    .info-group
-      >span
-        margin-right: 15px
-        @media #{$mobile}
-          display: block
-          margin-bottom: 15px
-    .indent
-      display: inline-block
-      @media screen and (min-width: 768px)
-        margin-left: 87px
-        margin-top: 15px
-        letter-spacing: 0
-      @media #{$mobile}
-        margin-top: 7.5px
+  //   display: flex
+  //   align-items: center
+  //   flex-wrap: nowrap
+  //   @media #{$mobile}
+  //     padding: 0 15px
+  //     flex-wrap: wrap
+  // .line
+  //   margin-left: 5px
+  //   margin-bottom: 14px
+  // .title-1
+  //   margin-left: 5px
+  // .title-2
+  //   margin-top: 30px
+  //   @media #{$mobile}
+  //     max-width: 100%
+  // .text-content
+  //   @media screen and (min-width: 768px)
+  //     margin-right: 56px
+  //   @media #{$mobile}
+  //     width: 100%
+  //     margin-bottom: 30px
+  
+
 div.design
-  background: url(#{$url}foot-bg.svg) center center no-repeat
-  background-size: cover
-  padding-top: 51px
-  padding-bottom: 22px
-  position: relative
+  padding-top: 7.5px
+  padding-bottom: 7.5px
+  background: #cecece
+  // background: url(#{$url}foot-bg.svg) center center no-repeat
+  // background-size: cover
+  // padding-top: 51px
+  // padding-bottom: 22px
+  // position: relative
   @media #{$mobile}
     background-size: 1560px cover
     padding-bottom: 0
@@ -80,7 +85,7 @@ div.design
     font-size: 14px
     color: white
     @media #{$mobile}
-      padding-bottom: 20px
+      padding-bottom: 10px
     span
       @media #{$mobile}
         float: left!important
@@ -88,8 +93,10 @@ div.design
         width: 100%
         text-align: center
     span, a
-      font-size: 14px
+      font-size: 12px
       color: white
+      font-weight: normal
+      letter-spacing: 2px
     a
       position: absolute
       right: 30px
@@ -102,12 +109,9 @@ div.design
 .right
   position: fixed
   top: 45%
-  width: 60px
-  right: 10px
+  width: 48px
+  right: 0px
   z-index: 9999
-  @media #{$mobile}
-    width: 60px
-    right: 0
   a
     +trans
     &:hover

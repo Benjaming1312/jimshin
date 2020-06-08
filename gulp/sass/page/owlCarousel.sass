@@ -3,8 +3,9 @@
   width: 100%
   position: relative
   +trans
-  @media #{$mobile}
-    margin-top: 65px
+  margin-bottom: 42px
+  // @media #{$mobile}
+  //   margin-top: 65px
   .col-xs-12
     padding: 0
     position: relative
@@ -15,32 +16,27 @@
     z-index: 999
     display: flex
     height: 100%
-    width: 50%
+    width: 100%
     align-items: center
+    justify-content: center
     line-height: 60px
-
     .content
-      margin-bottom: 15%
-    .svg
-      margin-right: 7.5px
-      opacity: 0
-      transform: translateY(150px)
-    .margin-right
-      margin-right: 46px
-      display: inline-block
+      @media #{$mobile}
+        width: 90%
   .owl-carousel
     z-index: 3
   .owl-dots
     position: absolute
-    bottom: 0
+    bottom: 30px
     width: 100%
     text-align: right
     z-index: 9999
     padding-right: 40px
     padding-bottom: 15px
     @media #{$mobile}
-      padding-right: 0px
+      padding-right: 7.5px
       padding-bottom: 5px
+      bottom: 0
     .owl-dot
       opacity: 1
       border-radius: 0
@@ -49,25 +45,34 @@
       span
         opacity: 1
         border-radius: 0
-        background: rgba(white, .39)
-        background: url(#{$url}owl-dot.svg) center center no-repeat
-        background-size: contain
-        background-position: center
-        width: 14px
-        height: 25px
-        margin-right: 6px
-        margin-left: 6px
+        // background: rgba(white)
+        // background: url(#{$url}owl-dot.svg) center center no-repeat
+        // background-size: contain
+        // background-position: center
+        background: white
+        border-radius: 50%
+        $w: 10px
+        width: $w
+        height: $w
+        display: inline-block
         +trans
-        // @media #{$mobile}
-        //   width: 6px
-        //   height: 6px
+        @media #{$mobile}
+          $w: 8px
+          width: $w
+          height: $w
       &.active
         span
           background: #fff
-          background: url(#{$url}owl-dot-active.svg) center center no-repeat
-          width: 14px
-          height: 25px
-          // @media #{$mobile}
+          // background: url(#{$url}owl-dot-active.svg) center center no-repeat
+          $w: 15px
+          width: $w
+          height: $w
+          transform: translateX(2.5px)
+          @media #{$mobile}
+            $w: 12px
+            width: $w
+            height: $w
+            transform: translateX(1.5px)
           //   width: 4.5px
           //   height: 4.5px
           //   top: 0

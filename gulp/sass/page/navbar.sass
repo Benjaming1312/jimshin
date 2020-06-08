@@ -1,20 +1,17 @@
 .navbar.navbar.navbar
-  position: absolute
+  position: fixed
   margin-bottom: 0
   z-index: 99
   width: 100%
   border: 0
   box-shadow: none
   border-radius: 0
-  background: white
-  padding: 38px 0 44px
+  background: rgba(white, .45)
+  padding: 20px 0 20px
   // +box-shadow
-  background: url(#{$url}nav-bg.png) center bottom no-repeat
-  background-size: cover
   z-index: 9999
+  border-top: 11px solid #cecece
   +trans
-  @media screen and (min-width: 768px)
-    transform: translateY(-157px)
   @media #{$mobile}
     padding-top: 0
     padding-bottom: 5px
@@ -109,7 +106,7 @@
       max-width: 65%
   .navbar-toggle
     border: 0
-    margin-top: 45px
+    margin-top: 25px
     background: none
     border-radius: 0
     .sr-only
@@ -118,7 +115,7 @@
     //   &::after
     //     background: #000
     .icon-bar
-      background: #008bd5
+      background: $color-blue
       width: 30px
       margin-bottom: .5rem
       &::before,
@@ -134,12 +131,12 @@
   #navbar
     padding: 0
     // @media screen and (min-width: 768px)
-    //   margin-right: 60px
+    //   margin-left: 121px
     @media #{$mobile}
       width: 100%
       margin: 0
       // background: #000
-      padding-bottom: 15px
+      padding-bottom: 0px
       box-shadow: none
       background: #fff
       a
@@ -151,11 +148,10 @@
       // width: 100%
       @media screen and (min-width: 768px)
         display: flex
-        justify-content: space-around
+        justify-content: flex-start
         align-items: center
-        justify-content: center
         padding-left: 0px
-        width: 100%
+        margin-left: 0vw
       @media #{$mobile}
         margin: 0
         float: left
@@ -170,7 +166,7 @@
         letter-spacing: 0.05rem
       >li
         @media screen and (min-width: 768px)
-          margin-left: 2.5vw
+          margin-left: 6vw
           padding-bottom: 0
         >a
           position: relative
@@ -179,31 +175,38 @@
           color: $color-b
           padding-bottom: 0
           font-weight: normal
-          padding-left: 8px
-          font-size: 18px
+          font-size: 17px
           font-weight: normal
+          padding-left: 7.5px
+          padding-right: 7.5px
+          text-align: center
           +trans
           @media screen and (min-width: 768px)
             margin-right: 0px
             padding-bottom: 0
+          @media #{$mobile}
+            text-align: left
           &::after
             @media screen and (min-width: 768px)
               content: ''
               display: block
-              width: 12px
-              height: 14px
-              background: url(#{$url}nav-arrow.svg) center center no-repeat
-              background-size: contain
+              width: 100%
+              min-width: 85px
+              height: 5px
+              background: #a6a8ab
+              // background: url(#{$url}nav-arrow.svg) center center no-repeat
+              // background-size: contain
               margin: 0 auto
               margin-top: 3px
               +trans
-              transform: translateY(15px)
+              transform: translateX(-100px)
+              // position: absolute
+              // bottom: 0
+              // left: 0
           &:hover
-            color: $color-orange
-            @media #{$mobile}
-              color: $color-orange
+            background: none
             &::after
-              transform: translateY(0px)
+              transform: translateX(0px)
         &.facebook
           @media screen and (min-width: 768px)
             margin-left: 2vw

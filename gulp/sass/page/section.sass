@@ -27,7 +27,7 @@ html
   margin-right: auto
 
 =box-shadow
-  box-shadow: 0px 7px 5px 0px rgba(#221e1f, .35)
+  box-shadow: 7px 7px 15px -1px rgba(#221e1f, .25)
 =text-shadow
   text-shadow: 1px 1px 30px rgba(#000, 1)
 =trans
@@ -51,21 +51,22 @@ html
       color: white
 
 =title
-  color: #ef8200
-  font-size: 37px
+  color: #15438b
+  font-size: 26px
   font-weight: 400
   text-align: center
-  margin-bottom: 30px
-  font-weight: 500
+  letter-spacing: 2.5px
+  margin-bottom: 0
   @media #{$mobile}
     margin-bottom: 15px
 
 =sub-title
-  font-size: 55px
-  color: #003685
-  margin-bottom: 30px
+  font-size: 26px
+  color: #ac882d
   text-align: center
-  font-weight: 500
+  font-weight: 400
+  letter-spacing: 5px
+  margin-top: 7.5px
   @media #{$mobile}
     margin-bottom: 15px
 
@@ -152,5 +153,18 @@ body:not(.page_mobilehome)
       color: $color-blue
 
 .module-title
+  margin-bottom: 40px
+  @media #{$mobile}
+    margin-bottom: 20px
+  &::after
+    content: ''
+    display: block
+    background: #e6e7e8
+    height: 1px
+    width: 289px
+    margin: 0 auto
+    margin-top: 22px
   h4.title
     +title
+  h4.sub-title
+    +sub-title

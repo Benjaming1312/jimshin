@@ -1,21 +1,15 @@
-- var url = '/ezfiles/802/1802/img/644/'
+- var url = '/dist/images/'
 
 .idx.container-fluid.section-1
   .row
-    .col-xs-12
-      .icon-group
-        .content
-          a.icon.svg(style="background:url("+url+"section-1-icon-1.svg); width: 168px; height: 193px;" href="#")
-        .content
-          a.icon.svg(style="background:url("+url+"section-1-icon-2.svg); width: 168px; height: 193px;" href="#")
-        .content
-          a.icon.svg(style="background:url("+url+"section-1-icon-3.svg); width: 168px; height: 193px;" href="#")
-      .text-content
-        span.svg.line(style="background:url("+url+"line.svg); height: 4px;")
-        span.svg.title-1(style="background:url("+url+"section-1-title-1.svg); height: 32px;")
-        br
-        span.svg.title-2(style="background:url("+url+"section-1-title-2.svg); height: 124px;")
-        //- span.svg.line(style="background:url("+url+"line.svg); width: 85px; height: 4px;")
-        //- span.svg.title-1(style="background:url("+url+"section-1-title-1.svg); width: 150px; height: 32px;")
-        //- br
-        //- span.svg.title-2(style="background:url("+url+"section-1-title-2.svg); width: 243px; height: 124px;")
+    .col-sm-6.col-xs-12.img
+      img.img-responsive(src=url + "section-1-img.png", alt="")
+    .col-sm-6.col-xs-12.text
+      .module-title
+        h4.title 服務項目
+        h4.sub-title SERVICE
+      p ● 免費到府現場評估、產品諮詢。
+      p ● 專業團隊提供安裝及施工服務。
+      p ● 訂製浴櫃、廚具、系統櫃，打造優良品質及精美設計。
+      p.more
+        a.btn(href="") View More
