@@ -15,6 +15,7 @@ const
 	// source = require('vinyl-source-stream')
 	// terser = require('rollup-plugin-terser')
 	del = require('del')
+	plumber = require('gulp-plumber')
 
 
 	gulp.task('clean', function() {
@@ -42,12 +43,18 @@ gulp.task('default',['clean', 'watch','connect']) //gulp 直接執行
 // 執行轉換JS
 gulp.task('scripts',function(){
 	gulp.src('gulp/js/userjs.js') //輸入路徑 **代表路徑的所有檔案轉換
+			.pipe(plumber())
+			.pipe(sourceMap.init())
 			.pipe(browserify())
 			.pipe(babel({
 					presets: ['env']
 			}))
 			.pipe(concat('userjs.js')) //合併所有JS產出為userjs.js
 			.pipe(uglify()) //最小化JS
+			.pipe(sourceMap.write('.', {
+				includeContent: false,
+				sourceRoot: 'gulp/js'
+			}))
 			.pipe(gulp.dest('dist/js')) //輸出路徑
 			.pipe(connect.reload())
 })
@@ -55,6 +62,7 @@ gulp.task('scripts',function(){
 // // // 轉換sass
 gulp.task('styles',function(){
 	gulp.src('gulp/sass/usercss.sass') //轉換的檔案
+			.pipe(plumber())
 			.pipe(sourceMap.init()) //sourcemap
 			.pipe(sass({outputStyle: 'compressed',errLogToConsole: true}).on('error',sass.logError)) //編譯
 			.pipe(autoprefixer("last 1 version"," > 1%" , "ie 8", "ie 7")
@@ -78,6 +86,7 @@ gulp.task('image',function(){
 //pug 轉html
 gulp.task('views',function(){
 	gulp.src('gulp/html/page/**.pug')
+			.pipe(plumber())
 			.pipe(pug({pretty: true}))
 			.pipe(gulp.dest('./'))
 			.pipe(connect.reload())

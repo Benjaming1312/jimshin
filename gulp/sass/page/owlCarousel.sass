@@ -4,75 +4,88 @@
   position: relative
   +trans
   margin-bottom: 42px
-  // @media #{$mobile}
-  //   margin-top: 65px
-  .col-xs-12
-    padding: 0
-    position: relative
   .text-content
     position: absolute
-    top: 0
-    right: 0
-    z-index: 999
-    display: flex
-    height: 100%
-    width: 100%
-    align-items: center
-    justify-content: center
-    line-height: 60px
-    .content
-      @media #{$mobile}
-        width: 90%
-  .owl-carousel
+    top: 25%
+    left: 25%
+    width: 50%
+    height: 50%
+    display: block
     z-index: 3
-  .owl-dots
-    position: absolute
-    bottom: 30px
-    width: 100%
-    text-align: right
-    z-index: 9999
-    padding-right: 40px
-    padding-bottom: 15px
-    @media #{$mobile}
-      padding-right: 7.5px
-      padding-bottom: 5px
-      bottom: 0
-    .owl-dot
-      opacity: 1
-      border-radius: 0
-      margin-right: 5px
-      border: 0
-      span
-        opacity: 1
-        border-radius: 0
-        // background: rgba(white)
-        // background: url(#{$url}owl-dot.svg) center center no-repeat
-        // background-size: contain
-        // background-position: center
-        background: white
-        border-radius: 50%
-        $w: 10px
-        width: $w
-        height: $w
-        display: inline-block
-        +trans
-        @media #{$mobile}
-          $w: 8px
-          width: $w
-          height: $w
-      &.active
-        span
-          background: #fff
-          // background: url(#{$url}owl-dot-active.svg) center center no-repeat
-          $w: 15px
-          width: $w
-          height: $w
-          transform: translateX(2.5px)
-          @media #{$mobile}
-            $w: 12px
-            width: $w
-            height: $w
-            transform: translateX(1.5px)
+    .box
+      background: rgba(white, .7)
+      padding: 30px
+      h4
+        line-height: 30px
+  // @media #{$mobile}
+  //   margin-top: 65px
+  // .col-xs-12
+  //   padding: 0
+  //   position: relative
+  // .text-content
+  //   position: absolute
+  //   top: 0
+  //   right: 0
+  //   z-index: 999
+  //   display: flex
+  //   height: 100%
+  //   width: 100%
+  //   align-items: center
+  //   justify-content: center
+  //   line-height: 60px
+  //   .content
+  //     @media #{$mobile}
+  //       width: 90%
+  // .owl-carousel
+  //   z-index: 3
+  // .owl-dots
+  //   position: absolute
+  //   bottom: 30px
+  //   width: 100%
+  //   text-align: right
+  //   z-index: 9999
+  //   padding-right: 40px
+  //   padding-bottom: 15px
+  //   @media #{$mobile}
+  //     padding-right: 7.5px
+  //     padding-bottom: 5px
+  //     bottom: 0
+  //   .owl-dot
+  //     opacity: 1
+  //     border-radius: 0
+  //     margin-right: 5px
+  //     border: 0
+  //     span
+  //       opacity: 1
+  //       border-radius: 0
+  //       // background: rgba(white)
+  //       // background: url(#{$url}owl-dot.svg) center center no-repeat
+  //       // background-size: contain
+  //       // background-position: center
+  //       background: white
+  //       border-radius: 50%
+  //       $w: 10px
+  //       width: $w
+  //       height: $w
+  //       display: inline-block
+  //       +trans
+  //       @media #{$mobile}
+  //         $w: 8px
+  //         width: $w
+  //         height: $w
+  //     &.active
+  //       span
+  //         background: #fff
+  //         // background: url(#{$url}owl-dot-active.svg) center center no-repeat
+  //         $w: 15px
+  //         width: $w
+  //         height: $w
+  //         transform: translateX(2.5px)
+  //         @media #{$mobile}
+  //           $w: 12px
+  //           width: $w
+  //           height: $w
+  //           transform: translateX(1.5px)
           //   width: 4.5px
           //   height: 4.5px
           //   top: 0

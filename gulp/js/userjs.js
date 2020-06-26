@@ -5,14 +5,16 @@
 //     return e ? true : false
 // })
 // import owl from 'owlCarousel.js'
-const owlFn = require('./owlCarousel')
+// const owlFn = require('./owlCarousel')
 const aosInit = require('./aos')
 const gotop = require('./scrollTo')
+const swiperJS = require('./swiper/index.js')
 
 $(function () {
   aosInit()
-  owlFn()
+  // owlFn()
   gotop()
+  swiperJS()
 })
 
 // owlFn()
