@@ -1,0 +1,31 @@
+.formBS
+  @media screen and (min-width: 768px)
+    margin-right: 30px
+  @media #{$mobile}
+    width: 100%
+    max-width: 300px
+    margin: 0 auto
+    margin-top: 15px
+  .btn
+    border: 0
+    padding: 0
+    width: 15px
+    height: 15px
+  .input-group
+    border-bottom: 1px solid #58595b
+    @media screen and (min-width: 768px)
+      width: 122px
+    @media screen and (min-width: 768px)
+      width: 100%
+  input
+    border: 0!important
+    color: $color-b2
+    background: none
+    padding-bottom: 3.5px!important
+    @media screen and (min-width: 768px)
+      max-width: 120px
+    &::placeholder
+      color: $color-b2
+      font-size: 14px
+      text-transform: uppercase
+      letter-spacing: 0.2rem

@@ -51,22 +51,22 @@ html
       color: white
 
 =title
-  color: #15438b
-  font-size: 26px
+  color: $color-b2
+  font-size: 28px
   font-weight: 400
   text-align: center
-  letter-spacing: 2.5px
+  letter-spacing: 0px
   margin-bottom: 0
   @media #{$mobile}
     margin-bottom: 15px
 
 =sub-title
-  font-size: 26px
-  color: #ac882d
+  font-size: 20px
+  color: #c3996b
   text-align: center
   font-weight: 400
-  letter-spacing: 5px
-  margin-top: 7.5px
+  letter-spacing: 0px
+  margin-top: 5px
   @media #{$mobile}
     margin-bottom: 15px
 
@@ -153,18 +153,10 @@ body:not(.page_mobilehome)
       color: $color-blue
 
 .module-title
-  margin-bottom: 40px
+  margin-bottom: 30px
   @media #{$mobile}
-    margin-bottom: 20px
-  &::after
-    content: ''
-    display: block
-    background: #e6e7e8
-    height: 1px
-    width: 289px
-    margin: 0 auto
-    margin-top: 22px
+    margin-bottom: 0px
   h4.title
     +title
-  h4.sub-title
+  .sub-title
     +sub-title

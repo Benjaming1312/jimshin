@@ -1,58 +1,19 @@
 .idx.section-1
-  background: #f4f4f2
-  padding: 55px 50px
   @media #{$mobile}
-    padding: 25px 20px
+    padding: 0 7.5px
   .row
-    +max-width
-    display: flex
+    padding: 15px 3.25px
     @media #{$mobile}
-      flex-wrap: wrap
-    .text
-      background: white
-      padding: 25px 20px
-      position: relative
+      padding-bottom: 0
+    .col-xs-12
+      padding: 0 7.5px
       @media #{$mobile}
-        padding-bottom: 0
-    .module-title
-      &::after
+        margin-bottom: 15px
+        padding: 0 3.5px
+      img
         width: 100%
-    p
-      color: #404041
-      font-size: 18px
-      letter-spacing: 3px
-      font-weight: 300
-      margin-bottom: 15px
-      line-height: 30px
-    .more
-      position: absolute
-      width: 100%
-      bottom: -15px
-      left: 0px
-      text-align: right
-      @media #{$mobile}
-        position: relative
-        margin-top: 15px
-        bottom: -15px
-        right: -20px
-        left: initial
-      a.btn
-        margin-bottom: 0
-        margin-right: 0
-        width: 70%
-        height: 45px
-        background: #cecece
-        border: 0
-        font-weight: 400
-        +trans
-        @media #{$mobile}
-          width: 90%
-        &:hover
-          &::after
-            transform: translateX(15px)
-        &::after
-          content: '>'
-          font-size: 18px
-          position: absolute
-          right: 30px
-          +trans
+    a
+      display: block
+      +trans
+      &:hover
+        opacity: 0.7

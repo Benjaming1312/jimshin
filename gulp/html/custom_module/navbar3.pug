@@ -1,27 +1,21 @@
-- var url = '/dist/images/'
+- var url = '/ezfiles/825/1825/img/1028/'
 nav.navbar
 	.container-fluid
-		//- ul.social
-		//- 	//- li
-		//- 	//- 	a(href="")
-		//- 	//- 		img(src=url+"head-icon-1.png", alt="")
-		//- 	//- 		| 電子報
-		//- 	//- li.global
-		//- 	//- 	a(href="")
-		//- 	//- 		img(src=url+"head-icon-2.png", alt="")
-		//- 	//- 		| 繁體中文
-		//- 	li
-		//- 		a(href="") 繁中
-		//- 	li
-		//- 		a(href="") EN
-			//- <form class="formBS" role="search" name="SearchMoForm" method="post" action="/bin/index.php?Plugin=mec&amp;Action=mobile_mecsearch/bin/index.php?Plugin=mec&amp;Action=mobile_mecsearch&amp;Lang=zh-tw">
-			//- 	<div class="input-group">
-			//- 		<span class="input-group-btn">
-			//- 			button.btn.svg(type="submit" style="background: url("+url+"search.svg)")
-			//- 		</span>
-			//- 		<input id="sch_key" name="SchKey" type="text" class="form-control" value="" placeholder="Search">
-			//- 	</div>
-			//- </form>
+		.nav-2
+			.fit-content.member
+			.fit-content.media.hidden-xs
+				a.svg(href="" style="background:url("+url+"social-icon-1.svg);")
+				a.svg(href="" style="background:url("+url+"social-icon-2.svg);")
+				a.svg(href="" style="background:url("+url+"social-icon-3.svg);")
+			.fit-content.search-content.hidden-xs
+				<form class="formBS" role="search" name="SearchMoForm" method="post" action="/bin/index.php?Plugin=mec&amp;Action=mobile_mecsearch/bin/index.php?Plugin=mec&amp;Action=mobile_mecsearch&amp;Lang=zh-tw">
+					<div class="input-group">
+						<span class="input-group-btn">
+							button.btn.svg(type="submit" style="background: url("+url+"search.svg)")
+						</span>
+						<input id="sch_key" name="SchKey" type="text" class="form-control" value="" placeholder="Search">
+					</div>
+				</form>
 		.navbar-header
 			button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
 				span.sr-only Toggle navigation
@@ -29,21 +23,278 @@ nav.navbar
 				span.icon-bar
 				span.icon-bar
 			// LOGO放置處
-			a.navbar-brand.svg(href='/' style="background: url("+url+"logo.svg); width: 127px; height: 51px;")
+			a.navbar-brand.svg(href='/' style="background: url("+url+"logo.svg); width: 93px; height: 57px;")
 		#navbar.navbar-collapse.collapse
+			.fit-content.search-content.visible-xs
+				<form class="formBS" role="search" name="SearchMoForm" method="post" action="/bin/index.php?Plugin=mec&amp;Action=mobile_mecsearch/bin/index.php?Plugin=mec&amp;Action=mobile_mecsearch&amp;Lang=zh-tw">
+					<div class="input-group">
+						<span class="input-group-btn">
+							button.btn.svg(type="submit" style="background: url("+url+"search.svg)")
+						</span>
+						<input id="sch_key" name="SchKey" type="text" class="form-control" value="" placeholder="Search">
+					</div>
+				</form>
 			ul.nav.navbar-nav
-				li(data-aos="fade-in", data-aos-delay="100")
-					a(href="") 首頁
-				li(data-aos="fade-in", data-aos-delay="200")
-					a(href="") 最新消息
-				li(data-aos="fade-in", data-aos-delay="300")
-					a(href="") 品牌介紹
-				li(data-aos="fade-in", data-aos-delay="400")
-					a(href="") 產品資訊
-				li(data-aos="fade-in", data-aos-delay="500")
-					a(href="") 關於我們
-				li(data-aos="fade-in", data-aos-delay="600")
-					a(href="") 維修服務
+				li.dropdown
+					a(href="")
+						span.tw 狗狗專區
+						span.en Dog
+					a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
+					ul.dropdown-menu(role='menu')
+						.content
+							.box
+								ul.list-inline
+									li
+										a(href="") 飼料
+										a.sub-dropdown-toggle(href="javascript: void(0);" type="button")
+										ul.styled
+											li
+												a(href="") 猋
+											li
+												a(href="") 阿拉卡特
+											li
+												a(href="") 晶燉
+											li
+												a(href="") 威斯頓
+									li
+										a(href="") 罐頭
+										a.sub-dropdown-toggle(href="javascript: void(0);" type="button")
+										ul.styled
+											li
+												a(href="") 猋
+											li
+												a(href="") 巧鮮杯
+									li
+										a(href="") 零食
+										a.sub-dropdown-toggle(href="javascript: void(0);" type="button")
+										ul.styled
+											li
+												a(href="") Goldpet餅乾
+									li
+										a(href="") 清潔用品
+										a.sub-dropdown-toggle(href="javascript: void(0);" type="button")
+										ul.styled
+											li
+												a(href="") 四爪
+									li
+										a(href="") 用品
+										a.sub-dropdown-toggle(href="javascript: void(0);" type="button")
+										ul.styled
+											li
+												a(href="") 四爪
+											li
+												a(href="") 飲水器
+											li
+												a(href="") 口罩
+											li
+												a(href="") 伊莉莎白
+											li
+												a(href="") 雪亮
+											li
+												a(href="") 玩具
+
+				li.dropdown
+					a(href="")
+						span.tw 貓咪專區
+						span.en Cat
+					a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
+					ul.dropdown-menu(role='menu')
+						.content
+							.box
+								ul.list-inline
+									li
+										a(href="") 飼料
+										a.sub-dropdown-toggle(href="javascript: void(0);" type="button")
+										ul.styled
+											li
+												a(href="") 猋
+											li
+												a(href="") 晶燉
+											li
+												a(href="") 阿拉卡特
+									li
+										a(href="") 罐頭
+										a.sub-dropdown-toggle(href="javascript: void(0);" type="button")
+										ul.styled
+											li
+												a(href="") 骰子貓
+											li
+												a(href="") 巧鮮杯
+											li
+												a(href="") 妙奇
+											li
+												a(href="") 激密纖維
+											li
+												a(href="") 漁極幼貓
+											li
+												a(href="") 漁極主食(小)
+											li
+												a(href="") 漁極主食(大)
+									li
+										a(href="") 零食
+										a.sub-dropdown-toggle(href="javascript: void(0);" type="button")
+										ul.styled
+											li
+												a(href="") 長崎魚干
+											li
+												a(href="") 日本藍
+											li
+												a(href="") ASUKU
+											li
+												a(href="") 鮪魚條
+									li
+										a(href="") 貓砂
+										a.sub-dropdown-toggle(href="javascript: void(0);" type="button")
+										ul.styled
+											li
+												a(href="") Snappy
+											li
+												a(href="") 豆腐砂
+											li
+												a(href="") 藤浦紙砂
+											li
+												a(href="") 松木砂
+											li
+												a(href="") 丁樂
+											li
+												a(href="") 雙貓
+											li
+												a(href="") Jew
+											li
+												a(href="") 速度貓
+											li
+												a(href="") 彭建
+											li
+												a(href="") 邱比特
+									li
+										a(href="") 清潔用品
+										a.sub-dropdown-toggle(href="javascript: void(0);" type="button")
+										ul.styled
+											li
+												a(href="") 四爪
+									li
+										a(href="") 用品
+										a.sub-dropdown-toggle(href="javascript: void(0);" type="button")
+										ul.styled
+											li
+												a(href="") 四爪
+											li
+												a(href="") 口罩
+											li
+												a(href="") 伊莉莎白
+											li
+												a(href="") 貓嗎啡
+				li.dropdown
+					a(href="")
+						span.tw 小動物
+						span.en Small Animal
+					a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
+					ul.dropdown-menu(role='menu')
+						.content
+							.box
+								ul.list-inline
+									li
+										a(href="") 飼料
+										a.sub-dropdown-toggle(href="javascript: void(0);" type="button")
+										ul.styled
+											li
+												a(href="") Mazuri
+											li
+												a(href="") 特寵專科
+									li
+										a(href="") 清潔用品
+										a.sub-dropdown-toggle(href="javascript: void(0);" type="button")
+										ul.styled
+											li
+												a(href="") 砂
+									li
+										a(href="") 墊料
+									li
+										a(href="") 零食
+									li
+										a(href="") 用品
+									li
+										a(href="") 其他
+				li.dropdown
+					a(href="")
+						span.tw 實驗動物
+						span.en Lab Animal
+					a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
+					ul.dropdown-menu(role='menu')
+						.content
+							.box
+								ul.list-inline
+									li
+										a(href="") 一般飼料
+										a.sub-dropdown-toggle(href="javascript: void(0);" type="button")
+										ul.styled
+											li
+												a(href="") Labdiet
+									li
+										a(href="") 特殊飼料
+										a.sub-dropdown-toggle(href="javascript: void(0);" type="button")
+										ul.styled
+											li
+												a(href="") Testdiet
+									li
+										a(href="") 墊料
+										a.sub-dropdown-toggle(href="javascript: void(0);" type="button")
+										ul.styled
+											li
+												a(href="") Shepherd shack 紙製玩具屋
+											li
+												a(href="") Tapvei
+											li
+												a(href="") SANI-CHIPS墊料
+											li
+												a(href="") ALPHA-dri紙墊料
+											li
+												a(href="") 玉米梗墊料
+											li
+												a(href="") AWF墊料
+									li
+										a(href="") 器材
+
+									li
+										a(href="") 儀器
+
+									li
+										a(href="") 其他
+										a.sub-dropdown-toggle(href="javascript: void(0);" type="button")
+										ul.styled
+											li
+												a(href="") 天竺鼠圓形飼料槽
+											li
+												a(href="") 小鼠固定架
+											li
+												a(href="") 天竺鼠L型飼料槽
+											li
+												a(href="") 其它類
+				li.dropdown
+					a(href="")
+						span.tw 活動專欄
+						span.en Events
+					a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
+					ul.dropdown-menu.no-align-left(role='menu')
+						.content
+							.box
+								ul.styled
+									li
+										a(href="") 公告資訊
+									li
+										a(href="") 活動專區
+									li
+										a(href="") 專欄文章
+									li
+										a(href="") 影音專欄
+				li.dropdown
+					a(href="")
+						span.tw 關於我們
+						span.en About us
+			.fit-content.media.visible-xs
+				a.svg(href="" style="background:url("+url+"social-icon-1.svg);")
+				a.svg(href="" style="background:url("+url+"social-icon-2.svg);")
+				a.svg(href="" style="background:url("+url+"social-icon-3.svg);")
 				//- li.dropdown(data-aos="fade-in" data-aos-delay="300")
 				//- 	a.fz16a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false') 關於協會
 				//- 	ul.dropdown-menu(role='menu')

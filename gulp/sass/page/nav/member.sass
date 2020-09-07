@@ -1,0 +1,102 @@
+$nav-b: #4b4d4f
+.nav-2
+  position: absolute
+  right: 0
+  top: 0
+  z-index: 2
+  max-width: 300px
+  @media #{$mobile}
+    position: static
+    width: 100%
+    display: block
+    width: 100%
+    max-width: initial
+.fit-content
+  width: 100%
+  display: flex
+  justify-content: flex-end
+  flex-wrap: nowrap
+  &.member
+    .nav.navbar-nav
+      margin: 7.5px
+      @media #{$mobile}
+        margin: 0
+        width: 100%
+        display: flex
+        flex-wrap: nowrap
+        border-bottom: 1px solid $nav-b
+      li
+        margin: 0
+        padding: 0
+        @media #{$mobile}
+          width: calc(100% / 3)
+          text-align: center
+        a
+          border: 0
+          padding: 0
+          margin: 0
+          color: $nav-b
+          font-size: 14px
+          padding: 0 15px
+          position: relative
+          @media #{$mobile}
+            white-space: nowrap
+            padding: 7.5px 0
+            border: 1px solid $nav-b
+            border-top: 0
+            border-bottom: 0
+          &::before
+            margin-right: 5px
+          &::after
+            content: ''
+            border-right: 1px solid $nav-b
+            height: 15px
+            display: inline-block
+            position: absolute
+            top: 3px
+            right: 0
+            font-size: 18px
+            @media #{$mobile}
+              display: none
+        &:nth-of-type(1)
+          a
+            @media #{$mobile}
+              border-left: 0
+            &::before
+              content: ''
+              display: inline-block
+              background: url(#{$url}member-icon-1.svg)
+              background-size: contain
+              width: 14px
+              height: 14px
+              background-repeat: no-repeat
+              background-position: center
+        &:nth-of-type(2)
+          a
+            @media #{$mobile}
+              border-left: 0
+              border-right: 0
+            &::before
+              content: ''
+              display: inline-block
+              background: url(#{$url}member-icon-2.svg)
+              background-size: contain
+              width: 19px
+              height: 14px
+              background-repeat: no-repeat
+              background-position: center
+        &:nth-of-type(3)
+          a
+            @media #{$mobile}
+              border-right: 0
+            &::before
+              content: ''
+              display: inline-block
+              background: url(#{$url}member-icon-3.svg)
+              background-size: contain
+              width: 20px
+              height: 14px
+              background-repeat: no-repeat
+              background-position: center
+            &::after
+              display: none

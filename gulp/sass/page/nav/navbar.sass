@@ -1,0 +1,122 @@
+$mt: 65px
+nav.navbar.navbar.navbar.navbar
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  background: rgba(white, .7)
+  borer: 0
+  box-shadow: none
+  +trans
+  @media #{$mobile}
+    background: white
+    padding-bottom: 15px
+  .navbar-brand
+    padding: 0
+    margin: 0
+    font-size: 0
+    line-height: 0
+    +trans
+    @media screen and (min-width: 768px)
+      position: absolute
+      left: 50px
+      top: 50px
+      z-index: 5
+    @media #{$mobile}
+      margin-left: 15px
+      margin-top: 7.5px
+  .navbar-toggle
+    border: 0
+    background: none
+    border-radius: 0
+    margin-top: 65px
+    margin-right: 15px
+    .sr-only
+      display: none
+    .icon-bar
+      width: 75%
+      background: #bca792
+      margin-top: 7.5px
+    //   display: 
+  .container-fluid
+    @media #{$mobile}
+      padding: 0
+  .navbar-header
+    @media #{$mobile}
+      margin: 0
+  #navbar
+    @media #{$mobile}
+      max-height: calc(100vh - 57px - 37px)
+      overflow: auto
+      overflow-x: hidden
+      margin: 0
+      overscroll-behavior: contain
+      // padding: 0 30px
+    a.dropdown-toggle
+      @media #{$mobile}
+        position: absolute
+        right: 0
+        top: 0px
+      &::after
+        @media #{$mobile}
+          content: ''
+          display: inline-block
+          border-width: 7.5px
+          border-style: solid solid solid solid
+          border-color: $color-b2 transparent transparent transparent
+          transform: rotate(90deg)
+          +trans
+    .open
+      .dropdown-toggle
+        &::after
+          @media #{$mobile}
+            transform: rotate(0deg) translate(0px, 7.5px)
+    .navbar-nav
+      +trans
+      @media screen and (min-width: 768px)
+        display: flex
+        justify-content: center
+        margin-right: 0
+        width: 100%
+        // position: absolute
+        margin-top: $mt
+      >li
+        margin: 0 15px
+        @media #{$mobile}
+          margin-left: 0
+          margin-right: 0
+        >a
+          border: 0!important
+          @media screen and (min-width: 768px)
+            padding-top: 0
+            margin: 0
+          @media #{$mobile}
+            margin: 0
+            padding-left: 0
+            padding-right: 0
+          span
+            display: block
+            text-align: center
+            @media #{$mobile}
+              text-align: left
+            &.tw
+              color: $color-b2
+              font-size: 17px
+            &.en
+              color: #929497
+              text-transform: initial
+              margin-top: 0px
+              font-size: 15px
+  &.scroll
+    background: white
+    box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.25)
+    #navbar .navbar-nav
+      @media screen and (min-width: 768px)
+        margin-top: 50px
+    .navbar-brand
+      @media screen and (min-width: 768px)
+        top: 30px
+    .fit-content.media
+      @media screen and (min-width: 768px)
+        margin-top: 3.5px
+        margin-bottom: 3.5px

@@ -3,20 +3,67 @@
   width: 100%
   position: relative
   +trans
-  margin-bottom: 42px
-  .text-content
-    position: absolute
-    top: 25%
-    left: 25%
-    width: 50%
-    height: 50%
-    display: block
+  margin-bottom: 0px
+  .owl-carousel
     z-index: 3
-    .box
-      background: rgba(white, .7)
-      padding: 30px
-      h4
-        line-height: 30px
+  .owl-dots
+    position: absolute
+    bottom: 20px
+    width: 100%
+    text-align: center
+    z-index: 9999
+    padding-right: 0px
+    padding-bottom: 0px
+    @media #{$mobile}
+      padding-right: 7.5px
+      padding-bottom: 5px
+      bottom: 0
+    .owl-dot
+      opacity: 1
+      border-radius: 0
+      margin-right: 15px
+      border: 0
+      span
+        opacity: 1
+        border-radius: 0
+        // background: rgba(white)
+        // background: url(#{$url}owl-dot.svg) center center no-repeat
+        // background-size: contain
+        // background-position: center
+        background: white
+        border-radius: 50%
+        $w: 13px
+        width: $w
+        height: $w
+        display: inline-block
+        +trans
+        @media #{$mobile}
+          $w: 13px
+          width: $w
+          height: $w
+      &.active
+        span
+          background: #c3b08f
+          $w: 13px
+          width: $w
+          height: $w
+          @media #{$mobile}
+            $w: 13px
+            width: $w
+            height: $w
+  // .text-content
+  //   position: absolute
+  //   top: 25%
+  //   left: 25%
+  //   width: 50%
+  //   height: 50%
+  //   display: block
+  //   z-index: 3
+  //   .box
+  //     background: rgba(white, .7)
+  //     padding: 30px
+  //     h4
+  //       line-height: 30px
   // @media #{$mobile}
   //   margin-top: 65px
   // .col-xs-12

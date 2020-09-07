@@ -50,7 +50,7 @@ gulp.task('scripts',function(){
 					presets: ['env']
 			}))
 			.pipe(concat('userjs.js')) //合併所有JS產出為userjs.js
-			.pipe(uglify()) //最小化JS
+			// .pipe(uglify()) //最小化JS
 			.pipe(sourceMap.write('.', {
 				includeContent: false,
 				sourceRoot: 'gulp/js'
@@ -71,7 +71,7 @@ gulp.task('styles',function(){
 					includeContent: false,
 					sourceRoot: 'gulp/sass'
 			})) //sourceMap寫入在一樣的地方  
-			.pipe(gulp.dest('dist/css/raw2346.rawmon.com/dist/css/')) //翻譯後的路徑
+			.pipe(gulp.dest('dist/css/ec036.so-buy.com/ezfiles/825/1825/img/1029/')) //翻譯後的路徑
 			.pipe(gulp.dest('dist/css/')) //翻譯後的路徑
 			.pipe(connect.reload())
 })

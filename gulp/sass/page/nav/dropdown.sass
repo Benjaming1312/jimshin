@@ -1,0 +1,130 @@
+nav.navbar.navbar.navbar.navbar
+  .dropdown
+    @media screen and (min-width: 768px)
+      position: initial
+    &:hover
+      @media screen and (min-width: 768px)
+        .dropdown-menu
+          display: block
+  .dropdown-menu
+    @media screen and (min-width: 768px)
+      left: -15px
+      box-shadow: none
+      border: 0
+      background: none
+    &.no-align-left
+      left: initial
+      .content
+        width: auto
+        padding-left: 0
+        padding-right: 0
+        .box
+          padding: 15px
+          @media #{$mobile}
+            padding-top: 0
+            padding-bottom: 0
+          .styled
+            display: block!important
+            padding-left: 0
+    .content
+      display: flex
+      justify-content: center
+      padding: 15px
+      padding-top: 0
+      @media screen and (min-width: 768px)
+        width: 100vw
+      @media #{$mobile}
+        padding: 0
+      .box
+        @media screen and (min-width: 768px)
+          width: 80%
+          border-radius: 15px
+          padding: 30px
+          background: white
+          box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.25)
+        @media #{$mobile}
+          width: 100%
+        .list-inline
+          display: flex
+          @media screen and (min-width: 768px)
+            flex-wrap: nowrap
+          @media #{$mobile}
+            flex-wrap: wrap
+            margin: 0
+          >li
+            width: 100%
+            padding: 0 15px
+            position: relative
+            @media screen and (min-width: 768px)
+              border-right: 1px dotted #ccc
+            @media #{$mobile}
+              padding-right: 0
+              padding: 7.5px 0px
+              width: 100%
+              padding-left: 15px
+            &:last-child
+              border: 0
+            .sub-dropdown-toggle
+              @media #{$mobile}
+                content: ''
+                display: inline-block
+                position: absolute
+                right: 0
+                top: 10px
+                border-width: 7.5px
+                border-style: solid solid solid solid
+                border-color: #db8526 transparent transparent transparent
+                transform: rotate(90deg)
+                +trans
+            >a:not(.sub-dropdown-toggle)
+              font-weight: bold
+              font-size: 17px
+              color: #db8526
+              border-left: 5px solid #db8526
+              display: block
+              padding-bottom: 0px
+              position: relative
+              line-height: 20px
+              @media screen and (min-width: 768px)
+                padding: 0 7.5px
+                padding-left: 7.5px
+              @media #{$mobile}
+                padding-left: 7.5px
+              &::after
+                content: ''
+                width: 100%
+                border-bottom: 1px dotted #ccc
+                height: 1px
+                display: block
+                position: absolute
+                bottom: -5px
+                left: 0
+        .styled
+          list-style: none
+          padding-left: 0
+          @media screen and (min-width: 768px)
+            margin-top: 7.5px
+          @media #{$mobile}
+            display: none
+            padding-left: 15px
+          li
+            padding-bottom: 7.5px
+            border-bottom: 1px dotted #ccc
+            @media screen and (min-width: 768px)
+              margin-bottom: 7.5px
+              padding-left: 7.5px
+              padding-right: 7.5px
+            @media #{$mobile}
+              padding: 7.5px 0
+              padding-left: 7.5px
+            a
+              white-space: nowrap
+              color: $nav-b
+              font-size: 15px
+  .list-inline
+    li.open
+      .styled
+        @media #{$mobile}
+          display: block!important
+      .sub-dropdown-toggle
+        transform: rotate(0deg)!important

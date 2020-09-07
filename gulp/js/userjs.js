@@ -8,13 +8,20 @@
 // const owlFn = require('./owlCarousel')
 const aosInit = require('./aos')
 const gotop = require('./scrollTo')
-const swiperJS = require('./swiper/index.js')
+const {banner} = require('./banner/index.js')
+const navbar = require('./navbar/index.js')
+const idxOwl = require('./indexOwl/index.js')
+// const swiperJS = require('./swiper/index.js')
+// const scollFn = require('./scrollTrigger/index.js')
 
 $(function () {
+  setTimeout(() => {
+    navbar()
+    banner()
+    idxOwl()
+  })
   aosInit()
-  // owlFn()
   gotop()
-  swiperJS()
 })
 
 // owlFn()
