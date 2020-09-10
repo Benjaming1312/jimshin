@@ -23,4 +23,13 @@ module.exports = function () {
       $(this).parent('li').toggleClass('open')
     })
   })
+
+  $('.dropdown').each(function () {
+    const positionLeft = $(this).position().left
+    if ($(this).find('.dropdown-menu').hasClass('no-align-left')) {
+      return
+    }
+    console.log('%c (／‵Д′)／~ ╧╧ positionLeft : ', 'padding: .25rem; font-size: 14px; background: #12bdba; color: #fff', positionLeft)
+    $(this).find('.dropdown-menu').attr('style', `left: -${positionLeft}px`)
+  })
 }

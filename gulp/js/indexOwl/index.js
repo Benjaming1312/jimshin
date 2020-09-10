@@ -16,8 +16,6 @@ function section3Owl () {
     nav: true,
     dots: false,
     loop: true,
-    animateOut: 'fadeOut',
-    animateIn: 'fadeIn',
     autoPlaySpeed: 5000,
     autoPlayTimeout: 1500,
     smartSpeed: 1500,
