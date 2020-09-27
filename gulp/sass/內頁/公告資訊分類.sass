@@ -1,0 +1,52 @@
+.page.container-fluid.events-list
+  margin-top: 30px
+.module-rcglist
+  +max-width
+  max-width: 750px
+  @media #{$mobile}
+    padding: 0 15px
+  .d-item
+    border: 1px solid $color-orange
+    margin-bottom: 30px
+    padding: 7.5px
+    &:hover
+      .d-img
+        img
+          transform: scale(1.1)
+    .mbox
+      padding: 0
+      position: relative
+      @media screen and (min-width: 768px)
+        display: flex
+
+    $w: 25%
+    .d-img
+      position: relative
+      overflow: hidden
+      @media screen and (min-width: 768px)
+        width: $w
+        max-width: $w
+      @media #{$mobile}
+        margin-bottom: 15px
+      img
+        width: 100%
+        +trans
+    .d-txt
+      position: relative
+      @media screen and (min-width: 768px)
+        width: calc(100% - #{$w})
+        max-width: calc(100% - #{$w})
+      h5
+        a
+          color: $color-orange
+          font-weight: bold
+          font-size: 18px
+      .mdetail
+        font-size: 14px
+        @media screen and (min-width: 768px)
+          position: absolute
+          bottom: 15px
+          left: 0
+
+.mbtn, .btn
+  +btn

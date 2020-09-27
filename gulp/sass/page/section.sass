@@ -28,27 +28,31 @@ html
 
 =box-shadow
   box-shadow: 7px 7px 15px -1px rgba(#221e1f, .25)
+=box-shadow2
+  box-shadow: 7px 7px 15px -1px rgba(#000, .5)
 =text-shadow
   text-shadow: 1px 1px 30px rgba(#000, 1)
 =trans
   transition: $trans
 
 =btn
-  background: #f1ec4f
-  border-color: #f1ec4f
-  color: #231815
+  background: white
+  border-color: $color-orange
+  color: white
   font-size: 16px
   +trans
-  height: 56px
   display: inline-flex
   align-items: center
   font-weight: 400
   border-radius: 0
   &:hover
-    background: $color-green
+    background: $color-orange
     color: white
     span
       color: white
+  span
+    color: $color-orange
+    +trans
 
 =title
   color: $color-b2
