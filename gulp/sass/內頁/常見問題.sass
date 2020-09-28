@@ -1,4 +1,7 @@
 .page.qa
+  margin-top: 30px
+  @media #{$mobile}
+    margin-top: 15px
   aside.col-sm-2
     p
       @media #{$mobile}
@@ -6,30 +9,28 @@
     a
       +btn
       background: $color-n
-      color: white
-      border: 1px solid rgba($color-orange, .3)
-      color: $color-orange
+      color: #353535
+      border: 1px solid #dbdcdc
       height: auto
       padding: 7.5px 15px
-      border-radius: 15px
+      border-radius: 10px
       @media #{$mobile}
         display: block
         width: 100%
       &:hover,
       &.active
-        background: $color-orange
-        color: white
+        background: #bca792
+        color: #353535
   main
     .content-title
       color: $color-orange
-      font-weight: bold
     .content
       margin-bottom: 30px
     .panel
       border: 0
       margin-bottom: 15px
       .panel-heading
-        background-color: $color-orange
+        background-color: #bca792
         color: white
         border-radius: 7.5px 7.5px 0 0
         border: 0

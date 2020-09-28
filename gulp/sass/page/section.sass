@@ -37,21 +37,26 @@ html
 
 =btn
   background: white
-  border-color: $color-orange
+  border: 1px solid #bca792
+  border-color: #bca792
   color: white
   font-size: 16px
   +trans
   display: inline-flex
   align-items: center
+  justify-content: center
   font-weight: 400
   border-radius: 0
-  &:hover
-    background: $color-orange
-    color: white
+  background: #bca792
+  &:hover,
+  &:focus,
+  &:active
+    background: $color-n
+    color: #bca792
     span
-      color: white
+      color: #bca792
   span
-    color: $color-orange
+    color: white
     +trans
 
 =title
@@ -128,33 +133,72 @@ body:not(.page_mobilehome)
   // background: url(#{$url}section-4-bg.png) center center repeat-y
   // background-size: contain
 
-.module-
+.module-.module-
   +max-width
+  max-width: 1180px!important
   margin-left: auto
   margin-right: auto
-  margin-bottom: 60px
+  margin-bottom: 0px!important
+  padding-bottom: 0!important
   @media #{$mobile}
     margin-bottom: 30px
   .mt
     margin-bottom: 15px
     h3
-      color: $color-green
-      border-bottom: 1px solid #ccc
+      color: #535353
+      border-bottom: 0
       padding: 0
       padding-bottom: 15px
       line-height: 2.5rem
       font-size: 28px
       font-weight: bold
-  h5
-    background: none!important
-    padding-left: 0!important
-    border-bottom: 1px dotted #ccc
-    padding-bottom: 15px
+  .msg-schtip
     margin-bottom: 15px
-    padding-top: 30px
+  #pageptlist
+    @media screen and (min-width: 768px)
+      margin: 0 -15px
+  .d-item
+    margin: 0 0px
+    padding: 0 15px
+    margin-bottom: 30px
+    text-align: center
+    @media #{$mobile}
+      margin-bottom: 30px
+    &:hover
+      img
+        transform: scale(1.1)
+  .d-img
+    display: block
+    width: 100%
+    height: 100%
+    box-shadow: 3px 3px 5px 0px rgba(#000, .55)
+    margin-bottom: 30px
+    position: relative
+    overflow: hidden
+    @media #{$mobile}
+      margin-bottom: 15px
+    img
+      +trans
+  h5
     a
-      font-size: 20px
-      color: $color-blue
+      color: #353535
+      font-weight: bold
+  .mprice
+    span
+      color: #ef8200
+      &.mpri-val
+        color: #ef8200
+  .mbtn
+    +btn
+    background: #bca792
+    border-color: #bca792
+    margin-top: 15px
+    font-size: 14px
+    &:hover,
+    &:active,
+    &:focus
+      background: none
+      color: #bca792
 
 .module-title
   margin-bottom: 15px

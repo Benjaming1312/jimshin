@@ -7,41 +7,41 @@ module.exports = function () {
   prodOwlCarousel()
   appendProdInfo()
 
-  // $('.module-relate').append(`<div class="owl-carousel"></div>`)
-  // $('.module-relate .row.listBS').addClass('item')
-  // $('.module-relate .row.listBS').appendTo($('.module-relate .owl-carousel'))
-  // $('.module-relate .owl-carousel').owlCarousel({
-  //     items: 1,
-  //     autoplay:true,
-  //     nav: true,
-  //     dots: false,
-  //     loop: true,
-  //     animateOut: 'fadeOut',
-  //     animateIn: 'fadeIn',
-  //     autoPlaySpeed: 5000,
-  //     autoPlayTimeout: 5000,
-  //     navText: [],
-  //     smartSpeed: 1500,
-  //     autoplayHoverPause: false,
-  //     responsiveClass: true,
-  //     responsive: {
-  //         0: {
-  //             items: 2,
-  //             nav: true,
-  //             margin: 15
-  //         },
-  //         440: {
-  //             items: 2,
-  //             nav: true,
-  //             margin: 15
-  //         },
-  //         768: {
-  //             items: 4,
-  //             nav: true,
-  //             margin: 15
-  //         },
-  //     }
-  // })
+  $('.module-relate').append(`<div class="owl-carousel"></div>`)
+  $('.module-relate .row.listBS').addClass('item')
+  $('.module-relate .row.listBS').appendTo($('.module-relate .owl-carousel'))
+  $('.module-relate .owl-carousel').owlCarousel({
+      items: 1,
+      autoplay:true,
+      nav: true,
+      dots: false,
+      loop: true,
+      animateOut: 'fadeOut',
+      animateIn: 'fadeIn',
+      autoPlaySpeed: 5000,
+      autoPlayTimeout: 5000,
+      navText: [],
+      smartSpeed: 1500,
+      autoplayHoverPause: false,
+      responsiveClass: true,
+      responsive: {
+          0: {
+              items: 2,
+              nav: true,
+              margin: 15
+          },
+          440: {
+              items: 2,
+              nav: true,
+              margin: 15
+          },
+          768: {
+              items: 4,
+              nav: true,
+              margin: 15
+          },
+      }
+  })
 }
 
 function appendProdInfo () {

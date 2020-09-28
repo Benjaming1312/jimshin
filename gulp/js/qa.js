@@ -14,6 +14,31 @@ module.exports = function () {
 
     if (url.indexOf(href) >= 0) {
       $(this).addClass('active')
+
+      setTimeout(() => {
+        scrollContent(href)
+      }, 500)
     }
+    
+
+    $(this).click(function (e) {
+      e.preventDefault()
+      e.stopPropagation()
+
+      $('aside.col-sm-2 a.active').removeClass('active')
+      $(this).addClass('active')
+
+      scrollContent(href)
+    })
   })
+}
+
+function scrollContent (href) {
+  const navH = $('.navbar').innerHeight()
+  const top = $(href).offset().top - navH - 100
+
+  $('html, body').animate({
+    scrollTop: top
+  }, 1000)
+
 }

@@ -1,5 +1,9 @@
 - var url = '/ezfiles/825/1825/img/1028/'
 
+.page.container-fluid.qa-banner
+  .row
+    .col-xs-12
+      img.img-responsive(src=url + "banner.png", alt="")
 .page.container-fluid.qa
   .row
     .col-xs-12.module-title
@@ -8,17 +12,17 @@
   .row
     aside.col-sm-2.col-xs-12
       p
-        a(href="") 購物 常見問題
+        a(href="#content-1") 購物 常見問題
       p
-        a(href="") 運送 常見問題
+        a(href="#content-2") 運送 常見問題
       p
-        a(href="") 售後 常見問題
+        a(href="#content-3") 售後 常見問題
       p
-        a(href="") 保存 常見問題
+        a(href="#content-4") 保存 常見問題
       p
-        a(href="") 產品 相關問題
+        a(href="#content-5") 產品 相關問題
     main.col-sm-10.col-xs-12
-      .content
+      #content-1.content
         h4.content-title 購物 常見問題
         .panel-group#accordion-1
           .panel.panel-default
@@ -49,7 +53,7 @@
             #collapse-1-4.panel-collapse.collapse
               .panel-body
                 p Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, deserunt voluptatibus. Optio nisi magnam, facere explicabo alias non beatae deserunt culpa illo, exercitationem eos eius vero! Soluta officiis labore omnis?
-      .content
+      #content-2.content
         h4.content-title 運送 常見問題
         .panel-group#accordion-1
           .panel.panel-default
@@ -80,7 +84,7 @@
             #collapse-2-4.panel-collapse.collapse
               .panel-body
                 p Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, deserunt voluptatibus. Optio nisi magnam, facere explicabo alias non beatae deserunt culpa illo, exercitationem eos eius vero! Soluta officiis labore omnis?
-      .content
+      #content-3.content
         h4.content-title 售後 常見問題
         .panel-group#accordion-1
           .panel.panel-default
@@ -111,7 +115,7 @@
             #collapse-3-4.panel-collapse.collapse
               .panel-body
                 p Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, deserunt voluptatibus. Optio nisi magnam, facere explicabo alias non beatae deserunt culpa illo, exercitationem eos eius vero! Soluta officiis labore omnis?
-      .content
+      #content-4.content
         h4.content-title 保存 常見問題
         .panel-group#accordion-1
           .panel.panel-default
@@ -142,7 +146,7 @@
             #collapse-4-4.panel-collapse.collapse
               .panel-body
                 p Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, deserunt voluptatibus. Optio nisi magnam, facere explicabo alias non beatae deserunt culpa illo, exercitationem eos eius vero! Soluta officiis labore omnis?
-      .content
+      #content-5.content
         h4.content-title 產品 相關問題
         .panel-group#accordion-1
           .panel.panel-default

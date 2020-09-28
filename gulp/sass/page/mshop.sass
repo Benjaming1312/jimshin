@@ -1,30 +1,225 @@
+#Dyn_head
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  background: rgba(255,255,255,0.7)
+  z-index: 1000
+
 .module-login,
 .module-forgetpsw,
 .module-register,
 .module-memmenu,
 .module-changepwd,
-.module-viewcart
-  max-width: 500px!important
+.module-viewcart,
+.module-formlist,
+.module-orderlist,
+.module-consignee,
+.module-billto,
+.module-submitorder,
+.module-
+  +max-width
+  max-width: 750px!important
   margin-left: auto
   margin-right: auto
   padding-bottom: 60px
+  @media screen and (min-width: 768px)
+    margin-top: 130px
   @media #{$mobile}
+    margin-top: 130px
+    padding: 0px 15px
     padding-bottom: 30px
-    margin: 30px
   .mt
+    text-align: center
+    margin-top: 15px
     h3
-      +title
+      color: #535353
+      font-size: 28px
+      font-weight: 400
+      text-align: center
+      letter-spacing: 0px
+      margin-bottom: 0
+      border: 0
+      @media #{$mobile}
+        margin-bottom: 15px
+  .form-btn
+    margin-top: 30px
 
+.mbtn,
 .btn
   +btn
+
+
+.module-orderlist,
+.module-consignee,
+.module-billto,
+.module-viewcart
+  max-width: 900px!important
+  margin-left: auto
+  margin-right: auto
 
 .module-forgetpsw,
 .module-changepwd
   .form-group
     margin-top: 15px
 
-.module-fav
+.module-fav,
+.module-misc
   display: none
 
-.mnavbar
+// .module-cglist
+//   .mt
+//     display: none
+.module-sublist
   display: none
+.mpgbar
+  +max-width
+  padding: 0 7.5px
+  margin-bottom: 15px
+  @media #{$mobile}
+    padding: 0 15px
+  .mbtn, .btn
+    padding-left: 15px
+    padding-right: 15px
+
+.mecmemcouponlist,
+.mecrequirerecord
+  display: none
+
+.list-group-item
+  a
+    +trans
+    &:hover
+      background: $color-green
+      color: white
+
+.module-billto
+  @media #{$mobile}
+    padding: 0 15px
+  >.mt
+    text-align: center
+    h3
+      font-size: 32px
+      color: $color-b
+      border: 0
+      letter-spacing: 0.2rem
+      font-weight: 500
+      text-align: center
+      margin-bottom: 0px
+      line-height: 60px
+      // &::before
+      //   content: ''
+      //   display: inline-block
+      //   width: 30px
+      //   height: 30px
+      //   background: url(#{$url}title-icon.svg) center center no-repeat
+      //   background-size: contain
+      //   margin-right: 15px
+
+
+.module-ecconsignee,
+.module-ecdeliver,
+.module-ecpay,
+.ecconsignee-add.ecconsignee-add
+  h3
+    color: #000
+  .mbtn
+    +btn
+    width: 150px
+    span
+      color: white
+.mcart-operate.mcart-operate
+  .mbtn
+    +btn
+    height: 40px
+.ecconsignee-list li.defaultAddr .mtag
+  white-space: nowrap
+.module-consignee
+  .mbtn
+    +btn
+    height: 40px
+    width: 150px
+    margin: 0
+    margin-bottom: 15px
+    span
+      color: white
+      white-space: nowrap
+
+.module-ecpay
+  .mt
+    margin-bottom: 15px
+
+.ecconsignee-list .consignee-info + .form-btn
+  display: flex
+  flex-wrap: nowrap
+  margin-top: 0
+  .mbtn
+    display: inline-block
+
+.ecconsignee-list li .form-btn
+  position: static!important
+  display: flex!important
+  justify-content: flex-end
+  background: #eee!important
+  padding-right: 10px
+
+
+.module-viewcart
+  .form-btn
+    margin-top: 0
+
+.showother ul > li.active,
+.ecpay-list ul > li.active > div
+  border-color: #bca792
+.ecorder-form .showother > .mbox > div[class$="-add"] .form-btn .mbtn-top
+  white-space: nowrap
+
+.ecorder-form > .module
+  padding-top: 30px 
+  margin-bottom: 15px
+  padding-bottom: 0px
+  &:nth-of-type(1)
+    padding-top: 15px
+  > .mt h3
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+    border-left: 5px solid #bca792
+    color: #535353
+    padding-left: 7.5px
+
+.ecconsignee-list li.active .consignee-info .mfield.eccons-name
+  background: $color-green
+  @media #{$mobile}
+    padding: 5px
+  *
+    color: white
+    @media #{$mobile}
+      margin-bottom: 0
+
+.showother.open,
+  @media #{$mobile}
+    z-index: 9999
+  .showpanel-btn,
+  .consignee-btn-add
+    @media #{$mobile}
+      white-space: nowrap
+
+.ok span:before, .ok span:after, .close span:before, .close span:after
+  background: $color-green
+
+.module-viewcart
+  @media #{$mobile}
+    padding: 0 15px
+
+.module-billto>.mt h3
+  white-space: nowrap
+  font-size: 26px
+
+.mdialog
+  z-index: 99999
+.mdialog .mdialog-foot .mbtn
+  justify-content: center
+
+.mcart-info + .form-btn
+  margin-top: 0

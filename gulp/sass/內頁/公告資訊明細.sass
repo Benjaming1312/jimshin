@@ -7,17 +7,18 @@
       padding: 0 15px
   .col.col_03
     margin-top: 90px
+    @media screen and (min-width: 768px)
+      padding-left: 70px
     @media #{$mobile}
       margin-top: 30px
     .d-item
       h5
         overflow: initial
+        border-left: 5px solid #bca792 
+        padding-left: 15px
+        line-height: 25px
         a
-          color: $color-orange
-          border-left: 5px solid $color-orange
-          padding-left: 15px
-          line-height: 40px
-          white-space: nowrap
+          color: #353535    
           overflow: initial
     .d-img
       img
@@ -31,8 +32,8 @@
       margin-bottom: 30px
     h4.title
       text-align: left
-      color: $color-orange
-      border-left: 5px solid $color-orange
+      color: #353535    
+      border-left: 5px solid #bca792 
       padding-left: 15px
       @media #{$mobile}
         line-height: 40px

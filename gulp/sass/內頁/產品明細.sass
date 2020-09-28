@@ -181,13 +181,13 @@
     .ad-pro-btns
       display: flex
       .mbtn
-        background: none
+        background: #bca792
         border-color: #bca792
-        color: #bca792
+        color: white
         +trans
         &:hover
-          background: #bca792
-          color: white
+          background: $color-n
+          color: #bca792
     .maddnum
       margin: 15px 0
       .mname
@@ -284,35 +284,37 @@
         h5
           text-align: center
         a
-          font-size: 20px
+          font-size: 18px
           font-weight: normal
           text-align: center
           color: #221e1f
           +trans
   .owl-carousel.owl-carousel
     padding: 0 30px
+    @media #{$mobile}
+      padding: 0 15px
     .owl-nav
       div
         display: inline-block
         margin: 0 auto
         width: 15px
         height: auto
-        +tr3($color-n, $color-n, $color-n, #1A2731)
+        +tr3($color-n, $color-n, $color-n, #dbdcdc)
         border-width: 10px 10px 10px 14px
         margin-right: 7.5px
         // margin-bottom: 20px
         +trans
         border-radius: 0
         background-image: none!important
-        top: 40%
+        top: 30%
         @media #{$mobile}
           top: 25%
       .owl-prev
         transform: rotate(-180deg)
-        left: 0px
+        left: -15px
       .owl-next
         transform: rotate(0deg)
-        right: 0px
+        right: -15px
 
 
 .prod-detail,
@@ -376,3 +378,4 @@
         a
           color: #bca792
           font-weight: bold
+          font-size: 18px

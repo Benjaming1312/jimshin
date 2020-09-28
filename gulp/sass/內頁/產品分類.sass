@@ -18,11 +18,13 @@
       max-width: 1180px!important
     .listBS
       @media screen and (min-width: 768px)
-        display: flex
-        flex-wrap: nowrap
+        // display: flex
+        // flex-wrap: nowrap
     .d-item
-      margin: 0 15px
+      margin: 0 0px
+      padding: 0 15px
       margin-bottom: 30px
+      text-align: center
       @media #{$mobile}
         margin-bottom: 30px
       &:hover
@@ -42,15 +44,21 @@
         +trans
     h5
       a
-        color: #bca792
+        color: #353535
         font-weight: bold
     .mprice
       span
-        color: #bca792
+        color: #ef8200
         &.mpri-val
-          color: $color-orange
+          color: #ef8200
     .mbtn
       +btn
       background: #bca792
       border-color: #bca792
       margin-top: 15px
+      font-size: 14px
+      &:hover,
+      &:active,
+      &:focus
+        background: none
+        color: #bca792
