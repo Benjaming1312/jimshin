@@ -17,9 +17,9 @@
     @media screen and (min-width: 768px)
       max-width: 1180px!important
     .listBS
-      @media screen and (min-width: 768px)
-        // display: flex
-        // flex-wrap: nowrap
+      @media #{$mobile}
+        display: flex
+        flex-wrap: wrap
     .d-item
       margin: 0 0px
       padding: 0 15px
@@ -27,6 +27,8 @@
       text-align: center
       @media #{$mobile}
         margin-bottom: 30px
+        width: calc(49% - 15px)
+        margin: 0 7.5px 15px
       &:hover
         img
           transform: scale(1.1)
@@ -57,6 +59,8 @@
       border-color: #bca792
       margin-top: 15px
       font-size: 14px
+      @media #{$mobile}
+        white-space: nowrap
       &:hover,
       &:active,
       &:focus

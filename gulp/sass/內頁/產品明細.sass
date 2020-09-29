@@ -29,6 +29,9 @@
     background: #d5c8bc
     padding: 15px
     margin-bottom: 15px
+    @media #{$mobile}
+      margin-left: 15px
+      width: calc(100% - 30px)
     p
       line-height: 30px
       font-size: 16px
@@ -47,6 +50,9 @@
       display: flex
       flex-wrap: wrap
       margin: 0 -15px
+      @media #{$mobile}
+        float: left
+        display: inline-flex
       a
         width: calc(100% / 4 - 30px)
         margin: 0 15px 15px
@@ -190,6 +196,10 @@
           color: #bca792
     .maddnum
       margin: 15px 0
+      @media #{$mobile}
+        display: flex
+        flex-wrap: nowrap
+        align-items: center
       .mname
         font-weight: bold
         color: #000
@@ -200,6 +210,9 @@
       .mval
         @media #{$mobile}
           margin: 15px 0
+          margin-top: 0
+          margin-bottom: 0
+          margin-left: 15px
       .btn
         border-radius: 0
         color: #000

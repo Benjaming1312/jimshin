@@ -88,8 +88,9 @@ nav.navbar.navbar.navbar.navbar
           margin-left: 0
           margin-right: 0
         &:hover
-          >a
-            border-bottom: 5px solid rgba(28, 32, 42, 1)
+          >a:not(.dropdown-toggle)
+            @media screen and (min-width: 768px)
+              border-bottom: 5px solid rgba(28, 32, 42, 1)
         >a
           border-bottom: 5px solid rgba(28, 32, 42, 0)
           @media screen and (min-width: 768px)
