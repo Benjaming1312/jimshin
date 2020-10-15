@@ -5,12 +5,12 @@ module.exports = function () {
     return
   }
 
+  section1Owl()
   section3Owl()
-  section4Owl()
 }
 
-function section3Owl () {
-  $('.idx.section-3 .owl-carousel').owlCarousel({
+function section1Owl () {
+  $('.idx.section-1 .owl-carousel').owlCarousel({
     items: 1,
     autoplay:true,
     nav: true,
@@ -29,14 +29,15 @@ function section3Owl () {
             items: 1
         },
         768: {
-            items: 5
+            items: 3,
+            margin: 30
         }
     }
   })
 }
 
-function section4Owl () {
-  $('.idx.section-4 .owl-carousel').owlCarousel({
+function section3Owl () {
+  $('.idx.section-3 .owl-carousel').owlCarousel({
     items: 1,
     autoplay:true,
     nav: true,
@@ -51,16 +52,13 @@ function section4Owl () {
     autoplayHoverPause: false,
     responsive: {
         0: {
-            items: 2,
-            margin: 15
+            items: 1
         },
         440: {
-            items: 2,
-            margin: 15
+            items: 1
         },
         768: {
-            items: 6,
-            margin: 15
+            items: 1
         }
     }
   })

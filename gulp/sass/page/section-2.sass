@@ -1,8 +1,15 @@
 .idx.section-2
-  padding: 0
-  @media screen and (min-width: 768px)
-    max-width: 1230px
-  .col-xs-12
-    padding: 0
-    img
-      width: 100%
+  +max-width
+  padding-top: 83px
+  margin-bottom: 94px
+  @media #{$mobile}
+    padding: 30px
+    padding-bottom: 0
+    margin-bottom: 0px
+  .row
+    @media screen and (min-width: 768px)
+      margin: 0 -15px
+  .col-sm-6
+    @media #{$mobile}
+      margin-bottom: 30px
+      +box-shadow

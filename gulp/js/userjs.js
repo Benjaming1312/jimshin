@@ -8,7 +8,7 @@
 // const owlFn = require('./owlCarousel')
 const aosInit = require('./aos')
 const gotop = require('./scrollTo')
-const {banner} = require('./banner/index.js')
+// const {banner} = require('./banner/index.js')
 const navbar = require('./navbar/index.js')
 const idxOwl = require('./indexOwl/index.js')
 const qa = require('./qa')
@@ -20,7 +20,7 @@ const prodDetail = require('./productDetail/index.js')
 $(function () {
   setTimeout(() => {
     navbar()
-    banner()
+    // banner()
     idxOwl()
     qa()
     neewsDetail()

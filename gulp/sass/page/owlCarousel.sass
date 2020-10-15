@@ -6,22 +6,51 @@
   margin-bottom: 0px
   .owl-carousel
     z-index: 3
+    .owl-nav
+      position: absolute
+      top: 60%
+      width: 100%
+      padding: 0 30px
+      @media #{$mobile}
+        top: 60%
+      .owl-prev
+        background: url(#{$url}arrow-white-l.svg)center center no-repeat
+        background-size: cover
+        background-position: center
+        background-repeat: no-repeat
+        filter: drop-shadow(3px 3px 3px rgba(#000, .21))
+        left: 35px
+        width: 9px
+        height: 18px
+        @media #{$mobile}
+          left: 15px
+      .owl-next
+        background: url(#{$url}arrow-white-r.svg)center center no-repeat
+        background-size: cover
+        background-position: center
+        background-repeat: no-repeat
+        filter: drop-shadow(3px 3px 3px rgba(#000, .21))
+        right: 35px
+        width: 9px
+        height: 18px
+        @media #{$mobile}
+          right: 15px
   .owl-dots
     position: absolute
-    bottom: 20px
+    bottom: 37px
     width: 100%
     text-align: center
     z-index: 9999
     padding-right: 0px
     padding-bottom: 0px
     @media #{$mobile}
-      padding-right: 7.5px
-      padding-bottom: 5px
+      padding-right: 0
+      padding-bottom: 0px
       bottom: 0
     .owl-dot
       opacity: 1
       border-radius: 0
-      margin-right: 15px
+      margin-right: 7.5px
       border: 0
       span
         opacity: 1
@@ -30,27 +59,27 @@
         // background: url(#{$url}owl-dot.svg) center center no-repeat
         // background-size: contain
         // background-position: center
-        background: white
+        background: #d3d1d2
         border-radius: 50%
-        $w: 13px
+        $w: 10px
         width: $w
         height: $w
         display: inline-block
         +trans
         @media #{$mobile}
-          $w: 13px
+          $w: 10px
           width: $w
           height: $w
       &.active
         span
-          background: #c3b08f
-          $w: 13px
-          width: $w
-          height: $w
-          @media #{$mobile}
-            $w: 13px
-            width: $w
-            height: $w
+          background: #afaea9
+          // $w: 13px
+          // width: $w
+          // height: $w
+          // @media #{$mobile}
+          //   $w: 13px
+          //   width: $w
+          //   height: $w
   // .text-content
   //   position: absolute
   //   top: 25%
