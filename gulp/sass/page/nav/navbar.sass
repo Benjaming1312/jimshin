@@ -14,12 +14,18 @@ nav.navbar.navbar.navbar.navbar
     padding-top: 37px
     background-image: url(#{$url}navbar-bg.png)
     background-position: center
-    background-size: 102%
+    background-size: 102% 100%
     background-repeat: no-repeat
   @media #{$mobile}
     background-image: url(#{$url}navbar-bg.png)
     padding-top: 7.5px
     padding-bottom: 0px
+  @media #{$pad-horizantal}
+    padding: 0 15px
+    padding-top: 15px
+  @media #{$pad-vertical}
+    padding: 0 15px
+    padding-top: 15px
   .navbar-brand
     padding: 0
     margin: 0
@@ -44,9 +50,17 @@ nav.navbar.navbar.navbar.navbar
       display: none
     .icon-bar
       width: 75%
-      background: #594a42
+      background: #4a3023
       margin-top: 7.5px
-    //   display: 
+      +trans
+    &:not(.collapsed)
+      .icon-bar
+        &:nth-of-type(2)
+          opacity: 0
+        &:nth-of-type(3)
+          transform: rotate(45deg) translate(0, 0)
+        &:nth-of-type(4)
+          transform: rotate(-45deg) translate(6px, -7px)
   .container-fluid
     @media screen and (min-width: 768px)
       +max-width
@@ -56,6 +70,34 @@ nav.navbar.navbar.navbar.navbar
     @media #{$mobile}
       margin: 0
       padding-bottom: 15px
+    .member
+      display: inline-flex
+      flex-wrap: nowrap
+      position: absolute
+      right: 70px
+      top: 20px
+      @media screen and (min-width: 768px)
+        position: absolute
+        right: 0  
+        margin-right: 0
+        bottom: 25px
+      @media #{$mobile}
+        margin-top: 3.5px
+        padding-bottom: 15px
+      @media #{$pad-vertical}
+        display: none
+      .svg
+        margin: 0 7.5px
+        min-width: 19px
+        min-height: 19px
+        +trans
+        &:hover
+          opacity: 0.3
+        &:first-child
+          @media #{$mobile}
+            margin-left: 0
+        &:last-child
+          margin-right: 0
   #navbar
     @media #{$mobile}
       max-height: calc(100vh - 57px - 37px)
@@ -63,7 +105,7 @@ nav.navbar.navbar.navbar.navbar
       // overflow-x: hidden
       margin: 0
       overscroll-behavior: contain
-      background: white
+      background: #e3ddd7
       // padding: 0 30px
     a.dropdown-toggle
       @media screen and (min-width: 768px)
@@ -80,6 +122,7 @@ nav.navbar.navbar.navbar.navbar
           border-style: solid solid solid solid
           border-color: #594a42 transparent transparent transparent
           transform: rotate(90deg)
+          transform-origin: 50% 50%
           +trans
     .open
       .dropdown-toggle
@@ -103,6 +146,10 @@ nav.navbar.navbar.navbar.navbar
         @media #{$mobile}
           margin-left: 0
           margin-right: 0
+          margin-bottom: 15px
+          border-bottom: 1px solid rgba(#4a3023, .2)
+        @media #{$pad-vertical}
+          margin: 0 12.5px
         &:hover
           >a:not(.dropdown-toggle)
             @media screen and (min-width: 768px)
@@ -115,19 +162,13 @@ nav.navbar.navbar.navbar.navbar
             right: 0  
             margin-right: 0
             bottom: 25px
-          @media #{$mobile}
-            margin-top: 3.5px
-            padding-bottom: 15px
           .svg
-            margin: 0 7.5px
+            margin: 0 12.5px
             min-width: 19px
             min-height: 19px
             +trans
             &:hover
               opacity: 0.3
-            &:first-child
-              @media #{$mobile}
-                margin-left: 0
             &:last-child
               margin-right: 0
         >a
@@ -143,6 +184,8 @@ nav.navbar.navbar.navbar.navbar
             margin: 0
             padding-left: 0
             padding-right: 0
+          @media #{$pad-vertical}
+            margin: 0
           span
             display: block
             text-align: center
@@ -153,18 +196,22 @@ nav.navbar.navbar.navbar.navbar
               font-size: 15px
               font-weight: 400
               letter-spacing: 0.1rem
+              @media #{$mobile}
+                font-size: 17px
+              @media #{$pad-vertical}
+                font-size: 14px
             &.en
               color: #929497
               text-transform: initial
               margin-top: 0px
               font-size: 15px
-          
   &.scroll
     background-color: #ded1c6
+    background-image: none
     box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.25)
     padding-top: 20px
     @media #{$mobile}
-      padding-top: 5px
+      padding-top: 7.5px
     // #navbar .navbar-nav
       // @media screen and (min-width: 768px)
       //   margin-top: 50px

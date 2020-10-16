@@ -3,6 +3,10 @@
   padding: 70px 0
   @media #{$mobile}
     padding: 30px
+  @media #{$pad-horizantal}
+    padding: 30px 70px
+  @media #{$pad-vertical}
+    padding: 30px 70px
   .row
     +max-width
     .col-xs-12
@@ -23,11 +27,14 @@
       padding: 0 30px
       @media #{$mobile}
         top: 60%
+      div
+        border-radius: 0
       .owl-prev
         background: url(#{$url}arrow-black-l.svg)center center no-repeat
         background-size: cover
         background-position: center
         background-repeat: no-repeat
+        filter: drop-shadow(3px 3px 3px rgba(#000, .21))
         left: -30px
         width: 9px
         height: 18px
@@ -38,6 +45,7 @@
         background-size: cover
         background-position: center
         background-repeat: no-repeat
+        filter: drop-shadow(3px 3px 3px rgba(#000, .21))
         right: -30px
         width: 9px
         height: 18px

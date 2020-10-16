@@ -17,6 +17,9 @@ nav.navbar
 		//- 			</div>
 		//- 		</form>
 		.navbar-header
+			.member.visible-xs
+				a.svg(href="" style="background:url("+url+"nav-icon-1.svg); width: 15px; height: 17px;")
+				a.svg(href="" style="background:url("+url+"nav-icon-2.svg); width: 17px; height: 18px;")
 			button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
 				span.sr-only Toggle navigation
 				span.icon-bar
@@ -51,7 +54,7 @@ nav.navbar
 										a(href="") 貓頭鷹系列
 									li
 										a(href="") 2020AW New Arrival
-								.img
+								.img.hidden-xs
 									img.img-responsive(src=url + "banner.png", alt="")
 
 				li.dropdown(data-aos="fade-in", data-aos-delay="200")
@@ -70,7 +73,7 @@ nav.navbar
 										a(href="") Autumn/Winter 2019
 									li
 										a(href="") Spring/Summer 2019
-								.img
+								.img.hidden-xs
 									img.img-responsive(src=url + "banner.png", alt="")
 							
 				li.dropdown(data-aos="fade-in", data-aos-delay="300")
@@ -89,7 +92,7 @@ nav.navbar
 										a(href="") Autumn/Winter 2019
 									li
 										a(href="") Spring/Summer 2019
-								.img
+								.img.hidden-xs
 									img.img-responsive(src=url + "banner.png", alt="")
 				li(data-aos="fade-in", data-aos-delay="400")
 					a(href="")
@@ -97,7 +100,7 @@ nav.navbar
 				li(data-aos="fade-in", data-aos-delay="500")
 					a(href="")
 						span.tw SHOP borsalini
-				li.member(data-aos="fade-in", data-aos-delay="600")
+				li.member.hidden-xs(data-aos="fade-in", data-aos-delay="600")
 					a.svg(href="" style="background:url("+url+"nav-icon-1.svg); width: 15px; height: 17px;")
 					a.svg(href="" style="background:url("+url+"nav-icon-2.svg); width: 17px; height: 18px;")
 			//- .fit-content.media.visible-xs

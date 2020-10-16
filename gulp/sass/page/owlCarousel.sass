@@ -13,6 +13,11 @@
       padding: 0 30px
       @media #{$mobile}
         top: 60%
+      div
+        border-radius: 0
+        &:active
+          @media #{$mobile}
+            background-color: $color-n
       .owl-prev
         background: url(#{$url}arrow-white-l.svg)center center no-repeat
         background-size: cover

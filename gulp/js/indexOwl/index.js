@@ -41,7 +41,7 @@ function section3Owl () {
     items: 1,
     autoplay:true,
     nav: true,
-    dots: false,
+    dots: true,
     loop: true,
     animateOut: 'fadeOut',
     animateIn: 'fadeIn',

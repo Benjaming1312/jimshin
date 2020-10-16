@@ -5,8 +5,12 @@
   @media #{$mobile}
     padding: 30px
     padding-top: 0
+  @media #{$pad-vertical}
+    padding: 30px 15px
+  @media #{$pad-horizantal}
+    padding: 30px 45px
   .row
-    @media screen and (min-width: 768px)
+    @media screen and (min-width: 1025px)
       margin: 0 -15px
   a
     img
@@ -22,10 +26,60 @@
     >a >img
       width: 100%
   .owl-carousel
+    .owl-dots
+      // position: absolute
+      // bottom: 37px
+      // width: 100%
+      // text-align: center
+      // z-index: 9999
+      // padding-right: 0px
+      // padding-bottom: 0px
+      // @media #{$mobile}
+      //   padding-right: 0
+      //   padding-bottom: 0px
+      //   bottom: 0
+      .owl-dot
+        opacity: 1
+        border-radius: 0
+        margin-right: 15px
+        border: 0
+        &:last-child
+          margin-right: 0
+        span
+          opacity: 1
+          border-radius: 0
+          // background: rgba(white)
+          // background: url(#{$url}owl-dot.svg) center center no-repeat
+          // background-size: contain
+          // background-position: center
+          background: white
+          border: 2px solid #272525
+          border-radius: 50%
+          $w: 12px
+          width: $w
+          height: $w
+          display: inline-block
+          +trans
+          @media #{$mobile}
+            $w: 12px
+            width: $w
+            height: $w
+        &.active
+          span
+            background: #808285
+            border-color: #808285
     .item
-      padding: 62px 0
+      padding: 62px 0 31px
       @media #{$mobile}
         padding: 15px
+        padding-bottom: 30px
+      @media #{$pad-vertical}
+        padding: 15px 0 15px
+      a
+        @media #{$pad-vertical}
+          display: block
+          margin: 0 auto
+          width: 80%
       img
         width: auto
         max-width: 100%
@@ -38,23 +92,32 @@
       padding: 0 30px
       @media #{$mobile}
         top: 60%
+      div
+        border-radius: 0
       .owl-prev
         background: url(#{$url}arrow-grey-l.svg)center center no-repeat
         background-size: cover
         background-position: center
         background-repeat: no-repeat
+        filter: drop-shadow(3px 3px 3px rgba(#000, .21))
         left: 30px
         width: 9px
         height: 18px
         @media #{$mobile}
           left: -15px
+        @media #{$pad-vertical}
+          left: 7.5px
+
       .owl-next
         background: url(#{$url}arrow-grey-r.svg)center center no-repeat
         background-size: cover
         background-position: center
         background-repeat: no-repeat
+        filter: drop-shadow(3px 3px 3px rgba(#000, .21))
         right: 30px
         width: 9px
         height: 18px
         @media #{$mobile}
           right: -15px
+        @media #{$pad-vertical}
+          right: 7.5px
