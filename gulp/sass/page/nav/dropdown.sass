@@ -12,13 +12,13 @@ nav.navbar.navbar.navbar.navbar
       border: 0
       background: none
       overflow: initial
-      width: 300px
+      width: 700px
     @media #{$mobile}
       border-top: 1px solid rgba(#4a3023, .2)
     &::before
       content: ''
       display: block
-      margin: 0 auto
+      // margin: 0 auto
       width: 30px
       height: 20px
       +tr3($color-n, $color-n, #e3ddd7, $color-n)
@@ -27,6 +27,9 @@ nav.navbar.navbar.navbar.navbar
       border-left-width: 18px
       border-right-width: 18px
       filter: drop-shadow(0px -3px 2px rgba(#594a42, .2))
+      @media screen and (min-width: 768px)
+        // position: absolute
+        margin-left: 130px
       @media #{$mobile}
         filter: drop-shadow(0px -3px 2px rgba(#594a42, .2))
         display: none
@@ -53,6 +56,9 @@ nav.navbar.navbar.navbar.navbar
 
         .box
           padding: 15px
+          @media screen and (min-width: 768px)
+            display: flex
+            flex-wrap: nowrap
           @media #{$mobile}
             padding-top: 0
             padding-bottom: 0
@@ -60,19 +66,43 @@ nav.navbar.navbar.navbar.navbar
           .styled
             display: block!important
             padding-left: 0
-        ul
-          list-style: none
-          padding-left: 0
-          margin-bottom: 15px
-          @media #{$mobile}
-            margin-bottom: 0
-          li
-            line-height: 30px
+          .img
+            @media screen and (min-width: 768px)
+              width: 50%
+              padding-left: 30px
+          .list-inline
+            display: flex
+            @media screen and (min-width: 768px)
+              flex-wrap: nowrap
+              width: 50%
             @media #{$mobile}
-              margin-bottom: 7.5px
-            a
-              color: #594a42
-              font-size: 14px
+              flex-wrap: wrap
+              margin: 0
+            >li
+              @media screen and (min-width: 768px)
+                width: 50%
+              @media #{$mobile}
+                width: 100%
+            ul
+              list-style: none
+              padding-left: 0
+              margin-bottom: 15px
+              @media screen and (min-width: 768px)
+                display: flex
+                flex-wrap: wrap
+              @media #{$mobile}
+                margin-bottom: 0
+              li
+                line-height: 30px
+                @media screen and (min-width: 768px)
+                  width: 100%
+                @media #{$mobile}
+                  margin-bottom: 7.5px
+                a
+                  color: #594a42
+                  font-size: 14px
+                  @media screen and (min-width: 768px)
+                    white-space: nowrap
     .content
       display: flex
       justify-content: center
@@ -91,61 +121,61 @@ nav.navbar.navbar.navbar.navbar
           // box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.5)
         @media #{$mobile}
           width: 100%
-        .list-inline
-          display: flex
-          @media screen and (min-width: 768px)
-            flex-wrap: nowrap
-          @media #{$mobile}
-            flex-wrap: wrap
-            margin: 0
-          >li
-            width: 100%
-            padding: 0 15px
-            position: relative
-            @media screen and (min-width: 768px)
-              border-right: 1px dotted #ccc
-            @media #{$mobile}
-              padding-right: 0
-              padding: 15px 0px
-              width: 100%
-              padding-left: 15px
-            &:last-child
-              border: 0
-            .sub-dropdown-toggle
-              @media #{$mobile}
-                content: ''
-                display: inline-block
-                position: absolute
-                right: 0
-                top: 15px
-                border-width: 10px
-                border-style: solid solid solid solid
-                border-color: #db8526 transparent transparent transparent
-                transform: rotate(90deg)
-                +trans
-            >a:not(.sub-dropdown-toggle)
-              font-weight: bold
-              font-size: 17px
-              color: #db8526
-              border-left: 5px solid #db8526
-              display: block
-              padding-bottom: 0px
-              position: relative
-              line-height: 20px
-              @media screen and (min-width: 768px)
-                padding: 0 7.5px
-                padding-left: 7.5px
-              @media #{$mobile}
-                padding-left: 7.5px
-              &::after
-                content: ''
-                width: 100%
-                border-bottom: 1px dotted #ccc
-                height: 1px
-                display: block
-                position: absolute
-                bottom: -5px
-                left: 0
+        // .list-inline
+        //   display: flex
+        //   @media screen and (min-width: 768px)
+        //     flex-wrap: nowrap
+        //   @media #{$mobile}
+        //     flex-wrap: wrap
+        //     margin: 0
+        //   >li
+        //     width: 100%
+        //     padding: 0 15px
+        //     position: relative
+        //     @media screen and (min-width: 768px)
+        //       border-right: 1px dotted #ccc
+        //     @media #{$mobile}
+        //       padding-right: 0
+        //       padding: 15px 0px
+        //       width: 100%
+        //       padding-left: 15px
+        //     &:last-child
+        //       border: 0
+        //     .sub-dropdown-toggle
+        //       @media #{$mobile}
+        //         content: ''
+        //         display: inline-block
+        //         position: absolute
+        //         right: 0
+        //         top: 15px
+        //         border-width: 10px
+        //         border-style: solid solid solid solid
+        //         border-color: #db8526 transparent transparent transparent
+        //         transform: rotate(90deg)
+        //         +trans
+        //     >a:not(.sub-dropdown-toggle)
+        //       font-weight: bold
+        //       font-size: 17px
+        //       color: #db8526
+        //       border-left: 5px solid #db8526
+        //       display: block
+        //       padding-bottom: 0px
+        //       position: relative
+        //       line-height: 20px
+        //       @media screen and (min-width: 768px)
+        //         padding: 0 7.5px
+        //         padding-left: 7.5px
+        //       @media #{$mobile}
+        //         padding-left: 7.5px
+        //       &::after
+        //         content: ''
+        //         width: 100%
+        //         border-bottom: 1px dotted #ccc
+        //         height: 1px
+        //         display: block
+        //         position: absolute
+        //         bottom: -5px
+        //         left: 0
         .styled
           list-style: none
           padding-left: 0
