@@ -15,6 +15,8 @@ nav.navbar.navbar.navbar.navbar
       width: 700px
     @media #{$mobile}
       border-top: 1px solid rgba(#4a3023, .2)
+    @media #{$pad-vertical}
+      width: 400px
     &::before
       content: ''
       display: block
@@ -33,6 +35,8 @@ nav.navbar.navbar.navbar.navbar
       @media #{$mobile}
         filter: drop-shadow(0px -3px 2px rgba(#594a42, .2))
         display: none
+      @media #{$pad-vertical}
+        margin-left: 110px
 
     &.no-align-left
       left: -102px
@@ -63,6 +67,8 @@ nav.navbar.navbar.navbar.navbar
             padding-top: 0
             padding-bottom: 0
             padding: 0 7.5px
+          @media #{$pad-vertical}
+            flex-wrap: wrap
           .styled
             display: block!important
             padding-left: 0
@@ -70,6 +76,8 @@ nav.navbar.navbar.navbar.navbar
             @media screen and (min-width: 768px)
               width: 50%
               padding-left: 30px
+            @media #{$pad-vertical}
+              padding-left: 0
           .list-inline
             display: flex
             @media screen and (min-width: 768px)
@@ -78,10 +86,14 @@ nav.navbar.navbar.navbar.navbar
             @media #{$mobile}
               flex-wrap: wrap
               margin: 0
+            @media #{$pad-vertical}
+              flex-wrap: wrap
             >li
               @media screen and (min-width: 768px)
                 width: 50%
               @media #{$mobile}
+                width: 100%
+              @media #{$pad-vertical}
                 width: 100%
             ul
               list-style: none
@@ -91,6 +103,8 @@ nav.navbar.navbar.navbar.navbar
                 display: flex
                 flex-wrap: wrap
               @media #{$mobile}
+                margin-bottom: 0
+              @media #{$pad-vertical}
                 margin-bottom: 0
               li
                 line-height: 30px
