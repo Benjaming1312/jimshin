@@ -4,8 +4,15 @@
   background-size: cover!important
   background-repeat: repeat-y!important
   background-position: center!important
+  @media screen and (min-width: 768px)
+    margin-top: 89px
+  @media #{$pad-horizantal}
+    margin-top: 30px
+  @media #{$pad-vertical}
+    margin-top: 30px
   @media #{$mobile}
     padding: 14px 0 10px
+    margin-top: 30px
   .svg
     cursor: pointer
     @media #{$mobile}
