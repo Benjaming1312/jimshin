@@ -1,0 +1,77 @@
+.page.store
+  @media screen and (min-width: 768px)
+    margin-top: 60px
+    padding-left: 30px
+    padding-right: 30px
+  @media #{$mobile}
+    margin-top: 30px
+    padding: 0
+    padding-left: 30px
+    padding-right: 30px
+  .list-inline
+    margin-bottom: 0
+    display: flex
+    justify-content: center
+    flex-wrap: nowrap
+    border: 0
+    padding-left: 0
+    @media #{$mobile}
+      flex-wrap: wrap
+    li
+      margin: 0
+      padding: 0
+      @media #{$mobile}
+        width: calc(50% - 5px)
+        margin: 0 2.5px
+        margin-bottom: 15px
+      a
+        margin: 0 1px
+        border: 0
+        padding: 7.5px 15px
+        white-space: nowrap
+        background: #ded1c6
+        display: inline-block
+        border-radius: 0
+        +trans
+        color: $color-brown-d
+        @media #{$mobile}
+          padding: 3.5px 12.5px
+          width: 100%
+      &.active
+        a
+          background: #594a42
+          color: white
+  .tab-content
+    background: #ded1c6
+    padding: 30px
+    padding-bottom: 0
+    @media #{$mobile}
+      padding: 15px
+    .title
+      margin-bottom: 15px
+      h4
+        text-align: left
+        border-bottom: 1px solid $color-brown-d 
+        color: $color-brown-d
+        padding-bottom: 15px
+    .tab-pane
+      padding: 0
+    .wrapper
+      padding: 0 35px
+      display: flex
+      width: 100%
+      float: left
+      flex-wrap: wrap
+      @media #{$mobile}
+        padding: 0px
+      p
+        margin-bottom: 7.5px
+        color: $color-brown
+        *
+          color: $color-brown
+        a
+          border: 0
+        i
+          margin-right: 3.5px
+    .col-md-4
+      margin-bottom: 30px

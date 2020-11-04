@@ -16,8 +16,11 @@ const neewsDetail = require('./newsDetail.js')
 const prodDetail = require('./productDetail/index.js')
 const about = require('./aboutus.js')
 const online_contents = require('./online-content.js')
+const mshop = require('./mshop.js')
+
 // const swiperJS = require('./swiper/index.js')
 // const scollFn = require('./scrollTrigger/index.js')
+$('body').hide()
 
 $(function () {
   setTimeout(() => {
@@ -29,10 +32,13 @@ $(function () {
     prodDetail()
     about()
     online_contents()
+    mshop()
+    $('body').show()
   })
   aosInit()
   gotop()
 })
+
 
 // owlFn()
 

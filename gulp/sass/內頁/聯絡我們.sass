@@ -1,0 +1,114 @@
+.page.contact,
+.page.service
+  margin-top: 90px
+  max-width: initial
+  padding: 60px
+  background-size: cover!important
+  background-repeat: no-repeat!important
+  background-position: center!important
+  @media #{$pad-horizantal}
+    margin-top: 65px
+    padding: 30px
+  @media #{$pad-vertical}
+    margin-top: 65px
+    padding: 30px
+  @media #{$mobile}
+    margin-top: 59px
+    padding: 30px
+  >.row
+    +max-width
+    background: rgba(#000, .3)
+    padding: 30px
+    @media #{$mobile}
+      padding: 15px
+    @media #{$pad-horizantal}
+      padding: 15px
+    @media #{$pad-vertical}
+      padding: 15px
+  .title-content
+    h4
+      color: white
+      border-bottom: 1px solid white
+      padding-bottom: 15px
+      margin-bottom: 15px
+      font-size: 22px
+  .text
+    p
+      color: white
+      margin-bottom: 15px
+      a
+        color: white
+        border: 0
+  .form
+    .formBS,
+    .listBS,
+    .form-group,
+    .col-sm-3,
+    .col-sm-9
+      border: 0!important
+    .col-sm-3,
+    .col-sm-9
+      margin-bottom: 15px
+      
+    .col-sm-3
+      color: white
+      @media #{$pad-horizantal}
+        white-space: nowrap
+    label
+      color: white
+    .col-sm-9
+      input[type="text"],
+      textarea
+        background: none
+        border: 0
+        border-bottom: 1px solid white
+        border-radius: 0
+        &::placeholder
+          color: rgba(white, .5)
+      input[type="file"]
+        color: white
+    .btn
+      +btn
+      background: $color-brown-d
+      border: 0
+      &:hover
+        background: $color-brown
+  .tab-pane
+    .title
+      background: #ded1c6
+      color: $color-brown
+      padding: 15px 0
+      margin-bottom: 15px
+  .nav-tabs.list-inline
+    margin-bottom: 0
+    display: flex
+    justify-content: center
+    flex-wrap: nowrap
+    border: 0
+    padding-left: 0
+    @media #{$mobile}
+      flex-wrap: wrap
+    li
+      margin: 0
+      padding: 0
+      @media #{$mobile}
+        width: calc(50% - 5px)
+        margin: 0 2.5px
+        margin-bottom: 15px
+      a
+        margin: 0 1px
+        border: 0
+        padding: 7.5px 15px
+        white-space: nowrap
+        background: #ded1c6
+        display: inline-block
+        border-radius: 0
+        +trans
+        color: $color-brown-d
+        @media #{$mobile}
+          padding: 3.5px 12.5px
+          width: 100%
+      &.active
+        a
+          background: #594a42
+          color: white
