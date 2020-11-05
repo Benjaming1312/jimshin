@@ -1,0 +1,68 @@
+.page.shop-list
+  aside.col-sm-3
+    @media #{$pad-vertical}
+      width: 30%
+    @media #{$mobile}
+      margin-bottom: 30px
+  main.col-sm-9
+    @media #{$pad-vertical}
+      width: 70%
+  .panel
+    border-color: #ececec
+    border-radius: 0
+    box-shadow: none
+    a
+      border: 0
+    .panel-heading
+      background: none
+      border-radius: 0
+      border: 0
+      a
+        &.collapsed
+          .fa
+            &::before
+              content: '\f067'
+      .fa
+        float: right
+        position: relative
+        top: 5px
+        &::before
+          content: '\f068'
+    p
+      padding: 10px 15px
+      margin-bottom: 0
+      @media #{$pad-vertical}
+        padding: 5px 7.5px
+  .panel-body
+    background: rgba(#ececec, .2)
+    padding-bottom: 0
+  .panel-group
+    margin-bottom: 0
+
+  .module-ptlist
+    margin-top: 15px
+    .listBS
+      margin: 0
+    .d-item
+      padding: 0.5px
+      .mbox
+        background: #e3ddd7
+        text-align: center
+        padding-bottom: 15px
+      .d-txt
+        a
+          font-size: 14px
+      .mpro-price
+        *
+          font-size: 14px
+      .mbtn
+        margin-top: 15px
+        padding: 3.5px 15px
+        background: $color-brown-d
+        border: 0
+        &:hover
+          background: rgba($color-brown, .7)
+          color: white
+          opacity: 1          
+    a
+      border: 0

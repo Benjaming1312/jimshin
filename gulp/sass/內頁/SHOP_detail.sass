@@ -1,0 +1,307 @@
+.module-ecptdetail.module-ecptdetail.module-ecptdetail
+  margin-top: 120px
+  +max-width
+  max-width: 1180px!important
+  @media #{$pad-horizantal}
+    margin-top: 95px
+    padding: 0 30px
+  @media #{$pad-vertical}
+    margin-top: 95px
+    padding: 0 30px
+  @media #{$mobile}
+    margin-top: 89px
+    padding: 0 30px
+  @media #{$mobile}
+    margin-top: 30px
+  .thumb-large
+    display: none
+  .mpro-name
+    background: none
+    border: 0
+    @media #{$mobile}
+      padding: 0 15px
+      margin-top: 15px
+    h3
+      padding: 0
+      margin: 0
+      border-bottom: 1px solid $color-b
+      padding-bottom: 15px
+      font-size: 30px
+  .prod-info
+    p
+      // margin-bottom: 20px
+      line-height: 40px
+  .mpro-price
+    span
+      font-size: 22px
+      font-weight: bolder
+      color: #8a6d3b
+  >.minner
+    padding-top: 0px
+    max-width: 1000px!important
+    margin: 0 auto
+    @media #{$mobile}
+      padding-top: 30px
+  .mpro-preview.col-sm-5
+    max-width: 530px
+    .carousel-module
+      .box
+        // box-shadow: 5px 5px 10px -1px rgba(#000, .3)
+      .main
+        .swiper-slide
+          padding-top: 100%
+          background-size: 80%!important
+          background-position: center!important
+          background-repeat: no-repeat!important
+    .hash-link-container
+      display: block
+      float: left
+      width: 100%
+      margin-left: auto
+      margin-right: auto
+      padding: 0 0px
+      @media #{$mobile}
+        padding: 0
+    .hash-link
+      padding: 7.5px 0
+      margin-left: auto
+      margin-right: auto
+      @media #{$mobile}
+        // padding-left: 0
+        // padding-right: 0
+      .swiper-wrapper
+        display: flex
+        flex-wrap: wrap
+        justify-content: flex-start
+        margin: 0 0px
+        @media #{$mobile}
+          margin: 0 -7.5px
+        .swiper-slide
+          margin: 0px 7.5px 15px
+          width: calc(100% / 4 - 15px)
+          @media #{$mobile}
+            width: calc(100% / 2 - 15px)
+          a
+            display: block
+            padding-top: 100%
+            background-size: 80%!important
+            background-size: 100% 100%!important
+            background-repeat: no-repeat!important
+            background-position: center!important
+            border: 1px  solid #ccc
+            // +box-shadow-prod
+  [class*="swiper-button"]
+    opacity: 0
+    display: none
+    +trans
+    @media #{$mobile}
+      display: none
+    &.swiper-button-next
+      background-image: url(/ezfiles/177/1177/img/8970/arrow-right.svg)
+      top: initial
+      bottom: 30px
+      // left: -30px
+    &.swiper-button-prev
+      background-image: url(/ezfiles/177/1177/img/8970/arrow-left.svg)
+      top: initial
+      bottom: 30px
+      // right: -30px
+      // left: initial
+  .mpro-preview.col-sm-5:hover
+    [class*="swiper-button"]
+      opacity: 1
+  .mpro-wrap
+    display: flex
+    @media #{$mobile}
+      display: block
+  .mpro-panel.col-sm-7
+    padding-left: 30px
+    @media #{$mobile}
+      padding-left: 0
+      width: 100%
+    .mbtn
+      +btn
+      margin: 0
+      height: 40px
+    .ad-pro-btns
+      display: flex
+    .maddnum
+      margin: 15px 0
+      input
+        height: 29.5px
+      .mval
+        @media #{$mobile}
+          margin: 15px 0
+    .prod-info,
+    .mpro-price,
+    .maddtocart
+      position: relative
+      @media #{$mobile}
+        height: auto
+        padding: 0 15px
+    .mbtn
+      margin-right: 7.5px
+      @media #{$mobile}
+        width: 100px
+        font-size: 15px
+    .title
+      font-size: 26px
+      color: $color-b
+    .sub-title
+      font-size: 22px
+      color: $color-b
+    .content-bottom
+      position: absolute
+      bottom: 120px
+      width: 1000%
+      @media #{$mobile}
+        position: static
+        margin-top: 60px
+      p
+        font-size: 18px
+
+.module-complex
+  @media #{$mobile}
+    margin: 0 15px
+  .tab-pane
+    padding: 0
+  nav > .nav-tabs
+    display: none
+
+.module-relation // 相關商品
+  margin-top: 30px
+  @media screen and (min-width: 768px)
+    padding: 0 15px
+  @media #{$mobile}
+    margin: 0 15px
+  .mt
+    display: none
+  .mb
+    padding-top: 0
+    .d-item
+      @media #{$mobile}
+        margin-bottom: 30px
+      .mbox
+        +trans
+        // padding: 15px
+        &:hover
+          .d-txt
+            a
+              color: #777
+      .d-img
+        background: white
+        margin-bottom: 30px
+      .d-txt
+        h5
+          text-align: center
+        a
+          font-size: 20px
+          font-weight: normal
+          text-align: center
+          color: #221e1f
+          +trans
+  .owl-carousel.owl-carousel
+    padding: 0 30px
+    .owl-nav
+      div
+        display: inline-block
+        margin: 0 auto
+        width: 15px
+        height: auto
+        +tr3($color-n, $color-n, $color-n, #1A2731)
+        border-width: 10px 10px 10px 14px
+        margin-right: 7.5px
+        // margin-bottom: 20px
+        +trans
+        border-radius: 0
+        background-image: none!important
+        top: 40%
+        @media #{$mobile}
+          top: 25%
+      .owl-prev
+        transform: rotate(-180deg)
+        left: 0px
+      .owl-next
+        transform: rotate(0deg)
+        right: 0px
+
+
+.prod-detail
+  padding: 0 20px
+  @media #{$mobile}
+    padding: 0 15px
+    margin-top: 15px
+  .nav-tabs
+    display: flex
+    flex-wrap: nowrap
+    border: 0
+    li
+      width: 100%
+      text-align: center
+      border: 0
+      a
+        display: block
+        padding: 15px 0
+        text-align: center
+        border-radius: 0
+        margin: 0
+        &:hover
+          border-bottom: 0
+      &.active
+        a
+          border-color: #777
+          border-bottom: 1px solid #fff
+  .tab-content
+    border: 1px solid #777
+    border-top: 1px solid #777
+    .tab-pane
+      margin-top: 0
+    p
+      text-align: center
+      font-size: 15px
+      line-height: 20px
+      color: #666
+      span, small
+        font-size: 15px
+        line-height: 20px
+        color: #666
+        display: inline-block
+        margin-top: 7.5px
+    p.img
+      img
+        margin: 0 auto
+        margin-bottom: 15px
+  .desc
+    .content
+      margin-bottom: 30px
+  .download
+    .text
+      p
+        margin-top: 15px
+        a
+          +btn
+          width: auto
+          height: auto
+          background: none
+          border: 1px solid #ccc
+          color: $color-b
+          padding: 5px 0
+          display: flex
+          align-items: center
+          .svg
+            width: 25px
+            height: 30px
+            margin-right: 15px
+            margin-top: 0
+          &:hover
+            color: white
+  .media
+    padding-top: 7.5px
+    .row
+      @media screen and (min-width: 768px)
+        margin: 0 -30px
+    .col-sm-6
+      padding: 0 30px
+      @media #{$mobile}
+        padding: 0px
+        margin-bottom: 7.5px

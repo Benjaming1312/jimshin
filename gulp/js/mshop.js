@@ -5,6 +5,9 @@ module.exports = function () {
     assignAOS()
     d_item_click()
   }
+  if (is('.module-ptlist')) {
+    assignAOS()
+  }
 
   // $('.main').addClass('news-detail')
 }

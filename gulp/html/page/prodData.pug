@@ -1,0 +1,246 @@
+- var url = '/ezfiles/811/1811/img/776/'
+- 
+  var list = [
+    {
+      id: 1,
+      label: '2020 A/W系列商品',
+      link: '/m/2000-1835-1755.php',
+      children: [
+        {
+          id: 1,
+          label: '新品上市',
+          link: '/m/2000-1835-1764.php',
+          children: [
+            {
+              id: 1,
+              label: '10/26新品上市',
+              link: '/m/2000-1835-1782.php'
+            },
+            {
+              id: 2,
+              label: '11/02新品上市',
+              link: '/m/2000-1835-1783.php'
+            },
+            {
+              id: 3,
+              label: '11/09新品上市',
+              link: '/m/2000-1835-1784.php'
+            }
+          ]
+        },
+        {
+          id: 2,
+          label: '限量義大利商品',
+          link: '/m/2000-1835-1765.php'
+        },
+        {
+          id: 3,
+          label: '經典再現',
+          link: '/m/2000-1835-1766.php'
+        },
+        {
+          id: 4,
+          label: '戰士貓頭鷹',
+          link: '/m/2000-1835-1767.php'
+        }
+      ]
+    },
+    {
+      id: 2,
+      label: '熱銷商品',
+      link: '/m/2000-1835-1756.php'
+    },
+    {
+      id: 3,
+      label: '義大利商品',
+      link: '/m/2000-1835-1757.php'
+    },
+    {
+      id: 4,
+      label: '經典再現系列',
+      link: '/m/2000-1835-1758.php'
+    },
+    {
+      id: 5,
+      label: '貓頭鷹系列',
+      link: '/m/2000-1835-1759.php'
+    },
+    {
+      id: 6,
+      label: '各式包款',
+      link: '/m/2000-1835-1760.php',
+      children: [
+        {
+          id: 1,
+          label: '托特包/肩背包',
+          link: '/m/2000-1835-1768.php'
+        },
+        {
+          id: 2,
+          label: '斜背包/手提包',
+          link: '/m/2000-1835-1769.php'
+        },
+        {
+          id: 3,
+          label: '後背包',
+          link: '/m/2000-1835-1770.php'
+        },
+        {
+          id: 4,
+          label: '萬用包/手機包',
+          link: '/m/2000-1835-1771.php'
+        }
+      ]
+    },
+    {
+      id: 7,
+      label: '休閒尼龍包系列',
+      link: '/m/2000-1835-1761.php'
+    },
+    {
+      id: 8,
+      label: '各式配件',
+      link: '/m/2000-1835-1762.php',
+      children: [
+        {
+          id: 1,
+          label: '皮夾',
+          link: '/m/2000-1835-1772.php',
+          children: [
+            {
+              id: 1,
+              label: '長夾',
+              link: '/m/2000-1835-1785.php'
+            },
+            {
+              id: 2,
+              label: '中夾',
+              link: '/m/2000-1835-1786.php'
+            },
+            {
+              id: 3,
+              label: '短夾',
+              link: '/m/2000-1835-1787.php'
+            }
+          ]
+        },
+        {
+          id: 2,
+          label: '零錢包/卡夾/證件套',
+          link: '/m/2000-1835-1773.php'
+        },
+        {
+          id: 3,
+          label: '風格背帶',
+          link: '/m/2000-1835-1774.php'
+        },
+        {
+          id: 4,
+          label: '皮件吊飾',
+          link: '/m/2000-1835-1775.php'
+        },
+        {
+          id: 5,
+          label: '女士皮衣',
+          link: '/m/2000-1835-1776.php'
+        },
+        {
+          id: 6,
+          label: '男士皮帶',
+          link: '/m/2000-1835-1777.php'
+        },
+        {
+          id: 7,
+          label: '行李箱',
+          link: '/m/2000-1835-1778.php'
+        },
+      ]
+    },
+    {
+      id: 9,
+      label: '優惠活動',
+      link: '/m/2000-1835-1763.php',
+      children: [
+        {
+          id: 1,
+          label: '假日市集',
+          link: '/m/2000-1835-1779.php'
+        },
+        {
+          id: 2,
+          label: '五折商品',
+          link: '/m/2000-1835-1780.php'
+        },
+        {
+          id: 3,
+          label: '四折商品',
+          link: '/m/2000-1835-1781.php'
+        },
+      ]
+    }
+  ]
+
+//- =panel(propList, idx, path)
+  //- each item, idx in propList
+  //-   .panel-group(id="#accordion" + idx)
+        //- .panel.panel-default
+        //-   .panel-heading
+        //-     .panel-title
+        //-       a(href="/m/2000-1813-1240.php") HEAD
+        //-       a.collapsed(data-toggle="collapse" data-parent="#accordion" + idx href="#collapse-1")
+        //-         .fa.fa-plus
+        //-   #collapse-1.panel-collapse.collapse
+        //-     .panel-body
+
+
+//- .page.container-fluid.product-list
+//-   .row
+//-     aside.col-sm-3.col-xs-12
+//-       each parent, pidx in list
+
+
+//-         //- .panel-group(id="#accordion" + pidx)
+//-         //-   .panel.panel-default
+//-         //-     .panel-heading
+//-         //-       .panel-title
+//-         //-         a(href="/m/2000-1813-1240.php") HEAD
+//-         //-         a.collapsed(data-toggle="collapse" data-parent="#accordion-1" href="#collapse-1")
+//-         //-           .fa.fa-plus
+//-         //-     #collapse-1.panel-collapse.collapse
+//-         //-       .panel-body
+//-         //-         ul
+//-         //-           li
+//-         //-             a(href="/m/2000-1813-1242.php") 網球拍
+//-         //-           li
+//-         //-             a(href="/m/2000-1813-1243.php") 壁球拍
+//-         //-           li
+//-         //-             a(href="/m/2000-1813-1244.php") 球拍袋
+//-         //-           li
+//-         //-             a(href="/m/2000-1813-1245.php") 運動鞋子
+//-         //-           li
+//-         //-             a(href="/m/2000-1813-1246.php") 運動服飾
+//-         //-           li
+//-                     a(href="/m/2000-1813-1247.php") 耗材&道具
+//-         //- .panel.panel-default
+//-         //-   .panel-heading
+//-         //-     .panel-title
+//-         //-       a(href="/m/2000-1813-1241.php") INFIN
+//-         //-       a.collapsed(data-toggle="collapse" data-parent="#accordion-1" href="#collapse-2")
+//-         //-         .fa.fa-plus
+//-         //-   #collapse-2.panel-collapse.collapse
+//-         //-     .panel-body
+//-         //-       ul
+//-         //-         li
+//-         //-           a(href="/m/2000-1813-1248.php") 戶外休閒/運動商品
+//-         //-         li
+//-         //-           a(href="/m/2000-1813-1249.php") 電腦包/後揹包/行李箱
+//-         //-         li
+//-         //-           a(href="/m/2000-1813-1250.php") 餐廚刀具
+//-         //-         li
+//-         //-           a(href="/m/2000-1813-1251.php") 護膚保養/沐浴洗髮
+//-         //-         li
+//-         //-           a(href="/m/2000-1813-1252.php") 時尚墨鏡/手錶
+//-         //-         li
+//-         //-           a(href="/m/2000-1813-1253.php") 居家香氛
+//-     main.col-sm-9.col-xs-12.append
+//-       | ===MODULE===

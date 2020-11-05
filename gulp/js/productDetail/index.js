@@ -7,41 +7,41 @@ module.exports = function () {
   prodOwlCarousel()
   appendProdInfo()
 
-  $('.module-relate').append(`<div class="owl-carousel"></div>`)
-  $('.module-relate .row.listBS').addClass('item')
-  $('.module-relate .row.listBS').appendTo($('.module-relate .owl-carousel'))
-  $('.module-relate .owl-carousel').owlCarousel({
-      items: 1,
-      autoplay:true,
-      nav: true,
-      dots: false,
-      loop: true,
-      animateOut: 'fadeOut',
-      animateIn: 'fadeIn',
-      autoPlaySpeed: 5000,
-      autoPlayTimeout: 5000,
-      navText: [],
-      smartSpeed: 1500,
-      autoplayHoverPause: false,
-      responsiveClass: true,
-      responsive: {
-          0: {
-              items: 2,
-              nav: true,
-              margin: 15
-          },
-          440: {
-              items: 2,
-              nav: true,
-              margin: 15
-          },
-          768: {
-              items: 4,
-              nav: true,
-              margin: 15
-          },
-      }
-  })
+  // $('.module-relate').append(`<div class="owl-carousel"></div>`)
+  // $('.module-relate .row.listBS').addClass('item')
+  // $('.module-relate .row.listBS').appendTo($('.module-relate .owl-carousel'))
+  // $('.module-relate .owl-carousel').owlCarousel({
+  //     items: 1,
+  //     autoplay:true,
+  //     nav: true,
+  //     dots: false,
+  //     loop: true,
+  //     animateOut: 'fadeOut',
+  //     animateIn: 'fadeIn',
+  //     autoPlaySpeed: 5000,
+  //     autoPlayTimeout: 5000,
+  //     navText: [],
+  //     smartSpeed: 1500,
+  //     autoplayHoverPause: false,
+  //     responsiveClass: true,
+  //     responsive: {
+  //         0: {
+  //             items: 2,
+  //             nav: true,
+  //             margin: 15
+  //         },
+  //         440: {
+  //             items: 2,
+  //             nav: true,
+  //             margin: 15
+  //         },
+  //         768: {
+  //             items: 4,
+  //             nav: true,
+  //             margin: 15
+  //         },
+  //     }
+  // })
 }
 
 function appendProdInfo () {
@@ -70,16 +70,18 @@ function prodOwlCarousel () {
 
     $('.mpro-preview.col-sm-5 img').each(function (idx) {
       const link = $(this).attr('src')
-      $('.swiper-container.main .swiper-wrapper').append(`<div class="swiper-slide" data-hash="prod-${idx}" style="background: url(${link});"></div>`)
+      $('.swiper-container.main .swiper-wrapper').append(`<div class="swiper-slide" data-hash="prodOwl-${idx}" style="background: url(${link});"></div>`)
 
-      $('.hash-link .swiper-wrapper').append(`<div class="swiper-slide"><a href="#prod-${idx}" style="background: url(${link});"></a></div>`)
+      $('.hash-link .swiper-wrapper').append(`<div class="swiper-slide"><a href="#prodOwl-${idx}" style="background: url(${link});"></a></div>`)
     })
 
-    const swiper = new Swiper('.swiper-container.main', {
-      spaceBetween: 0,
-      hashNavigation: {
-        watchState: true
-      }
+    setTimeout(() => {
+      const swiper = new Swiper('.swiper-container.main', {
+        spaceBetween: 0,
+        hashNavigation: {
+          watchState: true
+        }
+      })
     })
 
     // if ($('.swiper-container.hash-link .swiper-slide').length > 4) {
