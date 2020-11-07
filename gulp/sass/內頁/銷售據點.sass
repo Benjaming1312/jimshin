@@ -21,7 +21,7 @@
       margin: 0
       padding: 0
       @media #{$mobile}
-        width: calc(50% - 5px)
+        width: calc(49% - 5px)
         margin: 0 2.5px
         margin-bottom: 15px
       a
@@ -29,11 +29,14 @@
         border: 0
         padding: 7.5px 15px
         white-space: nowrap
-        background: #ded1c6
-        display: inline-block
+        background: rgba(222, 209, 198, .6)
+        display: inline-flex
+        align-items: center
+        justify-content: center
         border-radius: 0
         +trans
         color: $color-brown-d
+        font-size: 18px
         @media #{$mobile}
           padding: 3.5px 12.5px
           width: 100%
@@ -42,7 +45,7 @@
           background: #594a42
           color: white
   .tab-content
-    background: #ded1c6
+    background: rgba(222, 209, 198, .6)
     padding: 30px
     padding-bottom: 0
     @media #{$mobile}

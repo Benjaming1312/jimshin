@@ -13,6 +13,36 @@
     padding: 0 30px
   @media #{$mobile}
     margin-top: 30px
+  .nav-tabs
+    border: 0
+    li
+      a
+        border-radius: 0
+        background: $color-n
+        border: 0
+        color: white
+        +trans
+        color: #bca792
+        &:hover
+          background: #bca792
+          color: white
+          opacity: 1          
+      &.active
+        a
+          background: #bca792
+          color: white
+          opacity: 1
+  .tab-content
+    .tab-pane
+      padding-left: 0
+      padding-right: 0    
+      p
+        line-height: 28px
+        font-size: 14px
+        color: #666
+        white-space: nowrap
+        margin-bottom: 0
+
   .thumb-large
     display: none
   .mpro-name
@@ -24,7 +54,8 @@
     h3
       padding: 0
       margin: 0
-      border-bottom: 1px solid $color-b
+      border-bottom: 1px solid #4a3023
+      color: #4a3023
       padding-bottom: 15px
       font-size: 30px
   .prod-info
@@ -33,9 +64,9 @@
       line-height: 40px
   .mpro-price
     span
-      font-size: 22px
+      font-size: 20px
       font-weight: bolder
-      color: #8a6d3b
+      color: #4a3023
   >.minner
     padding-top: 0px
     max-width: 1000px!important
@@ -44,6 +75,8 @@
       padding-top: 30px
   .mpro-preview.col-sm-5
     max-width: 530px
+    @media #{$pad-vertical}
+      max-width: 50%
     .carousel-module
       .box
         // box-shadow: 5px 5px 10px -1px rgba(#000, .3)
@@ -97,16 +130,22 @@
     @media #{$mobile}
       display: none
     &.swiper-button-next
-      background-image: url(/ezfiles/177/1177/img/8970/arrow-right.svg)
-      top: initial
-      bottom: 30px
-      // left: -30px
+      background: url(#{$url}arrow-grey-r.svg) center center no-repeat
+      top: 50%
+      display: inline-block
+      z-index: 9999
+      opacity: 1
+      filter: drop-shadow(3px 3px 3px rgba(#000, .21))
+      width: 9px
+      height: 18px
     &.swiper-button-prev
-      background-image: url(/ezfiles/177/1177/img/8970/arrow-left.svg)
-      top: initial
-      bottom: 30px
-      // right: -30px
-      // left: initial
+      background: url(#{$url}arrow-grey-l.svg) center center no-repeat
+      display: inline-block
+      z-index: 9999
+      opacity: 1
+      filter: drop-shadow(3px 3px 3px rgba(#000, .21))
+      width: 9px
+      height: 18px
   .mpro-preview.col-sm-5:hover
     [class*="swiper-button"]
       opacity: 1
@@ -114,6 +153,11 @@
     display: flex
     @media #{$mobile}
       display: block
+      margin: 0 -15px
+    @media #{$pad-horizantal}
+      margin: 0 -15px
+    @media #{$pad-vertical}
+      margin: 0 -15px
   .mpro-panel.col-sm-7
     padding-left: 30px
     @media #{$mobile}
@@ -123,12 +167,18 @@
       +btn
       margin: 0
       height: 40px
+      background: #4a3023
+      font-weight: 300
+      font-size: 14px
+      &:hover
+        color: #4a3023
+        border-color: #4a3023
     .ad-pro-btns
       display: flex
     .maddnum
       margin: 15px 0
       input
-        height: 29.5px
+        height: 36px
       .mval
         @media #{$mobile}
           margin: 15px 0
@@ -144,6 +194,7 @@
       @media #{$mobile}
         width: 100px
         font-size: 15px
+        white-space: nowrap
     .title
       font-size: 26px
       color: $color-b

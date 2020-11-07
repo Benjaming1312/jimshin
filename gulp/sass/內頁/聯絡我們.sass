@@ -3,8 +3,8 @@
   margin-top: 90px
   max-width: initial
   padding: 60px
-  background-size: cover!important
-  background-repeat: no-repeat!important
+  background-size: 100% auto!important
+  background-repeat: repeat-y!important
   background-position: center!important
   @media #{$pad-horizantal}
     margin-top: 65px
@@ -36,6 +36,7 @@
     p
       color: white
       margin-bottom: 15px
+      line-height: 4rem
       a
         color: white
         border: 0
@@ -74,7 +75,7 @@
       &:hover
         background: $color-brown
   .tab-pane
-    .title
+    h4.title
       background: #ded1c6
       color: $color-brown
       padding: 15px 0
@@ -87,7 +88,7 @@
     border: 0
     padding-left: 0
     @media #{$mobile}
-      flex-wrap: wrap
+      flex-wrap: nowrap
     li
       margin: 0
       padding: 0
@@ -101,7 +102,9 @@
         padding: 7.5px 15px
         white-space: nowrap
         background: #ded1c6
-        display: inline-block
+        display: inline-flex
+        align-items: center
+        justify-content: center
         border-radius: 0
         +trans
         color: $color-brown-d

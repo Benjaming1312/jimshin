@@ -1,20 +1,20 @@
 .nav-2 form.formBS,
-#navbar form.formBS
+.navbar form.formBS
+  position: relative
   @media screen and (min-width: 768px)
-    margin-right: 30px
-    max-width: 133px
+    margin: 0 12.5px
+    width: 150px
+    max-width: 150px
   @media #{$mobile}
-    width: 100%
-    max-width: 300px
-    margin: 0 auto
-    margin-top: 15px
+    width: auto
   .btn
     border: 0
-    padding: 0
+    margin: 0 6.5px!important
     width: 15px
     height: 15px
+    padding: 0
   .input-group
-    border-bottom: 1px solid #58595b
+    border-bottom: 1px solid $color-n
     @media screen and (min-width: 768px)
       width: 122px
     @media screen and (min-width: 768px)
@@ -23,9 +23,10 @@
     border: 0!important
     color: $color-b2
     background: none
-    padding-bottom: 3.5px!important
+    padding: 0 7.5px!important
+    border-bottom: 1px solid #000
     @media screen and (min-width: 768px)
-      max-width: 120px
+      max-width: 150px
     &::placeholder
       color: $color-b2
       font-size: 14px

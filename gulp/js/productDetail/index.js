@@ -56,14 +56,14 @@ function prodOwlCarousel () {
         <div class="swiper-container main">
           <div class="swiper-wrapper">
         </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
         <div class="hash-link-container">
           <div class="hash-link swiper-container">
             <div class="swiper-wrapper">
             </div>
             </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
         </div>
       </div>
     </div>`)
@@ -79,7 +79,11 @@ function prodOwlCarousel () {
       const swiper = new Swiper('.swiper-container.main', {
         spaceBetween: 0,
         hashNavigation: {
-          watchState: true
+          watchState: true,
+        },
+        navigation: {          
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
         }
       })
     })

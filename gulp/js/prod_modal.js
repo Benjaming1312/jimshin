@@ -6,6 +6,7 @@ module.exports  = function () {
   }
 
   $('.module-ptlist').addClass('modal-page')
+  $('.module-cglist').addClass('modal-page')
 
   $('.d-item').each(function () {
     

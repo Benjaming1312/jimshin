@@ -13,6 +13,7 @@
     box-shadow: none
     a
       border: 0
+      color: #4a3023
     .panel-heading
       background: none
       border-radius: 0
@@ -26,6 +27,7 @@
         float: right
         position: relative
         top: 5px
+        color: #4a3023
         &::before
           content: '\f068'
     p
@@ -34,7 +36,7 @@
       @media #{$pad-vertical}
         padding: 5px 7.5px
   .panel-body
-    background: rgba(#ececec, .2)
+    background: #ded1c6
     padding-bottom: 0
   .panel-group
     margin-bottom: 0
@@ -50,19 +52,26 @@
         text-align: center
         padding-bottom: 15px
       .d-txt
+        h5
+          margin-bottom: 15px
         a
-          font-size: 14px
+          font-size: 16px
+          color: #4a3023
       .mpro-price
         *
           font-size: 14px
-      .mbtn
+      .mpro-btns
         margin-top: 15px
+      .mbtn
+        font-size: 14px
         padding: 3.5px 15px
         background: $color-brown-d
         border: 0
+        font-weight: 300
         &:hover
           background: rgba($color-brown, .7)
           color: white
           opacity: 1          
     a
       border: 0
+  

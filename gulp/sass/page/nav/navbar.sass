@@ -87,12 +87,16 @@ nav.navbar.navbar.navbar.navbar
       @media #{$mobile}
         margin-top: 3.5px
         padding-bottom: 15px
+        display: inline-flex!important
       @media #{$pad-vertical}
         display: none
       .svg
         margin: 0 7.5px
         min-width: 19px
         min-height: 19px
+        @media #{$mobile}
+          padding: 0
+          border: 0!important
         +trans
         &:hover
           opacity: 0.3
@@ -216,13 +220,41 @@ nav.navbar.navbar.navbar.navbar
     padding-top: 20px
     @media #{$mobile}
       padding-top: 7.5px
-    // #navbar .navbar-nav
-      // @media screen and (min-width: 768px)
-      //   margin-top: 50px
-    // .navbar-brand
-    //   @media screen and (min-width: 768px)
-    //     top: 30px
-    // .fit-content.media
-    //   @media screen and (min-width: 768px)
-    //     margin-top: 3.5px
-    //     margin-bottom: 3.5px
+
+  .search-input
+    width: 0px
+    overflow-x: hidden
+    overflow-y: initial
+    border-bottom: 1px solid #58595b
+    +trans
+    position: absolute
+    left: -35px
+    top: -15px
+    @media #{$mobile}
+      width: 0vw
+      left: 0
+      top: 35px
+      background: #ded1c6
+      border: 0
+    @media #{$pad-horizantal}
+      background: #ded1c6
+      top: 0
+    @media #{$pad-vertical}
+      background: #ded1c6
+      top: 0
+    &.show
+      width: 150px
+      padding: 7.5px
+      @media #{$mobile}
+        width: 100vw
+      @media #{$pad-vertical}
+        padding-top: 0
+        padding-bottom: 0
+      @media #{$pad-horizantal}
+        padding-top: 0
+        padding-bottom: 0
+    // position: absolute
+    // left: -150px
+    // top: 0
+  .formBS
+    margin-right: 0

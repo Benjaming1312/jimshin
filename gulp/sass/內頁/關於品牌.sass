@@ -55,7 +55,19 @@
         padding: 30px
       @media #{$pad-vertical}
         position: static
+    .title
+      margin-bottom: 0
+      text-align: left
+      border-left: 5px solid #404041
+      line-height: 25px
+      font-size: 20px
+      padding-left: 15px
+      margin-bottom: 15px
+    p
+      line-height: 4rem
   .img
+    @media screen and (min-width: 768px)
+      max-width: 700px
     @media #{$pad-horizantal}
       margin-bottom: 0px
     @media #{$pad-vertical}
@@ -64,6 +76,8 @@
       margin-bottom: 30px
   .row
     .text
+      @media screen and (min-width: 768px)
+        min-width: 430px
       .content
         @media (min-width: 1280px)
           position: relative
@@ -164,6 +178,8 @@
             color: white
           @media #{$pad-horizantal}
             color: white
+        .title
+          border-color: white
   &#section-4
     .wrapper
       padding-bottom: 0
