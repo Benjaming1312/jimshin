@@ -10,6 +10,16 @@
   @media #{$pad-vertical}
     padding: 0
 
+.page_mobilechgpasswd,
+.page_mobilecmhome,
+.page_mobileacctinfo,
+.page_mobile_mecorderlist,
+.page_mobile_mecdeliveraddrlist,
+.page_mobile_meccart,
+.page_mobile_mecbillto
+  .gotop-section
+    margin-top: 0
+
 .module-login,
 .module-forgetpsw,
 .module-register,
@@ -21,12 +31,13 @@
 .module-consignee,
 .module-billto,
 .module-submitorder,
-.module-
+.module-,
+.md_middle
   +max-width
   max-width: 750px!important
   margin-left: auto
   margin-right: auto
-  padding-bottom: 60px
+  padding-bottom: 30px
   @media screen and (min-width: 768px)
     margin-top: 130px
   @media #{$mobile}
@@ -72,6 +83,18 @@
 .postedform
   display: none
 
+.module-viewcart.module-viewcart.module-viewcart
+  .d-txt,
+  .d-cart
+    padding-bottom: 0
+    vertical-align: middle
+
+.ok.ok span:before,
+.ok.ok span:after,
+.close.close span:before,
+.close.close span:after
+  background: $color-brown
+
 // .module-cglist
 //   .mt
 //     display: none
@@ -95,8 +118,8 @@
   a
     +trans
     &:hover
-      background: #db8526
-      color: white
+      background: #ded1c6
+      color: $color-brown
 
 .module-billto
   @media #{$mobile}
@@ -154,12 +177,15 @@
   .mt
     margin-bottom: 15px
 
-.ecconsignee-list .consignee-info + .form-btn
-  display: flex
-  flex-wrap: nowrap
-  margin-top: 0
-  .mbtn
-    display: inline-block
+.ecconsignee-list .consignee-info 
+  .mfield.eccons-name.eccons-name.eccons-name
+    background: $color-brown-d
+  & + .form-btn
+    display: flex
+    flex-wrap: nowrap
+    margin-top: 0
+    .mbtn
+      display: inline-block
 
 .ecconsignee-list li .form-btn
   position: static!important
