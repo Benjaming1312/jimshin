@@ -22,10 +22,15 @@
     .row
       @media screen and (min-width: 768px)
         margin: 0 -15px
-      @media #{$pad-horizantal}
-        margin: 0 -15px
+        display: flex
+        flex-wrap: nowrap
       @media #{$pad-vertical}
         margin: 0 -15px
+        flex-wrap: wrap
+      @media #{$pad-horizantal}
+        margin: 0 -15px
+        display: flex
+        flex-wrap: nowrap
       @media #{$mobile}
         margin: 0
 
@@ -85,14 +90,14 @@
           top: 60px
           padding: 30px
           z-index: 9
+        @media #{$pad-vertical}
+          padding: 0
         @media #{$pad-horizantal}
           position: relative
           left: -60px
           top: 60px
           padding: 30px
           z-index: 9
-        @media #{$pad-vertical}
-          padding: 0
     &.reverse
       @media screen and (min-width: 768px)
         display: flex
@@ -180,6 +185,10 @@
             color: white
         .title
           border-color: white
+          @media #{$pad-vertical}
+            border-color: #404041
+          @media #{$mobile}
+            border-color: #404041
   &#section-4
     .wrapper
       padding-bottom: 0

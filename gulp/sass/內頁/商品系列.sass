@@ -59,13 +59,17 @@
     margin: 0 0px
     @media #{$mobile}
       justify-content: center
+    @media #{$pad-vertical}
+      justify-content: center
+    @media #{$pad-horizantal}
+      justify-content: center
   .d-item
     padding: 0.5px
     cursor: pointer
     @media #{$pad-horizantal}
-      width: 50%
+      width: 49%
     @media #{$pad-vertical}
-      width: 50%
+      width: 49%
     @media #{$mobile}
       width: 49%
     &:hover

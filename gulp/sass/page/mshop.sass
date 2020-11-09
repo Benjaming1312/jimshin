@@ -83,11 +83,24 @@
 .postedform
   display: none
 
-.module-viewcart.module-viewcart.module-viewcart
-  .d-txt,
-  .d-cart
-    padding-bottom: 0
-    vertical-align: middle
+.mcart-item.d-item
+  .mbox
+    @media screen and (min-width: 768px)
+      display: flex
+      align-items: center
+    // .d-img,
+    .d-txt
+      @media screen and (min-width: 768px)
+        width: calc(100% - 12% - 360px)
+      h5
+        @media screen and (min-width: 768px)
+          margin-bottom: 0
+    // .d-cart
+    //   padding-bottom: 0
+    //   display: inline-flex
+  //   .d-cart
+//     width: 460px
+
 
 .ok.ok span:before,
 .ok.ok span:after,
@@ -180,6 +193,10 @@
 .ecconsignee-list .consignee-info 
   .mfield.eccons-name.eccons-name.eccons-name
     background: $color-brown-d
+    *
+      color: white
+      margin-bottom: 0
+      padding: 0 2.5px
   & + .form-btn
     display: flex
     flex-wrap: nowrap
