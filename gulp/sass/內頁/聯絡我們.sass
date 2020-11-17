@@ -15,16 +15,22 @@
   @media #{$mobile}
     margin-top: 59px
     padding: 30px
+    background-repeat: no-repeat!important
+    background-size: cover!important
+    background-position: -200px!important
   >.row
     +max-width
     background: rgba(#000, .3)
     padding: 30px
     @media #{$mobile}
       padding: 15px
+      max-height: 700px
+      overflow: auto
     @media #{$pad-horizantal}
       padding: 15px
     @media #{$pad-vertical}
-      padding: 15px
+      padding: 15px      
+      
   .title-content
     h4
       color: white
@@ -76,8 +82,7 @@
         background: $color-brown
   .tab-pane
     h4.title
-      background: #ded1c6
-      color: $color-brown
+      color: white
       padding: 15px 0
       margin-bottom: 15px
   .nav-tabs.list-inline

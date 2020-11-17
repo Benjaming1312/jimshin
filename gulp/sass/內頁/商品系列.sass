@@ -1,5 +1,6 @@
 .banner.prod-banner
   margin-bottom: 50px
+  +max-width
   img
     width: 100%
   .col-sm-6
@@ -53,6 +54,7 @@
       font-weight: bold
 
 .module-ptlist.modal-page
+  +max-width
   .listBS
     display: flex
     flex-wrap: wrap
@@ -77,38 +79,41 @@
         opacity: 1
         transform: translateY(0)
     .mbox
-      background: #e3ddd7
+      background: rgba(#e3ddd7, .6)
       position: relative
   .d-txt
     position: absolute
-    top:  0
+    bottom: 0
     left: 0
     width: 100%
-    height: 100%
+    height: 40%
     display: flex
-    align-items: center
+    align-items: flex-end
     justify-content: center
     +trans
     transition-duration: 1.2s
     opacity: 0
-    transform: translateY(30px)
+    transform: translateY(15px)
     .mdetail
-      background: rgba(#000, .5)
-      padding: 30px
+      background: rgba(white, .5)
+      padding: 15px 30px
+      width: 100%
+      height: 100%
       @media #{$mobile}
         padding: 15px
       .prod-info
         @media #{$mobile}
           display: none
         *
-          color: white
+          color: #4a3023
         .title
           font-size: 16px
           margin-top: 0
           font-weight: 300
+          margin-bottom: 7.5px
         p
           font-size: 14px
-          line-height: 26px
+          line-height: 20px
           font-weight: 300
           @media #{$mobile}
             line-height: initial
@@ -125,9 +130,10 @@
     background: $color-brown
     *
       color: white
-    .close
-      top: -5px
-      z-index: 99
+  .close
+    top: -5px
+    z-index: 99
+    color: white
   .modal-dialog
     overscroll-behavior: contain
     margin: 0

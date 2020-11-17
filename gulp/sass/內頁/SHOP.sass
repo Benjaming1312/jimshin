@@ -1,4 +1,5 @@
 .page.shop-list
+  margin-top: 60px
   aside.col-sm-3
     @media #{$pad-vertical}
       width: 30%
@@ -8,7 +9,8 @@
     @media #{$pad-vertical}
       width: 70%
   .panel
-    border-color: #ececec
+    border: 0
+    border-bottom: 1px solid #ececec
     border-radius: 0
     box-shadow: none
     a
@@ -45,12 +47,18 @@
     margin-top: 15px
     .listBS
       margin: 0
+      @media #{$mobile}
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-around
     .d-item
       padding: 0.5px
+      @media #{$mobile}
+        width: 49%
       .mbox
-        background: #e3ddd7
+        background: none
         text-align: center
-        padding-bottom: 15px
+        padding-bottom: 0px
       .d-txt
         h5
           margin-bottom: 15px
