@@ -4,8 +4,8 @@
   max-width: initial
   padding: 60px
   background-size: 100% auto!important
-  background-repeat: repeat-y!important
-  background-position: center!important
+  background-repeat: no-repeat!important
+  background-position: top center!important
   @media #{$pad-horizantal}
     margin-top: 65px
     padding: 30px
@@ -22,6 +22,10 @@
     +max-width
     background: rgba(#000, .3)
     padding: 30px
+    max-height: 600px
+    height: 600px
+    overflow: auto
+    overscroll-behavior: contain
     @media #{$mobile}
       padding: 15px
       max-height: 700px
