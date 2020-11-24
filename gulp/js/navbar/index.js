@@ -26,16 +26,21 @@ module.exports = function () {
   })
 
   $('.dropdown').each(function () {
+    if ($(window).width() < 1100 && $(window).width() > 767) {
+      $(this).children('a').click(function (e) {
+        e.preventDefault()
+        e.stopPropagation()
+      })
+    }
+
     const positionLeft = $(this).position().left
     if ($(this).find('.dropdown-menu').hasClass('no-align-left')) {
       return
     }
-    console.log('%c (／‵Д′)／~ ╧╧ positionLeft : ', 'padding: .25rem; font-size: 14px; background: #12bdba; color: #fff', positionLeft)
     $(this).find('.dropdown-menu').attr('style', `left: -${positionLeft}px`)
   })
 
   const loginState = readCookie('Cust')
-  console.log('%c (／‵Д′)／~ ╧╧ loginState : ', 'padding: .25rem; font-size: 14px; background: #12bdba; color: #fff', [loginState])
   if (loginState !== '') {
     if ($(window).width() < 768 ) {
       $('.navbar .member.visible-xs .logout').removeClass('hidden')

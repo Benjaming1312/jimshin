@@ -69,15 +69,22 @@
       font-size: 20px
       font-weight: bolder
       color: #4a3023
+  .ad-pro-btns
+    display: flex
+    align-items: center
+
   .mbtn.addfav.addfav.addfav.addfav.addfav
     filter: drop-shadow(0 0 0 white)
-    background: url(/ezfiles/835/1835/img/1180/fav.svg)!important
+    background: url(/ezfiles/835/1835/img/1328/fav.svg)!important
     background-repeat: no-repeat!important
     background-position: center!important
     background-size: contain!important
     border: 0
+    height: 30px
+    width: 30px
+    padding: 0
     &.active
-      background: url(/ezfiles/835/1835/img/1180/fac_active.svg)!important
+      background: url(/ezfiles/835/1835/img/1328/fac_active.svg)!important
       background-repeat: no-repeat!important
       background-position: center!important
       background-size: contain!important
@@ -174,6 +181,8 @@
       margin: 0 -15px
   .mpro-panel.col-sm-7
     padding-left: 30px
+    @media screen and (min-width: 768px)
+      margin-top: 50px
     @media #{$mobile}
       padding-left: 0
       width: 100%
@@ -181,12 +190,12 @@
       +btn
       margin: 0
       height: 40px
-      background: #4a3023
+      background: #846c5d
       font-weight: 300
       font-size: 14px
       &:hover
-        color: #4a3023
-        border-color: #4a3023
+        color: #846c5d
+        border-color: #846c5d
     .ad-pro-btns
       display: flex
     .maddnum
