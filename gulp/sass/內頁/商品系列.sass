@@ -1,6 +1,11 @@
 .banner.prod-banner
   margin-bottom: 50px
   +max-width
+  >.row
+    @media #{$mobile}
+      display: flex
+      flex-direction: column-reverse
+      flex-wrap: wrap
   img
     width: 100%
   .col-sm-6
