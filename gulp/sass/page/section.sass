@@ -161,8 +161,13 @@ body:not(.page_mobilehome)
       margin: 0 -15px
   .listBS
     margin: 0
+    @media #{$mobile}
+      display: flex
+      flex-wrap: wrap
   .d-item
     padding: 0.5px
+    @media #{$mobile}
+      width: 49%
     .mbox
       text-align: center
       padding-bottom: 7.5px

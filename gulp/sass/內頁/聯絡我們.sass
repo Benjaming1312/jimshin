@@ -20,7 +20,7 @@
     background-position: -200px!important
   >.row
     +max-width
-    background: #c3b8ae
+    background: rgba(#ded1c6, .7)
     padding: 30px
     max-height: 600px
     height: 600px
@@ -37,20 +37,23 @@
       
   .title-content
     h4
-      color: white
+      color: #5a3628
       border-bottom: 1px solid white
       padding-bottom: 15px
       margin-bottom: 15px
       font-size: 22px
   .text
     p
-      color: white
+      color: #5a3628
       margin-bottom: 15px
       line-height: 4rem
       a
-        color: white
+        color: #5a3628
         border: 0
   .form
+    *
+      color: #5a3628
+      border-color: #5a3628
     .formBS,
     .listBS,
     .form-group,
@@ -62,22 +65,17 @@
       margin-bottom: 15px
       
     .col-sm-3
-      color: white
       @media #{$pad-horizantal}
         white-space: nowrap
-    label
-      color: white
     .col-sm-9
       input[type="text"],
       textarea
         background: none
         border: 0
-        border-bottom: 1px solid white
+        border-bottom: 1px solid #5a3628
         border-radius: 0
         &::placeholder
           color: rgba(white, .5)
-      input[type="file"]
-        color: white
     .btn
       +btn
       background: $color-brown-d
@@ -86,7 +84,7 @@
         background: $color-brown
   .tab-pane
     h4.title
-      color: white
+      color: #5a3628
       padding: 15px 0
       margin-bottom: 15px
   .nav-tabs.list-inline

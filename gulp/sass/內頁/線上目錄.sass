@@ -1,9 +1,9 @@
 @keyframes scrollTo
   0%
-    transform: rotate(90deg) translateX(0px)
+    transform: translateY(0px)
     // opacity: 0
   100%
-    transform: rotate(90deg) translateX(10px)
+    transform: translateY(10px)
     // opacity: 1
     
 
@@ -52,11 +52,11 @@
         $w: 15px
         width: $w
         height: $w
-        background-image: url(#{$url}arrow-black-r.svg)
+        background-image: url(#{$url}arrow-black-d.svg)
         background-position: center
         background-repeat: no-repeat
         background-size: contain
-        transform: rotate(90deg) translateX(0px)
+        transform: translateY(0px)
         +trans
         position: relative
         margin-top: 0px
@@ -161,3 +161,8 @@
         &.active
           span
             background: #afaea9
+
+.page.container-fluid.online-contents
+  .owl-nav
+    @media #{$mobile}
+      display: none!important

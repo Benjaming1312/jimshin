@@ -26,7 +26,14 @@ module.exports = function () {
   })
 
   $('.dropdown').each(function () {
-    if ($(window).width() < 1100 && $(window).width() > 767) {
+    if ($(window).width() < 767) {
+      $(this).children('a').eq(0).click(function (e) {
+        e.preventDefault()
+        e.stopPropagation()
+        $(this).siblings('.dropdown-toggle').click()
+      })
+    }
+    else if ($(window).width() < 1100 && $(window).width() > 767) {
       $(this).children('a').click(function (e) {
         e.preventDefault()
         e.stopPropagation()
