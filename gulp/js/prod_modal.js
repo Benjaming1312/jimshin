@@ -25,6 +25,13 @@ module.exports  = function () {
 
       $(this).find('.prod-info').clone().appendTo($('#modal .modal-body .row .text'))
 
+      const hasOther = $(this).find('.prod-info-other')
+
+      if (hasOther) {
+        $(this).find('.prod-info-other').clone().appendTo($('#modal .modal-body .row .text'))
+        $('#modal .prod-info-other').removeClass('hidden')
+      }
+
       $('#modal').modal('show')
     })
   })
