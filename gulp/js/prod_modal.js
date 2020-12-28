@@ -23,11 +23,19 @@ module.exports  = function () {
       $('#modal .modal-body .row').append(`<div class="col-sm-6 col-xs-12 img"><img class="img-responsive" src="${imgUrl}"></div>`)
       $('#modal .modal-body .row').append(`<div class="col-sm-6 col-xs-12 text"></div>`)
 
-      $(this).find('.prod-info').clone().appendTo($('#modal .modal-body .row .text'))
+      const hsaNewProdInfo = $(this).find('.prod-info-new').length
+      console.log('%c (／‵Д′)／~ ╧╧ hsaNewProdInfo : ', 'padding: .25rem; font-size: 14px; background: #12bdba; color: #fff', hsaNewProdInfo)
+      if (hsaNewProdInfo > 0) {
+        $(this).find('.prod-info-new').clone().appendTo($('#modal .modal-body .row .text'))
+        $('#modal .prod-info-new').removeClass('hidden')
+      }
+      else {
+        $(this).find('.prod-info').clone().appendTo($('#modal .modal-body .row .text'))
+      }
 
-      const hasOther = $(this).find('.prod-info-other')
+      const hasOther = $(this).find('.prod-info-other').length
 
-      if (hasOther) {
+      if (hasOther > 0) {
         $(this).find('.prod-info-other').clone().appendTo($('#modal .modal-body .row .text'))
         $('#modal .prod-info-other').removeClass('hidden')
       }
