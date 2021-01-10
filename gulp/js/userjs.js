@@ -36,8 +36,8 @@ $(function () {
     })
 
     baiduInit()
-  })
-  aosInit()
+    aosInit()
+  }, 5000)
   gotop()
 
   // Nav scroll
