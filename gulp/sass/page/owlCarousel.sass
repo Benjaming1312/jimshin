@@ -1,229 +1,44 @@
-.module-adv
+@keyframes scrollTo
+  0%
+    transform: translateY(0px)
+  100%
+    transform: translateY(10px)
+
+.banner
   img
     width: 100%
-.banner
-  padding: 0
-  width: 100%
-  position: relative
-  +trans
-  margin-bottom: 0px
-  .owl-carousel
-    z-index: 3
-    .owl-nav
-      position: absolute
-      top: 60%
-      width: 100%
-      padding: 0 30px
-      @media #{$mobile}
-        top: 60%
-      div
-        border-radius: 0
-        &:active
-          @media #{$mobile}
-            background-color: $color-n
-      .owl-prev
-        background: url(#{$url}arrow-white-l.svg)center center no-repeat
-        background-size: cover
-        background-position: center
-        background-repeat: no-repeat
-        filter: drop-shadow(3px 3px 3px rgba(#000, .21))
-        overflow: initial
-        left: 35px
-        width: 9px
-        height: 18px
-        @media #{$mobile}
-          left: 15px
-      .owl-next
-        background: url(#{$url}arrow-white-r.svg)center center no-repeat
-        background-size: cover
-        background-position: center
-        background-repeat: no-repeat
-        filter: drop-shadow(3px 3px 3px rgba(#000, .21))
-        overflow: initial
-        right: 35px
-        width: 9px
-        height: 18px
-        @media #{$mobile}
-          right: 15px
-  .owl-dots
-    position: absolute
-    bottom: 37px
-    width: 100%
-    text-align: center
-    z-index: 9999
-    padding-right: 0px
-    padding-bottom: 0px
+  .banner-content
+    position: relative
+  .banner-img
     @media #{$mobile}
-      padding-right: 0
-      padding-bottom: 0px
-      bottom: 0
-    .owl-dot
-      opacity: 1
-      border-radius: 0
-      margin-right: 7.5px
-      border: 0
-      span
-        opacity: 1
-        border-radius: 0
-        // background: rgba(white)
-        // background: url(#{$url}owl-dot.svg) center center no-repeat
-        // background-size: contain
-        // background-position: center
-        background: #d3d1d2
-        border-radius: 50%
-        $w: 10px
-        width: $w
-        height: $w
-        display: inline-block
-        +trans
-        @media #{$mobile}
-          $w: 10px
-          width: $w
-          height: $w
-      &.active
-        span
-          background: #afaea9
-          // $w: 13px
-          // width: $w
-          // height: $w
-          // @media #{$mobile}
-          //   $w: 13px
-          //   width: $w
-          //   height: $w
-  // .text-content
-  //   position: absolute
-  //   top: 25%
-  //   left: 25%
-  //   width: 50%
-  //   height: 50%
-  //   display: block
-  //   z-index: 3
-  //   .box
-  //     background: rgba(white, .7)
-  //     padding: 30px
-  //     h4
-  //       line-height: 30px
-  // @media #{$mobile}
-  //   margin-top: 65px
-  // .col-xs-12
-  //   padding: 0
-  //   position: relative
-  // .text-content
-  //   position: absolute
-  //   top: 0
-  //   right: 0
-  //   z-index: 999
-  //   display: flex
-  //   height: 100%
-  //   width: 100%
-  //   align-items: center
-  //   justify-content: center
-  //   line-height: 60px
-  //   .content
-  //     @media #{$mobile}
-  //       width: 90%
-  // .owl-carousel
-  //   z-index: 3
-  // .owl-dots
-  //   position: absolute
-  //   bottom: 30px
-  //   width: 100%
-  //   text-align: right
-  //   z-index: 9999
-  //   padding-right: 40px
-  //   padding-bottom: 15px
-  //   @media #{$mobile}
-  //     padding-right: 7.5px
-  //     padding-bottom: 5px
-  //     bottom: 0
-  //   .owl-dot
-  //     opacity: 1
-  //     border-radius: 0
-  //     margin-right: 5px
-  //     border: 0
-  //     span
-  //       opacity: 1
-  //       border-radius: 0
-  //       // background: rgba(white)
-  //       // background: url(#{$url}owl-dot.svg) center center no-repeat
-  //       // background-size: contain
-  //       // background-position: center
-  //       background: white
-  //       border-radius: 50%
-  //       $w: 10px
-  //       width: $w
-  //       height: $w
-  //       display: inline-block
-  //       +trans
-  //       @media #{$mobile}
-  //         $w: 8px
-  //         width: $w
-  //         height: $w
-  //     &.active
-  //       span
-  //         background: #fff
-  //         // background: url(#{$url}owl-dot-active.svg) center center no-repeat
-  //         $w: 15px
-  //         width: $w
-  //         height: $w
-  //         transform: translateX(2.5px)
-  //         @media #{$mobile}
-  //           $w: 12px
-  //           width: $w
-  //           height: $w
-  //           transform: translateX(1.5px)
-          //   width: 4.5px
-          //   height: 4.5px
-          //   top: 0
-
-
-// .mads-li
-//   // margin-top: 112px
-//   position: relative
-//   .owl-controls
-//     position: absolute
-//     width: 100%
-//     bottom: 0px
-//     // width: 7px
-//     // top: 46%
-//     // right: 20px
-//     // @media #{$mobile}
-//     //   right: 10px
-//     //   top: 30%  
-//     //   bottom: -30px
-//   .owl-dots
-//     .owl-dot
-//       opacity: 1
-//       border-radius: 0
-//       margin-right: 5px
-//       span
-//         opacity: 1
-//         border-radius: 0
-//         background: rgba(white, .39)
-//         border: 1px solid rgba(white, .39)
-//         border-radius: 50%
-//         // background: url(#{$url}dot.png) center center no-repeat
-//         // background-size: cover
-//         // background-position: center
-//         width: 12px
-//         height: 12px
-//         margin-right: 6px
-//         margin-left: 6px
-//         +trans
-//         @media #{$mobile}
-//           width: 6px
-//           height: 6px
-//       &.active
-//         span
-//           background: #fff
-//           border: 1px solid #fff
-//           border-radius: 50%
-//           // background: url(#{$url}dot-active.png) center center no-repeat
-//           // width: 9px
-//           // height: 9px
-//           // position: relative
-//           // top: 2px
-//           @media #{$mobile}
-//             width: 4.5px
-//             height: 4.5px
-//             top: 0
+      padding-top: 100%
+      background-size: cover!important
+      background-position: top center!important
+      background-repeat: no-repeat!important
+  .content
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    z-index: 3
+    .svg
+      @media #{$mobile}
+        max-width: 250px
+  .scroll
+    position: absolute
+    bottom: 90px
+    left: calc((100% - 42px) / 2)
+    animation-name: scrollTo
+    animation-duration: 1s
+    animation-fill-mode: both
+    animation-direction: alternate
+    animation-iteration-count: infinite
+    +trans
+    cursor: pointer
+    z-index: 4
+    @media #{$mobile}
+      bottom: 30px

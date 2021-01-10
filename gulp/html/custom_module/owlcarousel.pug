@@ -1,30 +1,10 @@
-- var url = '/ezfiles/835/1835/img/1180/'
+- var url = '/dist/images/'
+
 .banner.container-fluid
 	.row
-		.col-xs-12
-			| ===MODULE===
-			//- .text-content
-			//- 	.content
-			//- 		img.img-responsive(src=url + "banner-text.png", alt="")
-			//- .owl-carousel.hidden-xs
-			//- 	.item
-			//- 		img.img-responsive(src=url + "banner.png", alt="")
-			//- 	.item
-			//- 		img.img-responsive(src=url + "banner.png", alt="")
-			//- 	.item
-			//- 		img.img-responsive(src=url + "banner.png", alt="")
-			//- 	.item
-			//- 		img.img-responsive(src=url + "banner.png", alt="")
-			//- 	.item
-			//- 		img.img-responsive(src=url + "banner.png", alt="")
-			//- .owl-carousel.visible-xs
-			//- 	.item
-			//- 		img.img-responsive(src=url + "banner-m.png", alt="")
-			//- 	.item
-			//- 		img.img-responsive(src=url + "banner-m.png", alt="")
-			//- 	.item
-			//- 		img.img-responsive(src=url + "banner-m.png", alt="")
-			//- 	.item
-			//- 		img.img-responsive(src=url + "banner-m.png", alt="")
-			//- 	.item
-			//- 		img.img-responsive(src=url + "banner-m.png", alt="")
+		.col-xs-12.banner-content
+			img.img-responsive.hidden-xs(src=url + "banner.png", alt="")
+			span.svg.banner-img.visible-xs(style="background:url("+url+"banner.png);")
+			.content
+				span.svg(style="background:url("+url+"logo.svg); width: 485px; height: 75px;")
+			span.svg.scroll(style="background:url("+url+"arrow.svg); width: 42px; height: 21px;")

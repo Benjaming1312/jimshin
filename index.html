@@ -4,233 +4,92 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <!-- Bootstrap-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css"/>
-    <!-- font-awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <!-- owlCarousel-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
-    <!-- noto sans tc-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanstc.css"/>
     <!-- aos--><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <!-- swiper--><script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js" integrity="sha256-NiMdnMv0WBAps3M8mcB7WHzlanETt0rnwMCgg67DgCk=" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css" integrity="sha256-kGupfJ4zZb4/m0GPPVY0ng7FwSjZm1E0wMWG1aRYbwk=" crossorigin="anonymous" />
-    <!-- gsap--><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js" integrity="sha256-XDWrid8aGX+NZwSY7JzTu6oWArI71Sw+aUZ9Hd0P5mo=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/TextPlugin.min.js" integrity="sha256-ueVAnnZLQzTgupbVzZ98US77GlFMzWhqWJ+i8oqO4O8=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/ScrollTrigger.min.js" integrity="sha256-VOmGZIiFXM1EqfqanRqwQ/1JfzredGUMk/M6AAPMdRw=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/ScrollToPlugin.min.js" integrity="sha256-dIqkGRmOeTpe7Zxq1vdIDcQonrVWrzXHo1tRuo5fEr0=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/PixiPlugin.min.js" integrity="sha256-A9jCDXQhTsPDKUP8/HHoRBI9MKpRJmjKalOnqt3PBXY=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/MotionPathPlugin.min.js" integrity="sha256-3qQZGNeXc42t1E5iyn5XA92eBXFJevVtshE8aWBE0Xs=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/EaselPlugin.min.js" integrity="sha256-eQgQne4nbpnHXQAgqqkIz/bUmdYbUUyJxV9OXS1XCpo=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/EasePack.min.js" integrity="sha256-YYZMCUSiShKxzX6n63C7BBttMsgswc/NkXc4WdCK/ro=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/CSSRulePlugin.min.js" integrity="sha256-c73GnBat1qBHmg9/ttdWrVUwzwj5U8MVqacscUi1tGY=" crossorigin="anonymous"></script>
-    <!-- fancy-box--><script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" />
+    <!-- 百度地圖--><script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/vue"></script>
     <!-- user defined-->
-    <link rel="stylesheet" href="/ezfiles/835/1835/img/1181/usercss.css"/>
-    <script src="/ezfiles/835/1835/img/1182/userjs.js"></script>
+    <!-- test scenario-->
+    <link href="/dist/css/usercss.css" rel="stylesheet"/>
+    <script src="/dist/js/userjs.js"></script>
     <title>Document</title>
   </head>
   <body>
     <nav class="navbar">
       <div class="container-fluid">
         <div class="navbar-header">
-          <div class="member visible-xs"><a class="svg" href="" style="background:url(/ezfiles/835/1835/img/1180/nav-icon-1.svg); width: 15px; height: 17px;"></a><a class="svg" href="" style="background:url(/ezfiles/835/1835/img/1180/nav-icon-2.svg); width: 17px; height: 18px;"></a></div>
-          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-          <!-- LOGO放置處--><a class="navbar-brand svg" href="/" style="background: url(/ezfiles/835/1835/img/1180/logo.svg); width: 150px; height: 29px;"></a>
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#myNavbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
         </div>
-        <div class="navbar-collapse collapse" id="navbar">
-          <ul class="nav navbar-nav">
-            <li class="dropdown" data-aos="fade-in" data-aos-delay="100"><a href=""><span class="tw">關於品牌</span></a><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false"></a>
-              <ul class="dropdown-menu no-align-left" role="menu">
-                <div class="content">
-                  <div class="box">
-                    <ul class="list-inline">
-                      <li>
-                        <ul>
-                          <li><a href="">品牌故事</a></li>
-                          <li><a href="">經典商品</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <ul>
-                          <li><a href="">貓頭鷹系列</a></li>
-                          <li><a href="">2020AW New Arrival</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                    <div class="img hidden-xs"><img class="img-responsive" src="/ezfiles/835/1835/img/1180/banner.png" alt=""/></div>
-                  </div>
-                </div>
-              </ul>
-            </li>
-            <li class="dropdown" data-aos="fade-in" data-aos-delay="200"><a href=""><span class="tw"> 線上目錄</span></a><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false"></a>
-              <ul class="dropdown-menu no-align-left" role="menu">
-                <div class="content">
-                  <div class="box">
-                    <ul class="list-inline">
-                      <li>
-                        <ul>
-                          <li><a href="">Autumn/Winter 2020</a></li>
-                          <li><a href="">Spring/Summer 2020</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <ul>
-                          <li><a href="">Autumn/Winter 2019</a></li>
-                          <li><a href="">Spring/Summer 2019</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                    <div class="img hidden-xs"><img class="img-responsive" src="/ezfiles/835/1835/img/1180/banner.png" alt=""/></div>
-                  </div>
-                </div>
-              </ul>
-            </li>
-            <li class="dropdown" data-aos="fade-in" data-aos-delay="300"><a href=""><span class="tw">商品系列</span></a><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false"></a>
-              <ul class="dropdown-menu no-align-left" role="menu">
-                <div class="content">
-                  <div class="box">
-                    <ul class="list-inline">
-                      <li>
-                        <ul>
-                          <li><a href="">Autumn/Winter 2020</a></li>
-                          <li><a href="">Spring/Summer 2020</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <ul>
-                          <li><a href="">Autumn/Winter 2019</a></li>
-                          <li><a href="">Spring/Summer 2019</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                    <div class="img hidden-xs"><img class="img-responsive" src="/ezfiles/835/1835/img/1180/banner.png" alt=""/></div>
-                  </div>
-                </div>
-              </ul>
-            </li>
-            <li data-aos="fade-in" data-aos-delay="400"><a href=""><span class="tw">銷售據點</span></a></li>
-            <li data-aos="fade-in" data-aos-delay="500"><a href=""><span class="tw">SHOP borsalini</span></a></li>
-            <li class="member hidden-xs" data-aos="fade-in" data-aos-delay="600"><a class="svg" href="" style="background:url(/ezfiles/835/1835/img/1180/nav-icon-1.svg); width: 15px; height: 17px;"></a><a class="svg" href="" style="background:url(/ezfiles/835/1835/img/1180/nav-icon-2.svg); width: 17px; height: 18px;"></a></li>
+        <div class="navbar-collapse collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li data-aos="fade-in" data-aos-delay="100"><a href="">HOME</a></li>
+            <li data-aos="fade-in" data-aos-delay="200"><a href="">ABOUT US</a></li>
+            <li data-aos="fade-in" data-aos-delay="300"><a href="">CONTACTS</a></li>
           </ul>
         </div>
       </div>
     </nav>
     <div class="banner container-fluid">
       <div class="row">
-        <div class="col-xs-12">===MODULE===</div>
-      </div>
-    </div>
-    <div class="banner container-fluid">
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="swiper-container hidden-xs">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img class="img-responsive" src="/images/banner-1.png" alt=""/>
-                <div class="text-content">
-                  <div class="box">
-                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias perspiciatis facilis natus ipsum expedita totam praesentium pariatur repudiandae quaerat excepturi, enim ut nihil doloribus atque consequuntur sed in consequatur optio!</h4>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide"><img class="img-responsive" src="/images/banner-2.png" alt=""/>
-                <div class="text-content">
-                  <div class="box">
-                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias perspiciatis facilis natus ipsum expedita totam praesentium pariatur repudiandae quaerat excepturi, enim ut nihil doloribus atque consequuntur sed in consequatur optio!</h4>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide"><img class="img-responsive" src="/images/banner-3.png" alt=""/>
-                <div class="text-content">
-                  <div class="box">
-                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias perspiciatis facilis natus ipsum expedita totam praesentium pariatur repudiandae quaerat excepturi, enim ut nihil doloribus atque consequuntur sed in consequatur optio!</h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-container visible-xs">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img class="img-responsive" src="/images/banner-1.png" alt=""/></div>
-              <div class="swiper-slide"><img class="img-responsive" src="/images/banner-2.png" alt=""/></div>
-              <div class="swiper-slide"><img class="img-responsive" src="/images/banner-3.png" alt=""/></div>
-            </div>
-          </div>
+        <div class="col-xs-12 banner-content"><img class="img-responsive hidden-xs" src="/dist/images/banner.png" alt=""/><span class="svg banner-img visible-xs" style="background:url(/dist/images/banner.png);"></span>
+          <div class="content"><span class="svg" style="background:url(/dist/images/logo.svg); width: 485px; height: 75px;"></span></div><span class="svg scroll" style="background:url(/dist/images/arrow.svg); width: 42px; height: 21px;"></span>
         </div>
       </div>
     </div>
-    <div class="idx container-fluid section-1">
+    <div class="idx container-fluid section-1" id="section-1">
       <div class="row">
-        <div class="col-xs-12" data-aos="fade">
-          <div class="owl-carousel">
-            <div class="item"><a href=""><img class="img-responsive" src="/ezfiles/835/1835/img/1180/section-1-img-1.png" alt=""/></a></div>
-            <div class="item"><a href=""><img class="img-responsive" src="/ezfiles/835/1835/img/1180/section-1-img-2.png" alt=""/></a></div>
-            <div class="item"><a href=""><img class="img-responsive" src="/ezfiles/835/1835/img/1180/section-1-img-3.png" alt=""/></a></div>
-            <div class="item"><a href=""><img class="img-responsive" src="/ezfiles/835/1835/img/1180/section-1-img-1.png" alt=""/></a></div>
-            <div class="item"><a href=""><img class="img-responsive" src="/ezfiles/835/1835/img/1180/section-1-img-2.png" alt=""/></a></div>
-            <div class="item"><a href=""><img class="img-responsive" src="/ezfiles/835/1835/img/1180/section-1-img-3.png" alt=""/></a></div>
-          </div>
+        <div class="col-xs-12">
+          <div class="module-title"><span class="svg" style="background:url(/dist/images/section-1-title.svg); width: 422px; height: 79px;"></span></div>
+          <p>上海合极数据科技有限公司以设计实验室精密电子仪器和实验室智能化解决方案的新型企业。<br/>主营业务为数据和智能化系统整合方案商，专注在智能实验室系统解决方案。合极有完整的供应链，<br/>在研发、技术、专利、销售渠道、洞察市场发展具有竞争优势。跟随国家十四五的发展布局，<br/>提升下一代高校科研和产业科研实验，提供创新的科研环境； 并可应用在跨领域实验室智能化应用。<br/>公司发展潜力无限且竞争力强，致力于打造成为优质领头智能实验室解决方案商。<br/>合极有资深的专家加持，秉持着开放包容进取的工作环境，团队协作，相互支持，一同发展，用心经营，<br/>往目标前进。有合理科学的晋升渠道，并支持员工可持续发展。公司主张有良好的人品，<br/>积极乐观的工作态度。发掘优秀人才成为公司的合伙人与企业共成长、共发展!</p>
+          <p class="en-content">Shanghai Heji Data Technology Co., Ltd. is a new type of enterprise that designs laboratory precision electronic instruments and laboratory intelligent solutions. Heji’s core business is data and intelligent system integration solution provider, focusing on smart laboratory system solutions. Heji owns a complete supply chain and has competitive advantages in R&D, technology, intellectual properties, sales channels, and market insights. Following the development layout of the country’s 14th Five-Year Plan to enhance the next generation of educational and industrial scientific research experiments, provide an innovative scientific research environment that can be applied to cross-field laboratory intelligent applications. The company has great development potential that is competitive in the market and is committed to become the industry’s leader for high-quality intelligent laboratory solution provider. Heji has senior experts, offers an opened working environment, values teamwork, working towards a common goal with heart and synergy. Heji offers good promotion channels and support the sustainable career development. The company advocates good characters with a positive working attitude. We invite outstanding talents to join us as partners of the company. Come to grow and achieve together with the company!</p>
+          <p class="readmore"><a class="svg" style="background:url(/dist/images/readmore.svg); width: 160px; height: 31px;"></a></p>
         </div>
       </div>
     </div>
     <div class="idx container-fluid section-2">
       <div class="row">
-        <div class="col-sm-6 col-xs-12" data-aos="fade">
-          <div class="embed-responsive embed-responsive-16by9">
-            <video class="embed-responsive-item" src="/ezfiles/835/1835/img/1180/0818_borsalini_v1_final_5MB.mp4#t=1" controls="controls"></video>
-          </div>
+        <div class="col-sm-6 col-xs-12 info">
+          <div class="module-title"><span class="svg" style="background:url(/dist/images/section-2-logo.svg); width: 403px; height: 78px;"></span></div>
+          <p><span class="svg" style="background:url(/dist/images/section-2-icon-1.svg); width: 15px; height: 15px;"></span><a href="tel: 1391 847 9101">1391 847 9101</a></p>
+          <p><span class="svg" style="background:url(/dist/images/section-2-icon-2.svg); width: 15px; height: 15px;"></span>上海市闵行区新龙路399弄1号上坤国际广场T4栋11层1102C室<br/>Unit 1102C, Floor 11, Building T4, No. 1, Lane 399, Xinlong Road, Minhang District, Shanghai</p>
         </div>
-        <div class="col-sm-6 col-xs-12" data-aos="fade">
-          <div class="embed-responsive embed-responsive-16by9">
-            <video class="embed-responsive-item" src="/ezfiles/835/1835/img/1180/0827_borsalini_v2_5mb.mp4#t=1" controls="controls"></video>
+        <div class="col-sm-6 col-xs-12 form" id="form"><span class="svg title" style="background:url(/dist/images/section-2-title.svg); width: 443px; height: 34px;"></span>
+          <div class="form-group">
+            <label for="name">NAME</label>
+            <input class="form-control" id="name" type="text" v-model="form.name"/>
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="idx container-fluid section-3">
-      <div class="row">
-        <div class="col-sm-6 col-xs-12" data-aos="fade"><a href=""><img class="img-responsive" src="/ezfiles/835/1835/img/1180/section-3-img.png" alt=""/></a></div>
-        <div class="col-sm-6 col-xs-12" data-aos="fade">
-          <div class="owl-carousel">
-            <div class="item"><a href=""><img class="img-responsive" src="/ezfiles/835/1835/img/1180/section-3-img-owl.png" alt=""/></a></div>
-            <div class="item"><a href=""><img class="img-responsive" src="/ezfiles/835/1835/img/1180/section-3-img-owl.png" alt=""/></a></div>
-            <div class="item"><a href=""><img class="img-responsive" src="/ezfiles/835/1835/img/1180/section-3-img-owl.png" alt=""/></a></div>
+          <div class="form-group">
+            <label for="number">NUMBER</label>
+            <input class="form-control" id="number" type="text" v-model="form.number"/>
           </div>
+          <div class="form-group">
+            <label for="email">MAIL</label>
+            <input class="form-control" id="email" type="email" v-model="form.email"/>
+          </div>
+          <div class="form-group">
+            <label for="message">MESSAGES</label>
+            <textarea class="form-control" id="message" rows="5" v-model="form.message"></textarea>
+          </div>
+          <button class="svg" type="submit" @click="submit" style="background:url(/dist/images/sendmessage.svg); width: 151px; height: 29px;"></button>
         </div>
-      </div>
-    </div>
-    <div class="gotop-section container-fluid">
-      <div class="row">
-        <div class="col-xs-12 text-center"><a class="svg gotop" style="background:url(/ezfiles/835/1835/img/1180/gotop.svg); width: 131px; height: 49px;"></a></div>
       </div>
     </div>
     <footer class="foot">
       <div class="row info">
-        <div class="col-xs-12">
-          <ul class="list-inline text-link">
-            <li><a href="">購物說明</a></li>
-            <li><a href="">品牌消息</a></li>
-            <li><a href="">聯絡我們</a></li>
-            <li><a href="">服務專區</a></li>
-          </ul>
-          <ul class="list-inline icon-link">
-            <li><a class="svg" href="" style="background:url(/ezfiles/835/1835/img/1180/foot-icon-1.svg); width: 37px; height: 37px;"></a></li>
-            <li><a class="svg" href="" style="background:url(/ezfiles/835/1835/img/1180/foot-icon-2.svg); width: 37px; height: 37px;"></a></li>
-            <li><a class="svg" href="" style="background:url(/ezfiles/835/1835/img/1180/foot-icon-3.svg); width: 37px; height: 37px;"></a></li>
-            <li><a class="svg" href="" style="background:url(/ezfiles/835/1835/img/1180/foot-icon-4.svg); width: 37px; height: 37px;"></a></li>
-          </ul>
-        </div>
+        <div class="col-xs-12"><div style="width:100%;height:480px;border:#ccc solid 1px;" id="dituContent"></div></div>
       </div>
     </footer>
     <div class="design container-fluid">
       <div class="row">
         <div class="col-xs-12">
-          <p class="text-center"><span>Copyright © 2020 borsalini</span><span> All rights reserved.    </span></p>
+          <p class="text-center"><span>© 2020 HEJI DATA TECHNOLOGY</span><a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">沪ICP备19029205号-1</a></p>
         </div>
       </div>
     </div>
-    <div class="right"><a class="svg gotop" href="javascript: void(0);" style="background:url(/ezfiles/835/1835/img/1180/gotop.svg); width: 48px; height: 48px;"></a></div>
+    <div class="right"><a class="svg gotop" href="javascript: void(0);" style="background:url(/dist/images/gotop.svg); width: 65px; height: 65px;"></a></div>
   </body>
 </html>

@@ -5,6 +5,9 @@ a
     text-decoration: none
 html
   overflow-x: hidden
+body
+  overflow-x: hidden
+
 .langbar
   display: none
 
@@ -194,10 +197,19 @@ body:not(.page_mobilehome)
         opacity: 1     
 
 .module-title
-  margin-bottom: 15px
-  @media #{$mobile}
-    margin-bottom: 0px
-  h4.title
-    +title
-  .sub-title
-    +sub-title
+  text-align: center
+  &::after
+    content: ''
+    display: block
+    height: 4px
+    width: 100px
+    background: #fca313
+    margin: 0 auto
+    margin-top: 40px
+    margin-bottom: 50px
+    @media #{$mobile}
+      margin-top: 10px
+      margin-bottom: 25px
+  .svg
+    @media #{$mobile}
+      max-width: 90%

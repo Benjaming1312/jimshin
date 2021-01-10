@@ -37,7 +37,7 @@ gulp.task('connect',function(){
 	})
 })
 
-gulp.task('default',['clean', 'watch','connect']) //gulp 直接執行
+gulp.task('default',['watch','connect']) //gulp 直接執行
 
 
 // 執行轉換JS

@@ -1,175 +1,19 @@
 - var url = '/ezfiles/835/1835/img/1180/'
 nav.navbar
 	.container-fluid
-		//- .nav-2
-		//- 	.fit-content.member
-		//- 	.fit-content.media.hidden-xs
-		//- 		a.svg(href="" style="background:url("+url+"social-icon-1.svg);")
-		//- 		a.svg(href="" style="background:url("+url+"social-icon-2.svg);")
-		//- 		a.svg(href="" style="background:url("+url+"social-icon-3.svg);")
-		//- 	.fit-content.search-content.hidden-xs
-		//- 		<form class="formBS" role="search" name="SearchMoForm" method="post" action="/bin/index.php?Plugin=mec&amp;Action=mobile_mecsearch/bin/index.php?Plugin=mec&amp;Action=mobile_mecsearch&amp;Lang=zh-tw">
-		//- 			<div class="input-group">
-		//- 				<span class="input-group-btn">
-		//- 					button.btn.svg(type="submit" style="background: url("+url+"search.svg)")
-		//- 				</span>
-		//- 				<input id="sch_key" name="SchKey" type="text" class="form-control" value="" placeholder="Search">
-		//- 			</div>
-		//- 		</form>
 		.navbar-header
-			.member.visible-xs
-				a.svg(href="" style="background:url("+url+"nav-icon-1.svg); width: 15px; height: 17px;")
-				a.svg(href="" style="background:url("+url+"nav-icon-2.svg); width: 17px; height: 18px;")
-			button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+			button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#myNavbar')
 				span.sr-only Toggle navigation
 				span.icon-bar
 				span.icon-bar
 				span.icon-bar
-			// LOGO放置處
-			a.navbar-brand.svg(href='/' style="background: url("+url+"logo.svg); width: 150px; height: 29px;")
-		#navbar.navbar-collapse.collapse
-			//- .fit-content.search-content.visible-xs
-			//- 	<form class="formBS" role="search" name="SearchMoForm" method="post" action="/bin/index.php?Plugin=mec&amp;Action=mobile_mecsearch/bin/index.php?Plugin=mec&amp;Action=mobile_mecsearch&amp;Lang=zh-tw">
-			//- 		<div class="input-group">
-			//- 			<span class="input-group-btn">
-			//- 				button.btn.svg(type="submit" style="background: url("+url+"search.svg)")
-			//- 			</span>
-			//- 			<input id="sch_key" name="SchKey" type="text" class="form-control" value="" placeholder="Search">
-			//- 		</div>
-			//- 	</form>
-			ul.nav.navbar-nav
-				li.dropdown(data-aos="fade-in", data-aos-delay="100")
-					a(href="")
-						span.tw 關於品牌
-					a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
-					ul.dropdown-menu.no-align-left(role='menu')
-						.content
-							.box
-								ul.list-inline
-									li
-										ul
-											li
-												a(href="") 品牌故事
-											li
-												a(href="") 經典商品
-									li
-										ul
-											li
-												a(href="") 貓頭鷹系列
-											li
-												a(href="") 2020AW New Arrival
-								.img.hidden-xs
-									img.img-responsive(src=url + "banner.png", alt="")
-
-				li.dropdown(data-aos="fade-in", data-aos-delay="200")
-					a(href="")
-						span.tw  線上目錄
-					a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
-					ul.dropdown-menu.no-align-left(role='menu')
-						.content
-							.box
-								ul.list-inline
-									li
-										ul
-											li
-												a(href="") Autumn/Winter 2020
-											li
-												a(href="") Spring/Summer 2020
-									li
-										ul
-											li
-												a(href="") Autumn/Winter 2019
-											li
-												a(href="") Spring/Summer 2019
-								.img.hidden-xs
-									img.img-responsive(src=url + "banner.png", alt="")
-							
-				li.dropdown(data-aos="fade-in", data-aos-delay="300")
-					a(href="")
-						span.tw 商品系列
-					a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
-					ul.dropdown-menu.no-align-left(role='menu')
-						.content
-							.box
-								ul.list-inline
-									li
-										ul
-											li
-												a(href="") Autumn/Winter 2020
-											li
-												a(href="") Spring/Summer 2020
-									li
-										ul
-											li
-												a(href="") Autumn/Winter 2019
-											li
-												a(href="") Spring/Summer 2019
-								.img.hidden-xs
-									img.img-responsive(src=url + "banner.png", alt="")
-				li(data-aos="fade-in", data-aos-delay="400")
-					a(href="")
-						span.tw 銷售據點
-				li(data-aos="fade-in", data-aos-delay="500")
-					a(href="")
-						span.tw SHOP borsalini
-				li.member.hidden-xs(data-aos="fade-in", data-aos-delay="600")
-					a.svg(href="" style="background:url("+url+"nav-icon-1.svg); width: 15px; height: 17px;")
-					a.svg(href="" style="background:url("+url+"nav-icon-2.svg); width: 17px; height: 18px;")
-			//- .fit-content.media.visible-xs
-			//- 	a.svg(href="" style="background:url("+url+"social-icon-1.svg);")
-			//- 	a.svg(href="" style="background:url("+url+"social-icon-2.svg);")
-			//- 	a.svg(href="" style="background:url("+url+"social-icon-3.svg);")
-				//- li.dropdown(data-aos="fade-in" data-aos-delay="300")
-				//- 	a.fz16a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false') 關於協會
-				//- 	ul.dropdown-menu(role='menu')
-				//- 		li
-				//- 			a(href="") 設立沿革 
-				//- 		li
-				//- 			a(href="") 宗旨任務
-				//- 		li
-				//- 			a(href="") 組織架構
-				//- 		li
-				//- 			a(href="") 理監事
-				//- 		li
-				//- 			a(href="") 大事紀
-				//- li.dropdown(data-aos="fade-in" data-aos-delay="400")
-				//- 	a.fz16a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false') 評鑑服務
-				//- 	ul.dropdown-menu(role='menu')
-				//- 		li
-				//- 			a(href="") 服務項目 
-				//- 		li
-				//- 			a(href="") 歷年實績
-
-				//- li.dropdown(data-aos-delay="500", data-aos="fade-in")
-				//- 	a.fz16a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false') 國際合作
-				//- 	ul.dropdown-menu(role='menu')
-				//- 		li
-				//- 			a(href="") 現況與發展 
-				//- 		li
-				//- 			a(href="") 國際合作組織
-				//- 		li
-				//- 			a(href="") 國際領航平台 
-				//- li(data-aos-delay="600", data-aos="fade-in")
-				//- 	a.fz16(href="") 校務研究
-				//- li.dropdown(data-aos-delay="700", data-aos="fade-in")
-				//- 	a.fz16a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false') 研習活動
-				//- 	ul.dropdown-menu(role='menu')
-				//- 		li
-				//- 			a(href="") 活動簡介 
-				//- 		li
-				//- 			a(href="") 歷年實績
-				//- li.dropdown(data-aos-delay="800", data-aos="fade-in")
-				//- 	a.fz16(href="") 出版品
-				//- li.dropdown(data-aos-delay="900", data-aos="fade-in")
-				//- 	a.fz16a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false') 相關連結
-				//- 	ul.dropdown-menu(role='menu')
-				//- 		li
-				//- 			a(href="") 國外評鑑機構 
-				//- 		li
-				//- 			a(href="") 國內評鑑機構
-				//- 		li
-				//- 			a(href="") 評鑑雙月刊 
-
-				//- li.facebook
-				//- 	a(href="https://www.facebook.com/yinhuo.tw/" target="_blank")
-				//- 		img.img-responsive(src=url+"facebook.svg" style="width: 23px; height: 23px;")
+			//- // LOGO放置處
+			//- a.navbar-brand.svg(href='/' style="background: url("+url+"logo.svg); width: 150px; height: 29px;")
+		#myNavbar.navbar-collapse.collapse
+			ul.nav.navbar-nav.navbar-right
+				li(data-aos="fade-in", data-aos-delay="100")
+					a(href="") HOME
+				li(data-aos="fade-in", data-aos-delay="200")
+					a(href="") ABOUT US
+				li(data-aos="fade-in", data-aos-delay="300")
+					a(href="") CONTACTS

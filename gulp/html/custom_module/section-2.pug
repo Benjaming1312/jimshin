@@ -1,10 +1,30 @@
-- var url = '/ezfiles/835/1835/img/1180/'
+- var url = '/dist/images/'
 
 .idx.container-fluid.section-2
   .row
-    .col-sm-6.col-xs-12(data-aos="fade")
-      .embed-responsive.embed-responsive-16by9
-        video.embed-responsive-item(src=url + "0818_borsalini_v1_final_5MB.mp4#t=1", controls)
-    .col-sm-6.col-xs-12(data-aos="fade")
-      .embed-responsive.embed-responsive-16by9
-        video.embed-responsive-item(src=url + "0827_borsalini_v2_5mb.mp4#t=1", controls)
+    .col-sm-6.col-xs-12.info
+      .module-title
+        span.svg(style="background:url("+url+"section-2-logo.svg); width: 403px; height: 78px;")
+      p
+        span.svg(style="background:url("+url+"section-2-icon-1.svg); width: 15px; height: 15px;")
+        a(href="tel: 1391 847 9101") 1391 847 9101
+      p
+        span.svg(style="background:url("+url+"section-2-icon-2.svg); width: 15px; height: 15px;")
+        | 上海市闵行区新龙路399弄1号上坤国际广场T4栋11层1102C室
+        br
+        | Unit 1102C, Floor 11, Building T4, No. 1, Lane 399, Xinlong Road, Minhang District, Shanghai
+    .col-sm-6.col-xs-12.form#form
+      span.svg.title(style="background:url("+url+"section-2-title.svg); width: 443px; height: 34px;")
+      .form-group
+        label(for="name") NAME
+        input#name.form-control(type="text" v-model="form.name")
+      .form-group
+        label(for="number") NUMBER
+        input#number.form-control(type="text" v-model="form.number")
+      .form-group
+        label(for="email") MAIL
+        input#email.form-control(type="email" v-model="form.email")
+      .form-group
+        label(for="message") MESSAGES
+        textarea#message.form-control(rows="5" v-model="form.message")
+      button.svg(type="submit" @click="submit" style="background:url("+url+"sendmessage.svg); width: 151px; height: 29px;")

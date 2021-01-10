@@ -1,89 +1,23 @@
-.gotop-section
-  background: #ded1c6
-  padding: 28px 0 20px
-  background-size: cover!important
-  background-repeat: repeat-y!important
-  background-position: center!important
-  @media screen and (min-width: 768px)
-    margin-top: 89px
-  @media #{$pad-horizantal}
-    margin-top: 30px
-  @media #{$pad-vertical}
-    margin-top: 30px
-  @media #{$mobile}
-    padding: 14px 0 10px
-    margin-top: 30px
-  .svg
-    cursor: pointer
-    @media #{$mobile}
-      max-width: 111px
-      max-height: 39px
-    +trans
-    &:hover
-      opacity: 0.7
-
-footer.foot
-  background: white
-  margin-top: 0px
-  padding-top: 80px
-  padding-bottom: 30px
-  @media #{$mobile}
-    margin-top: 30px
-    padding-top: 0
-    padding-bottom: 15px
-  @media #{$pad-vertical}
-    padding: 30px 0 25px
-  .col-xs-12
-    padding: 0
-  .row
-    p.text-center
-      color: #4a3023
-      font-size: 16px
-      margin-bottom: 20px
-    .list-inline
-      margin: 0
-      padding: 0
-      display: flex
-      justify-content: center
-      @media screen and (min-width: 768px)
-        flex-wrap: nowrap
-      @media #{$mobile}
-        flex-wrap: wrap
-      &.text-link
-        margin-bottom: 40px
-        background: #f3ede8
-        padding: 20px 0
-        @media #{$mobile}
-          margin-bottom: 15px
-          padding: 14px 0
-        li
-          padding: 0
-          @media #{$mobile}
-            width: 49%
-            text-align: center
-            margin-bottom: 7.5px
-          &:last-child
-            a::after
-              display: none
-          a
-            font-size: 16px
-            color: #4a3023
-            letter-spacing: 6px
-            &::after
-              @media screen and (min-width: 768px)
-                content: '|'
-                font-size: 16px
-                color: #4a3023
-                margin: 0 30px
-      &.icon-link
-        li
-          padding: 0
-          margin: 0 15px
+footer.foot  
+  margin-top: 0
+  position: relative
+  margin-top: -2px
+  &::before
+    content: ''
+    display: block
+    width: 105%
+    height: 67px
+    background: url(#{$url}foot-mask.png) center center repeat-x
+    background-size: 100% 100%
+    position: absolute
+    top: 0
+    left: -2.5%
+    z-index: 1
 
 div.design
-  padding-top: 13px
-  padding-bottom: 13px
-  background: #ded1c6
+  padding-top: 15px
+  padding-bottom: 15px
+  background: #020f3f
   // background: url(#{$url}foot-bg.svg) center center no-repeat
   // background-size: cover
   // padding-top: 51px
@@ -96,12 +30,9 @@ div.design
     margin: 0
     padding: 0px 0
     text-align: center
-    font-size: 10px
-    color: #545454
+    font-size: 14px
+    color: white
     margin-bottom: 0px
-    @media #{$mobile}
-      padding-bottom: 10px
-      line-height: 25px
     span
       @media #{$mobile}
         float: left!important
@@ -109,9 +40,9 @@ div.design
         width: 100%
         text-align: center
     span, a
-      font-size: 10px
-      color: #545454
-      font-weight: normal
+      font-size: 14px
+      color: white
+      font-weight: 400
       letter-spacing: 0px
       letter-spacing: 1px
       @media #{$mobile}
@@ -119,11 +50,13 @@ div.design
     a
       position: absolute
       right: 30px
+      font-size: 10px
       @media #{$mobile}
         position: static
         display: block
         width: 100%
-        margin-top: 0px
+        margin-top: 7.5px
+        float: left
 
 .right
   position: fixed
