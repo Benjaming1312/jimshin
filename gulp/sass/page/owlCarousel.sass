@@ -5,8 +5,22 @@
     transform: translateY(10px)
 
 .banner
-  img
+  height: 100vh
+  @media #{$mobile}
+    height: auto
+  .hidden-img
+    visibility: hidden
+    @media #{$mobile}
+      display: none
+  .hidden-xs
+    position: fixed
+    left: 0
+    top: 0
     width: 100%
+    height: 100%
+    background-size: cover!important
+    background-position: center top!important
+    background-repeat: no-repeat!important
   .banner-content
     position: relative
   .banner-img

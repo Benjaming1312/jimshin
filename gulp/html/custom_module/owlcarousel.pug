@@ -3,7 +3,8 @@
 .banner.container-fluid
 	.row
 		.col-xs-12.banner-content
-			img.img-responsive.hidden-xs(src=url + "banner.png", alt="")
+			img.img-responsive.hidden-img(src=url + "banner.png", alt="")
+			span.svg.banner-img.hidden-xs(style="background:url("+url+"banner.png);")
 			span.svg.banner-img.visible-xs(style="background:url("+url+"banner.png);")
 			.content(data-aos="fade-up" data-aos-delay="500")
 				span.svg(style="background:url("+url+"logo.svg); width: 485px; height: 75px;")

@@ -37,8 +37,33 @@ $(function () {
 
     baiduInit()
     aosInit()
-  }, 5000)
+  }, 1000)
   gotop()
+
+  $(window).scroll(function () {
+    setTimeout(() => {
+      console.log('%c (／‵Д′)／~ ╧╧ scroll : ', 'padding: .25rem; font-size: 14px; background: #12bdba; color: #fff')
+      const top = $(window).scrollTop()
+      const sectionTop = $('#section-1').offset().top
+      if (top > sectionTop) {
+        return
+      }
+      
+      const top_sectionTop = top - sectionTop
+      if (Math.abs(top_sectionTop) > 600) {
+        $('.linear-gradient').attr('style', `opacity: 0;`)
+        return
+      }
+      // if (Math.abs(top_sectionTop) > 150) {
+      //   $('.linear-gradient').attr('style', `opacity: .9;`)
+      //   return
+      // }
+
+      const calc_top_sectionTop_reverse = (1000 - Math.abs(top_sectionTop)) / 1000
+      console.log('%c (／‵Д′)／~ ╧╧ abs_top_sectionTop : ', 'padding: .25rem; font-size: 14px; background: #12bdba; color: #fff', [calc_top_sectionTop_reverse, top_sectionTop])
+      $('.linear-gradient').attr('style', `opacity: ${calc_top_sectionTop_reverse};`)
+    })
+  })
 
   // Nav scroll
   $('#myNavbar li a').click(function () {
