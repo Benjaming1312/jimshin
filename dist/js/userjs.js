@@ -101,11 +101,11 @@
 
     // const swiperJS = require('./swiper/index.js')
     // const scollFn = require('./scrollTrigger/index.js')
-    $('body').hide();
 
     $(function () {
+      $('body').hide();
       setTimeout(function () {
-        $('body').show();
+        $('body').fadeIn(700);
         // particles
         particlesJS.load('particles-js', './dist/static/particles.json', function () {});
 
