@@ -5,17 +5,18 @@
   margin-top: -2px
   @media #{$mobile}
     padding-bottom: 30px
-  &::before
+  .linear-gradient
     content: ''
     display: block
     width: 105%
     height: 350px
-    background: url(#{$url}section-1-mask.png) center center repeat-x
-    background-size: 100% 100%
     position: absolute
     top: 0
     left: -2.5%
     z-index: 1
+    +trans
+  .linear-gradient
+	  background-image: linear-gradient(to bottom, #000410, rgba(#000410, 0))
   .row
     position: relative
     z-index: 2
@@ -23,7 +24,7 @@
     margin: 0 auto
   p
     text-align: center
-    font-size: 17px
+    font-size: 16px
     font-weight: 500
     line-height: 35px
     color: #231815

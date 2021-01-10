@@ -114,6 +114,17 @@
       aosInit();
       gotop();
 
+      // Nav scroll
+      $('#myNavbar li a').click(function () {
+        var target = $(this).data('scroll');
+        console.log('%c (／‵Д′)／~ ╧╧  : ', 'padding: .25rem; font-size: 14px; background: #12bdba; color: #fff', target);
+        scrollTo(target);
+
+        if ($(window).width() < 768) {
+          $('.navbar-toggle').click();
+        }
+      });
+
       // banner scroll
       $('.banner .scroll').click(function () {
         scrollTo('section-1');
