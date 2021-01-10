@@ -4,7 +4,8 @@ module.exports = function () {
 
     setTimeout(() => {
       AOS.init({
-        once: true
+        once: true,
+        duration: 700
       })
     })
   }, 1000);

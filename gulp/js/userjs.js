@@ -31,6 +31,9 @@ $('body').hide()
 $(function () {
   setTimeout(() => {
     $('body').show()
+    // particles
+    particlesJS.load('particles-js', './dist/static/particles.json', function() {
+    })
 
     baiduInit()
   })

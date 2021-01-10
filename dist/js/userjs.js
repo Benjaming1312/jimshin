@@ -19,7 +19,8 @@
 
         setTimeout(function () {
           AOS.init({
-            once: true
+            once: true,
+            duration: 700
           });
         });
       }, 1000);
@@ -98,6 +99,8 @@
     $(function () {
       setTimeout(function () {
         $('body').show();
+        // particles
+        particlesJS.load('particles-js', './dist/static/particles.json', function () {});
 
         baiduInit();
       });
