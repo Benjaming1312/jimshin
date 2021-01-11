@@ -111,7 +111,7 @@
 
         baiduInit();
         aosInit();
-      }, 1000);
+      }, 5000);
       gotop();
 
       $(window).scroll(function () {
