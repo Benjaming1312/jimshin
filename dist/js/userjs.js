@@ -128,10 +128,6 @@
             $('.linear-gradient').attr('style', "opacity: 0;");
             return;
           }
-          // if (Math.abs(top_sectionTop) > 150) {
-          //   $('.linear-gradient').attr('style', `opacity: .9;`)
-          //   return
-          // }
 
           var calc_top_sectionTop_reverse = (1000 - Math.abs(top_sectionTop)) / 1000;
           console.log('%c (／‵Д′)／~ ╧╧ abs_top_sectionTop : ', 'padding: .25rem; font-size: 14px; background: #12bdba; color: #fff', [calc_top_sectionTop_reverse, top_sectionTop]);
