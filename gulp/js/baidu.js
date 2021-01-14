@@ -5,7 +5,6 @@ module.exports = function () {
 //创建和初始化地图函数：
 function initMap(){
   if (!BMap) {
-    console.log('%c (／‵Д′)／~ ╧╧ not BMap : ', 'padding: .25rem; font-size: 14px; background: #12bdba; color: #fff')
     setTimeout(() => {
       initMap()
     }, 1000);
