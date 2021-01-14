@@ -1,12 +1,14 @@
 .idx.section-2
   position: relative
-  padding-top: 150px
   margin-top: -2px
-  padding-bottom: 115px
   background: white
+  display: flex
+  align-items: center
+  height: 100vh
   @media #{$mobile}
     padding-bottom: 30px
     padding-top: 30px
+    height: auto
   &::before
     content: ''
     display: block
@@ -21,6 +23,13 @@
   .row
     max-width: 1050px
     margin: 0 auto
+  .col-sm-12
+    .module-title
+      text-align: center
+      &::after
+        margin: 0 auto
+        margin-top: 40px
+        margin-bottom: 50px
   .module-title
     text-align: left
     &::after
@@ -33,9 +42,13 @@
         max-width: 90%
   .info
     padding-right: 30px
-    padding-top: 70px
+    padding-top: 0px
     @media #{$mobile}
       padding-top: 30px
+    .module-title
+      margin-bottom: 40px
+      &::after
+        display: none
     p
       position: relative
       padding-left: 25px
@@ -50,6 +63,16 @@
         position: absolute
         top: 7.5px
         left: 0
+  .svg.scroll
+    margin: 0 auto
+    display: block
+    margin-top: 30px
+    animation-name: scrollTo
+    animation-duration: 1s
+    animation-fill-mode: both
+    animation-direction: alternate
+    animation-iteration-count: infinite
+    cursor: pointer
   .form
     @media #{$mobile}
       margin-top: 60px
@@ -62,6 +85,7 @@
       flex-wrap: nowrap
       @media #{$mobile}
         flex-wrap: wrap
+        padding-bottom: 7.5px
       label
         width: 120px
         font-size: 14px
@@ -69,6 +93,7 @@
         color: #595757
         position: relative
         top: 5px
+        z-index: 999
         @media #{$mobile}
           width: 100%
           margin-bottom: 7.5px

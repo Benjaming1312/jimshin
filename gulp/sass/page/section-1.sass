@@ -5,8 +5,13 @@
   margin-top: -2px
   +trans
   transition-duration: 1s
+  display: flex
+  align-items: center
+  padding: 0
   @media #{$mobile}
     padding-bottom: 30px
+    flex-wrap: wrap
+    width: 100%
 .idx.section-1
   &::before
     @media #{$mobile}
@@ -44,6 +49,9 @@
     z-index: 100000
     max-width: 850px
     margin: 0 auto
+    @media #{$mobile}
+      padding-left: 30px
+      padding-right: 30px
   p
     text-align: center
     font-size: 16px
@@ -51,7 +59,13 @@
     line-height: 35px
     color: #231815
     &.en-content
-      display: none
+      overflow: hidden
+      height: 0
+      +trans
+      transition-duration: 700s
+      font-family: 'sans-serif'
+      &.active
+        height: auto
   .readmore
     margin-top: 60px
     a
@@ -59,6 +73,16 @@
       +trans
       &:hover
         opacity: 0.7
+  .svg.scroll
+    margin: 0 auto
+    display: block
+    margin-top: 30px
+    animation-name: scrollTo
+    animation-duration: 1s
+    animation-fill-mode: both
+    animation-direction: alternate
+    animation-iteration-count: infinite
+    cursor: pointer
 #particles-js
   position: absolute
   top: 0

@@ -1,5 +1,5 @@
 nav.navbar.navbar
-  position: absolute
+  position: fixed
   top: 0
   left: 0
   width: 100%
@@ -23,6 +23,7 @@ nav.navbar.navbar
       overflow: hidden
       +trans
       color: white
+      padding: 0
       &::after
         content: ''
         display: block
@@ -37,7 +38,7 @@ nav.navbar.navbar
       &:hover,
       &:focus
         background: none
-        color: #fca313
+        color: #fca313!important
         &::after
           transform: translateX(0)
   .navbar-toggle
