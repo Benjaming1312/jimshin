@@ -45,11 +45,14 @@ $(function () {
       const top = $(window).scrollTop()
       const sectionTop = $('#section-1').offset().top
       const section1Bottom = $('#section-1').offset().top + $('#section-1').height()
-      if (top > (section1Bottom - 300)) {
-        $('.nav a').css('color', '#fca313')
-      }
-      else {
-        $('.nav a').css('color', 'white')
+
+      if ($(window).width() > 768) {
+        if (top > (section1Bottom - 300)) {
+          $('.nav a').css('color', '#fca313')
+        }
+        else {
+          $('.nav a').css('color', 'white')
+        }
       }
 
       if (top > sectionTop) {

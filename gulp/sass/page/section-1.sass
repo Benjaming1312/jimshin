@@ -12,6 +12,7 @@
     padding-bottom: 30px
     flex-wrap: wrap
     width: 100%
+    height: auto!important
 .idx.section-1
   &::before
     @media #{$mobile}
@@ -52,6 +53,7 @@
     @media #{$mobile}
       padding-left: 30px
       padding-right: 30px
+      width: 100%
   p
     text-align: center
     font-size: 16px
@@ -68,6 +70,8 @@
         height: auto
   .readmore
     margin-top: 60px
+    @media #{$mobile}
+      margin-top: 30px
     a
       cursor: pointer
       +trans
@@ -83,6 +87,8 @@
     animation-direction: alternate
     animation-iteration-count: infinite
     cursor: pointer
+    @media #{$mobile}
+      margin-top: 0
 #particles-js
   position: absolute
   top: 0

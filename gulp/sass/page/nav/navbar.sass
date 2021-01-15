@@ -11,9 +11,12 @@ nav.navbar.navbar
   background: none
   @media #{$mobile}
     padding: 0
-    z-index: 99999
+    z-index: 999999
   li
     margin: 0 30px
+    @media #{$mobile}
+      margin-left: 50px
+      margin-bottom: 15px
     &:last-child
       margin-right: 0
     a
@@ -68,6 +71,7 @@ nav.navbar.navbar
       background: rgba(#ccc, 1)
       +trans
       padding-left: 60px
+      padding-top: 20px
       filter: drop-shadow(7px 7px 5px rgba(#000, .3))
       z-index: 99
       transform: translateX(-100%)
