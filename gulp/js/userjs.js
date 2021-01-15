@@ -35,7 +35,7 @@ $(function () {
     particlesJS.load('particles-js', './dist/static/particles.json', function() {
     })
 
-    baiduInit()
+    // baiduInit()
     aosInit()
   }, 5000)
   gotop()
