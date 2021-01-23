@@ -82,6 +82,74 @@
       map.addControl(ctrl_sca);
     }
   }, {}], 3: [function (require, module, exports) {
+    module.exports = function () {
+      var app = new Vue({
+        el: '#form',
+        data: {
+          loading: false,
+          form: {
+            name: '',
+            number: '',
+            email: '',
+            message: ''
+          },
+          warning: {
+            name: false,
+            number: false,
+            email: false,
+            message: false
+          }
+        },
+        methods: {
+          submit: function submit() {
+            var _this = this;
+
+            if (this.loading) {
+              // now loading
+              return;
+            }
+
+            this.loading = true;
+            var formKeys = Object.keys(this.form);
+            for (var i = 0; i < formKeys.length; i++) {
+              var key = formKeys[i];
+              if (!this.form[key]) {
+                this.warning[key] = true;
+              } else {
+                this.warning[key] = false;
+              }
+            }
+            // Any error
+            if (Object.values(this.warning).some(function (err) {
+              return err;
+            })) {
+              console.log('%c (／‵Д′)／~ ╧╧ any error : ', 'padding: .25rem; font-size: 14px; background: #12bdba; color: #fff', Object.entries(this.warning));
+              return;
+            }
+
+            var data = {
+              name: this.form.name,
+              number: this.form.number,
+              mail: this.form.email,
+              message: this.form.message
+            };
+
+            axios.post('/send', { data: data }).then(function () {
+              console.log('send mail succuss');
+              setTimeout(function () {
+                _this.loading = false;
+              }, 5000);
+            }).catch(function (e) {
+              console.error(e);
+              setTimeout(function () {
+                _this.loading = false;
+              }, 5000);
+            });
+          }
+        }
+      });
+    };
+  }, {}], 4: [function (require, module, exports) {
     // $(function () {
     //     // owlcarouselfn('.banner .row .col-xs-12', false, true)
     // })
@@ -107,6 +175,7 @@
     // const footer = require('./footer.js')
 
     var baiduInit = require('./baidu.js');
+    var contact = require('./contact.js');
 
     // const swiperJS = require('./swiper/index.js')
     // const scollFn = require('./scrollTrigger/index.js')
@@ -119,8 +188,10 @@
         particlesJS.load('particles-js', './dist/static/particles.json', function () {});
 
         baiduInit();
+        contact();
         aosInit();
-      }, 5000);
+        // }, 5000)
+      });
       gotop();
 
       $(window).scroll(function () {
@@ -212,7 +283,7 @@
     // $(function () {
     //   es6()
     // })
-  }, { "./aos": 1, "./baidu.js": 2, "./scrollTo": 4 }], 4: [function (require, module, exports) {
+  }, { "./aos": 1, "./baidu.js": 2, "./contact.js": 3, "./scrollTo": 5 }], 5: [function (require, module, exports) {
     // $(function () {
     //     $('.gotop a').on('click', function () {
     //         $('html, body').animate({
@@ -242,5 +313,5 @@
         }, 1000);
       });
     };
-  }, {}] }, {}, [3]);
+  }, {}] }, {}, [4]);
 //# sourceMappingURL=userjs.js.map

@@ -23,6 +23,7 @@ const gotop = require('./scrollTo')
 // const footer = require('./footer.js')
 
 const baiduInit = require('./baidu.js')
+const contact = require('./contact.js')
 
 // const swiperJS = require('./swiper/index.js')
 // const scollFn = require('./scrollTrigger/index.js')
@@ -36,8 +37,10 @@ $(function () {
     })
 
     baiduInit()
+    contact()
     aosInit()
-  }, 5000)
+  // }, 5000)
+  })
   gotop()
 
   $(window).scroll(function () {

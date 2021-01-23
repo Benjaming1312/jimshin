@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <!-- Bootstrap-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css"/>
-    <!-- aos--><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- aos--><link rel="stylesheet" href="./dist/css/aos.css" />
+<script src="./dist/js/aos.js"></script>
     <!-- 百度地圖--><script type="text/javascript" src="//api.map.baidu.com/api?v=2.0&ak=lrSQmwV5PzYtSPKPmxWMCBoBiDktp4uZ"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/vue"></script>
-    <!-- particles--><script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.js" integrity="sha512-FG4FmjLeSvZ4T4WW7nwMqwA/sEzOn5l0jHjceT+N5UX/sTFaBgljBhFWpTRi+n4YuxIgvnokTX0IQ9ROE0Y0QA==" crossorigin="anonymous"></script>
+    <script src="./dist/js/jquery.min.js"></script>
+    <script src="./dist/js/bootstrap.min.js"></script>
+    <script src="./dist/js/vue.min.js"></script>
+    <!-- particles--><script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js" integrity="sha512-Kef5sc7gfTacR7TZKelcrRs15ipf7+t+n7Zh6mKNJbmW+/RRdCW9nwfLn4YX0s2nO6Kv5Y2ChqgIakaC6PW09A==" crossorigin="anonymous"></script>
+    <script src="./dist/js/axios.min.js"></script>
     <!-- user defined-->
     <!-- test scenario-->
     <link href="./dist/css/usercss.css" rel="stylesheet"/>
@@ -64,24 +65,24 @@
           <p data-aos="fade-up"><span class="svg" style="background:url(./dist/images/section-2-icon-1.svg); width: 15px; height: 15px;"></span><a href="mailto: info@hejidata.com">info@hejidata.com</a></p>
           <p data-aos="fade-up"><span class="svg" style="background:url(./dist/images/section-2-icon-2.svg); width: 15px; height: 15px;"></span><a href="https://j.map.baidu.com/79/sMs" target="_blank">上海市闵行区新龙路399弄1号上坤国际广场T4栋11层1102C室</a><br/>Unit 1102C, Floor 11, Building T4, No. 1, Lane 399, Xinlong Road, Minhang District, Shanghai</p>
         </div>
-        <div class="col-sm-6 col-xs-12 form" id="form">
-          <div class="form-group" data-aos="fade-up">
+        <div class="col-sm-6 col-xs-12 form" id="form" data-aos="fade-up">
+          <div class="form-group" :class="{warning: warning.name}">
             <label for="name">姓名 Name</label>
             <input class="form-control" id="name" type="text" v-model="form.name"/>
           </div>
-          <div class="form-group" data-aos="fade-up">
+          <div class="form-group" :class="{warning: warning.number}">
             <label for="number">电话 Number</label>
             <input class="form-control" id="number" type="text" v-model="form.number"/>
           </div>
-          <div class="form-group" data-aos="fade-up">
+          <div class="form-group" :class="{warning: warning.email}">
             <label for="email">电邮 E-mail</label>
             <input class="form-control" id="email" type="email" v-model="form.email"/>
           </div>
-          <div class="form-group" data-aos="fade-up">
+          <div class="form-group" :class="{warning: warning.message}">
             <label for="message">留言 Messages</label>
             <textarea class="form-control" id="message" rows="5" v-model="form.message"></textarea>
           </div>
-          <button class="svg" type="submit" @click="submit" style="background:url(./dist/images/sendmessage.svg); width: 151px; height: 29px;" data-aos="fade-up"></button>
+          <button class="svg" type="submit" @click="submit" style="background:url(./dist/images/sendmessage.svg); width: 151px; height: 29px;" data-aos="fade-up"></button><span class="glyphicon glyphicon-refresh" v-if="loading"></span>
         </div>
         <div class="col-xs-12 col-sm-12">
           <p class="text-center"><span class="svg scroll" style="background:url(./dist/images/arrow-blue.svg); width: 42px; height: 21px;"></span></p>

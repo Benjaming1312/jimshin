@@ -1,3 +1,8 @@
+@keyframes loading
+  0%
+    transform: rotate(0)
+  100%
+    transform: rotate(360deg)
 .idx.section-2
   position: relative
   margin-top: -2px
@@ -96,6 +101,9 @@
       @media #{$mobile}
         flex-wrap: wrap
         padding-bottom: 7.5px
+      &.warning
+        input, textarea
+          border-color: red
       label
         width: 120px
         font-size: 14px
@@ -117,9 +125,22 @@
       margin-left: 120px
       border: 0
       margin-top: 30px
+      outline: 0
       +trans
-      &:hover
+      &:hover,
+      &:active,
+      &:focus
         opacity: 0.7
       @media #{$mobile}
         margin-top: 15px
         margin-left: 0
+  .glyphicon
+    margin-left: 7.5px
+    position: relative
+    top: -5px
+    display: inline-block
+    animation-name: loading
+    animation-duration: 1s
+    animation-fill-mode: both
+    animation-direction: revert
+    animation-iteration-count: infinite
