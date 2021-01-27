@@ -30,7 +30,10 @@ const contact = require('./contact.js')
 
 $(function () {
   $('body').hide()
-  setTimeout(() => {
+
+  const img = new Image()
+  img.src = './dist/images/banner.png'
+  img.onload = function () {
     $('body').fadeIn(700)
     // particles
     particlesJS.load('particles-js', './dist/static/particles.json', function() {
@@ -38,9 +41,19 @@ $(function () {
 
     baiduInit()
     contact()
-    aosInit()
-  // }, 5000)
-  })
+    aosInit()    
+  }
+
+  // setTimeout(() => {
+  //   $('body').fadeIn(700)
+  //   // particles
+  //   particlesJS.load('particles-js', './dist/static/particles.json', function() {
+  //   })
+
+  //   baiduInit()
+  //   contact()
+  //   aosInit()
+  // }, 2000)
   gotop()
 
   $(window).scroll(function () {
@@ -128,6 +141,7 @@ function scrollTo (target) {
     scrollTop: top
   }, 1000)
 }
+
 
 // owlFn()
 

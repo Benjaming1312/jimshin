@@ -182,7 +182,10 @@
 
     $(function () {
       $('body').hide();
-      setTimeout(function () {
+
+      var img = new Image();
+      img.src = './dist/images/banner.png';
+      img.onload = function () {
         $('body').fadeIn(700);
         // particles
         particlesJS.load('particles-js', './dist/static/particles.json', function () {});
@@ -190,8 +193,18 @@
         baiduInit();
         contact();
         aosInit();
-        // }, 5000)
-      });
+      };
+
+      // setTimeout(() => {
+      //   $('body').fadeIn(700)
+      //   // particles
+      //   particlesJS.load('particles-js', './dist/static/particles.json', function() {
+      //   })
+
+      //   baiduInit()
+      //   contact()
+      //   aosInit()
+      // }, 2000)
       gotop();
 
       $(window).scroll(function () {
