@@ -79,7 +79,7 @@ gulp.task('styles',function(){
 
 //圖片壓縮
 gulp.task('image',function(){
-	gulp.src('gulp/img/compress/**')
+	gulp.src('gulp/img/**')
 			.pipe(gulpImagemin())
 			.pipe(gulp.dest('dist/images'))
 })

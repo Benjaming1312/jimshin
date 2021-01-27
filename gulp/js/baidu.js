@@ -25,13 +25,13 @@ function createMap(){
   var marker = new BMap.Marker(point);  // 创建标注
 	map.addOverlay(marker);               // 将标注添加到地图中
   // marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
-  var label = new BMap.Label("上海市闵行区新龙路399弄1号\n上坤国际广场T4栋11层1102C室",{offset:new BMap.Size(20,-10)});
-  label.setStyle({
-    maxWidth: 'initial',
-    width: '175px',
-    whiteSpace: 'break-spaces'
-  })
-	marker.setLabel(label);
+  // var label = new BMap.Label("上海市闵行区新龙路399弄1号\n上坤国际广场T4栋11层1102C室",{offset:new BMap.Size(20,-10)});
+  // label.setStyle({
+  //   maxWidth: 'initial',
+  //   width: '175px',
+  //   whiteSpace: 'break-spaces'
+  // })
+	// marker.setLabel(label);
   window.map = map;//将map变量存储在全局
 }
 
