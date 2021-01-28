@@ -38,6 +38,7 @@ div.design
     font-size: 14px
     color: white
     margin-bottom: 0px
+    position: relative
     span
       @media #{$mobile}
         float: left!important
@@ -52,11 +53,46 @@ div.design
       letter-spacing: 1px
       @media #{$mobile}
         line-height: 15px
-    a
+    .right
       position: absolute
-      right: 30px
+      right: 15px
+      display: flex
+      flex-wrap: nowrap
+      width: auto
+      @media #{$mobile}
+        position: static
+        display: block
+    .back-1
+      display: inline-flex
+      flex-wrap: nowrap
+      margin-right: 7.5px
+      @media #{$mobile}
+        justify-content: center
+        align-items: center
+        justify-content: center
+      a
+        font-size: 10px
+        @media #{$mobile}
+          width: auto
+          align-items: center
+          display: inline-flex
+        span
+          @media #{$mobile}
+            display: inline-block
+            width: auto
+      span
+        font-size: 10px
+        color: white
+        +trans
+    a
+      // position: absolute
+      // right: 30px
       font-size: 10px
+      display: inline-block
+      white-space: nowrap
       +trans
+      float: left
+
       @media #{$mobile}
         position: static
         display: block
@@ -65,6 +101,8 @@ div.design
         float: left
       &:hover
         color: deepskyblue
+        span
+          color: deepskyblue
 
 .right
   position: fixed
