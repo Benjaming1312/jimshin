@@ -68,25 +68,28 @@
         <div class="col-sm-6 col-xs-12 form" id="form" data-aos="fade-up">
           <div class="form-group" :class="{warning: warning.name}">
             <label for="name">姓名 Name</label>
-            <input class="form-control" id="name" type="text" v-model="form.name"/>
+            <input class="form-control" id="name" type="text" v-model="form.name" required="required"/>
           </div>
           <div class="form-group" :class="{warning: warning.number}">
             <label for="number">电话 Number</label>
-            <input class="form-control" id="number" type="text" v-model="form.number"/>
+            <input class="form-control" id="number" type="tel" v-model="form.number" required="required"/>
           </div>
           <div class="form-group" :class="{warning: warning.email}">
             <label for="email">电邮 E-mail</label>
-            <input class="form-control" id="email" type="email" v-model="form.email"/>
+            <input class="form-control" id="email" type="email" v-model="form.email" required="required"/>
           </div>
           <div class="form-group" :class="{warning: warning.message}">
             <label for="message">留言 Messages</label>
-            <textarea class="form-control" id="message" rows="5" v-model="form.message"></textarea>
+            <textarea class="form-control" id="message" rows="5" v-model="form.message" required="required"></textarea>
           </div>
           <button class="svg" type="submit" @click="submit" style="background:url(./dist/images/sendmessage.svg); width: 151px; height: 29px;" data-aos="fade-up"></button><span class="glyphicon glyphicon-refresh" v-if="loading"></span>
         </div>
         <div class="col-xs-12 col-sm-12">
           <p class="text-center"><span class="svg scroll" style="background:url(./dist/images/arrow-blue.svg); width: 42px; height: 21px;"></span></p>
         </div>
+      </div>
+      <div class="alert fade" role="alert" :class="successClass">
+        <p>{{alertMessage}}</p>
       </div>
     </div>
     <footer class="foot" id="foot">

@@ -41,7 +41,7 @@ app.post('/send', function (req, res) {
   }
 })
 
-app.listen(CONFIG.routePort, () => {
+app.listen(process.env.PORT || CONFIG.routePort, () => {
   // console.log('mail server run at :', CONFIG.routePort)
 })
 
@@ -51,7 +51,7 @@ function send(data) {
     from: CONFIG.mailFrom,
     to: CONFIG.mailTo,
     subject: CONFIG.mailSubject,
-    html: `<p>姓名 Name: &nbsp;&nbsp;${data.name}</p><p>电话 Number: &nbsp;&nbsp;<a href="tel:${Number(data.number)}">${Number(data.number)}</a></p><p>电邮 E-mail: &nbsp;&nbsp;${data.mail}</p><p>留言 Messages: <br>${data.message.replace(/(?:\r\n|\r|\n)/g, '<br>')}</p>`
+    html: `<p>姓名 Name: &nbsp;&nbsp;${data.name}</p><p>电话 Number: &nbsp;&nbsp;<a href="tel:${data.number}">${data.number}</a></p><p>电邮 E-mail: &nbsp;&nbsp;${data.mail}</p><p>留言 Messages: <br>${data.message.replace(/(?:\r\n|\r|\n)/g, '<br>')}</p>`
   }
 
   mailTransport.sendMail(temp, function (err) {

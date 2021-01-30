@@ -1,6 +1,6 @@
 module.exports = function () {
   const app = new Vue({
-    el: '#form',
+    el: '#section-2',
     data: {
       loading: false,
       form: {
@@ -14,9 +14,19 @@ module.exports = function () {
         number: false,
         email: false,
         message: false,
-      }
+      },
+      success: false,
+      successClass: '',
+      alertMessage: '',
+      phoneRegex: new RegExp(/^(\+\d{1,2}\s?)?1?\-?\.?\s?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/),
+      mailRegex: new RegExp(/[a-z0-9.-_]+@[a-z.]+/)
     },
     methods: {
+      closeAlert () {
+        setTimeout(() => {
+          this.successClass = ''
+        }, 3000)
+      },
       submit: function () {
         if (this.loading) {
           // now loading
@@ -24,6 +34,7 @@ module.exports = function () {
         }
 
         this.loading = true
+        this.success = false
         const formKeys = Object.keys(this.form)
         for (let i = 0 ; i < formKeys.length; i++) {
           const key = formKeys[i]
@@ -32,11 +43,22 @@ module.exports = function () {
           }
           else {
             this.warning[key] = false
+
+            if (key === 'number') {
+              this.warning[key] = !this.phoneRegex.test(this.form[key])
+            }
+
+            if (key === 'email') {
+              this.warning[key] = !this.mailRegex.test(this.form[key])
+            }
           }
         }
         // Any error
         if (Object.values(this.warning).some(err => err)) {
-          console.log('%c (／‵Д′)／~ ╧╧ any error : ', 'padding: .25rem; font-size: 14px; background: #12bdba; color: #fff', Object.entries(this.warning))
+          this.successClass = 'in alert-danger'
+          this.alertMessage = '资料填写未完全'
+          this.loading = false
+          this.closeAlert()
           return
         }
 
@@ -47,21 +69,26 @@ module.exports = function () {
           message: this.form.message
         }
 
-
         axios.post('/send', {data})
-        .then(() => {
-          console.log('send mail succuss')
-          setTimeout(() => {
-            this.loading = false
-          }, 5000);
-        })
-        .catch(e => {
-          console.error(e)
-          setTimeout(() => {
-            this.loading = false
-          }, 5000);
-        })
+          .then(() => {
+            setTimeout(() => {
+              console.log('send mail succuss')
+              this.loading = false
+              this.successClass = 'in alert-success'
+              this.alertMessage = '信件已送出'
+              this.closeAlert()
+            }, 5000);
+          })
+          .catch(e => {
+            setTimeout(() => {
+              console.error('error', e)
+              this.loading = false
+              this.successClass = 'in alert-success'
+              this.alertMessage = '信件已送出'
+              this.closeAlert()
+            }, 5000);
+          })
       }
-    },
+    }
   })
 }

@@ -19,18 +19,20 @@
     .col-sm-6.col-xs-12.form#form(data-aos="fade-up")
       .form-group(:class="{warning: warning.name}")
         label(for="name") 姓名 Name
-        input#name.form-control(type="text" v-model="form.name")
+        input#name.form-control(type="text" v-model="form.name" required)
       .form-group(:class="{warning: warning.number}")
         label(for="number") 电话 Number
-        input#number.form-control(type="text" v-model="form.number")
+        input#number.form-control(type="tel" v-model="form.number" required)
       .form-group(:class="{warning: warning.email}")
         label(for="email") 电邮 E-mail
-        input#email.form-control(type="email" v-model="form.email")
+        input#email.form-control(type="email" v-model="form.email" required)
       .form-group(:class="{warning: warning.message}")
         label(for="message") 留言 Messages
-        textarea#message.form-control(rows="5" v-model="form.message")
+        textarea#message.form-control(rows="5" v-model="form.message" required)
       button.svg(type="submit" @click="submit" style="background:url("+url+"sendmessage.svg); width: 151px; height: 29px;" data-aos="fade-up")
       span.glyphicon.glyphicon-refresh(v-if="loading")
     .col-xs-12.col-sm-12
       p.text-center
         span.svg.scroll(style="background:url("+url+"arrow-blue.svg); width: 42px; height: 21px;")
+  .alert.fade(role="alert" :class="successClass")
+    p {{alertMessage}}

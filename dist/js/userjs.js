@@ -84,7 +84,7 @@
   }, {}], 3: [function (require, module, exports) {
     module.exports = function () {
       var app = new Vue({
-        el: '#form',
+        el: '#section-2',
         data: {
           loading: false,
           form: {
@@ -98,11 +98,24 @@
             number: false,
             email: false,
             message: false
-          }
+          },
+          success: false,
+          successClass: '',
+          alertMessage: '',
+          phoneRegex: new RegExp(/^(\+\d{1,2}\s?)?1?\-?\.?\s?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/),
+          mailRegex: new RegExp(/[a-z0-9.-_]+@[a-z.]+/)
         },
         methods: {
-          submit: function submit() {
+          closeAlert: function closeAlert() {
             var _this = this;
+
+            setTimeout(function () {
+              _this.successClass = '';
+            }, 3000);
+          },
+
+          submit: function submit() {
+            var _this2 = this;
 
             if (this.loading) {
               // now loading
@@ -110,6 +123,7 @@
             }
 
             this.loading = true;
+            this.success = false;
             var formKeys = Object.keys(this.form);
             for (var i = 0; i < formKeys.length; i++) {
               var key = formKeys[i];
@@ -117,13 +131,24 @@
                 this.warning[key] = true;
               } else {
                 this.warning[key] = false;
+
+                if (key === 'number') {
+                  this.warning[key] = !this.phoneRegex.test(this.form[key]);
+                }
+
+                if (key === 'email') {
+                  this.warning[key] = !this.mailRegex.test(this.form[key]);
+                }
               }
             }
             // Any error
             if (Object.values(this.warning).some(function (err) {
               return err;
             })) {
-              console.log('%c (／‵Д′)／~ ╧╧ any error : ', 'padding: .25rem; font-size: 14px; background: #12bdba; color: #fff', Object.entries(this.warning));
+              this.successClass = 'in alert-danger';
+              this.alertMessage = '资料填写未完全';
+              this.loading = false;
+              this.closeAlert();
               return;
             }
 
@@ -135,14 +160,20 @@
             };
 
             axios.post('/send', { data: data }).then(function () {
-              console.log('send mail succuss');
               setTimeout(function () {
-                _this.loading = false;
+                console.log('send mail succuss');
+                _this2.loading = false;
+                _this2.successClass = 'in alert-success';
+                _this2.alertMessage = '信件已送出';
+                _this2.closeAlert();
               }, 5000);
             }).catch(function (e) {
-              console.error(e);
               setTimeout(function () {
-                _this.loading = false;
+                console.error('error', e);
+                _this2.loading = false;
+                _this2.successClass = 'in alert-success';
+                _this2.alertMessage = '信件已送出';
+                _this2.closeAlert();
               }, 5000);
             });
           }
