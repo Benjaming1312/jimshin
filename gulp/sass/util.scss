@@ -153,7 +153,7 @@ body{ font-family: '微軟正黑體', sans-serif;}
 .idx-banner .owl-dots .owl-dot span{ opacity:1; background:#fff; margin:0 7px;}
 .idx-banner .owl-dots .owl-dot.active span{ background:#0a4b91; }
 
-.home_module .about_us { background:url(/dist/images/about_img001.jpg) center no-repeat; background-size:cover; padding:40px 0;}
+.home_module .about_us { background:url(./dist/images/about_img001.jpg) center no-repeat; background-size:cover; padding:40px 0;}
 .home_module .about_us .outer{ max-width:1140px; margin:0 auto; display:flex; flex-wrap:wrap;align-items: center;}
 .home_module .about_us .outer .col01{ width:450px;}
 .home_module .about_us .outer .col02{ width:calc(100% - 450px);}
@@ -199,7 +199,7 @@ body{ font-family: '微軟正黑體', sans-serif;}
 .home_module .products .outer .item .box .action a:hover{ color:#0a4b91; text-decoration:none;}
 
 
-.home_module .brand_list{ background:url(/dist/images/brand_bg.jpg) center no-repeat; background-size:cover; border-top:10px solid #0a4b91; padding:35px 0 85px 0;}
+.home_module .brand_list{ background:url(./dist/images/brand_bg.jpg) center no-repeat; background-size:cover; border-top:10px solid #0a4b91; padding:35px 0 85px 0;}
 .home_module .brand_list .outer{ max-width:1200px; margin:0 auto;}
 .home_module .brand_list .outer .title{ text-align:center; position:relative; margin-bottom:20px;}
 .home_module .brand_list .outer .title:after{ content:''; position:absolute; width:144px; height:2px; background:#0a4b91; left:calc(50% - 72px); bottom:-10px; }
@@ -214,9 +214,9 @@ body{ font-family: '微軟正黑體', sans-serif;}
 	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
 }
 .home_module .brand_list .outer .brand_slider .swiper-wrapper .swiper-slide .box img{ max-width:100%;}
-.home_module .brand_list .outer .brand_slider .swiper-button-next{ right:0; background:url(/dist/images/slider_arrow_right.svg) center no-repeat;}
+.home_module .brand_list .outer .brand_slider .swiper-button-next{ right:0; background:url(./dist/images/slider_arrow_right.svg) center no-repeat;}
 .home_module .brand_list .outer .brand_slider .swiper-button-next:after{ content:'';}
-.home_module .brand_list .outer .brand_slider .swiper-button-prev{ left:0;background:url(/dist/images/slider_arrow_left.svg) center no-repeat;}
+.home_module .brand_list .outer .brand_slider .swiper-button-prev{ left:0;background:url(./dist/images/slider_arrow_left.svg) center no-repeat;}
 .home_module .brand_list .outer .brand_slider .swiper-button-prev:after{ content:'';}
 
 
@@ -288,13 +288,13 @@ body{ font-family: '微軟正黑體', sans-serif;}
 .detail_div .outer .company_list .item a{ color: #3e3a39;}
 .detail_div .outer .company_list .item .company_name{ font-size:24px; font-weight:800; margin-bottom:15px;color: #0a4b91;}
 .detail_div .outer .company_list .item .company_tel{display:flex; flex-wrap:wrap; align-items:center; line-height:30px; margin-bottom:10px; }
-.detail_div .outer .company_list .item .company_tel i{ background-image:url(/dist/images/icon_phone_white.svg);}
+.detail_div .outer .company_list .item .company_tel i{ background-image:url(./dist/images/icon_phone_white.svg);}
 .detail_div .outer .company_list .item .company_fax{display:flex; flex-wrap:wrap; align-items:center; margin-bottom:10px; }
-.detail_div .outer .company_list .item .company_fax i{ background-image:url(/dist/images/icon_fax_white.svg);}
+.detail_div .outer .company_list .item .company_fax i{ background-image:url(./dist/images/icon_fax_white.svg);}
 .detail_div .outer .company_list .item .company_mail{display:flex; flex-wrap:wrap; align-items:center; margin-bottom:10px; }
-.detail_div .outer .company_list .item .company_mail i{ background-image:url(/dist/images/icon_mail_white_02.svg);}
+.detail_div .outer .company_list .item .company_mail i{ background-image:url(./dist/images/icon_mail_white_02.svg);}
 .detail_div .outer .company_list .item .company_address{display:flex; flex-wrap:wrap; align-items:center; margin-bottom:10px; }
-.detail_div .outer .company_list .item .company_address i{ background-image:url(/dist/images/icon_location_white.svg);}
+.detail_div .outer .company_list .item .company_address i{ background-image:url(./dist/images/icon_location_white.svg);}
 .detail_div .outer .company_list .item .map{ margin-top:20px;}
 .detail_div .outer .company_list .item .map iframe{ width:100%; height:300px;filter: grayscale(0%);transition: 0.5s ease;}
 .detail_div .outer .company_list .item .map iframe:hover{filter: grayscale(100%);}
