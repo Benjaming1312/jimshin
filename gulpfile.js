@@ -56,7 +56,6 @@ gulp.task('scripts',function(){
 				sourceRoot: 'gulp/js'
 			}))
 			.pipe(gulp.dest('dist/js')) //輸出路徑
-			.pipe(gulp.dest('./backend/dist/js'))
 			.pipe(connect.reload())
 })
 
@@ -72,7 +71,6 @@ gulp.task('styles',function(){
 					includeContent: false,
 					sourceRoot: 'gulp/sass'
 			})) //sourceMap寫入在一樣的地方  
-			.pipe(gulp.dest('./backend/dist/css'))
 			.pipe(gulp.dest('dist/css/')) //翻譯後的路徑
 			.pipe(connect.reload())
 })
@@ -90,7 +88,6 @@ gulp.task('views',function(){
 			.pipe(plumber())
 			.pipe(pug({pretty: true}))
 			.pipe(gulp.dest('./'))
-			.pipe(gulp.dest('./backend'))
 			.pipe(connect.reload())
 })
 

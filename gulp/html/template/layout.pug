@@ -1,0 +1,49 @@
+- var url = './dist/'
+
+<!DOCTYPE html>
+html(lang="zh-hant")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha512-DUC8yqWf7ez3JD1jszxCWSVB0DMP78eOyBpMa5aJki1bIRARykviOuImIczkxlj1KhVSyS16w2FSQetkD4UU2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		// Bootstrap
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+		// font-awesome
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+		// Swiper
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.1.2/swiper-bundle.min.js" integrity="sha512-YwVwcoCpxYOLJeE6O+b1nzpao2knl8A1X71Z+UtJohpGM98p+wIB1SfzzI5iZbAs9IDNVHGQV57euFUiUtRxRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.1.2/swiper-bundle.min.css" integrity="sha512-mVBP1jI3ciijKmBuJHz4RfFBY25gQG5tT8rWqRoNZqtkaL4Rdyh6UZWqbRi30ULanGgqoj+owIpyZU4h00ctBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		// owlCarousel
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js")
+		// noto sans tc
+		link(rel="stylesheet", href="https://fonts.googleapis.com/earlyaccess/notosanstc.css")
+		// aos
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+		// test scenario
+		link(href="./dist/css/usercss.css", rel="stylesheet")
+		script(src="./dist/js/userjs.js")
+		
+		// favico
+		link(rel="SHORTCUT ICON", href="./dist/images/favico.ico" type="image/x-icon")
+		link(rel="Bookmark", href="./dist/images/favico.ico")
+
+		title 錦欣貿易股份有限公司 
+	body
+		include ../custom_module/head.html
+		//- include ../custom_module/owlcarousel.pug
+
+		.main
+			block content
+		<button class="toggle_btn">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+		include ../custom_module/foot.html

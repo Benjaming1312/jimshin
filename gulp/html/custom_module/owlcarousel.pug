@@ -1,11 +1,15 @@
 - var url = './dist/images/'
 
-.banner.container-fluid#banner
-	.row
-		.col-xs-12.banner-content
-			//- img.img-responsive.hidden-img(src=url + "banner.png", alt="")
-			span.svg.banner-img(style="background:url("+url+"banner.png);")
-			//- span.svg.banner-img.visible-xs(style="background:url("+url+"banner.png);")
-			.content(data-aos="fade-up" data-aos-delay="500")
-				span.svg(style="background:url("+url+"logo.svg); width: 485px; height: 75px;")
-			span.svg.scroll(style="background:url("+url+"arrow.svg); width: 42px; height: 21px;")
+// 電腦版 banner
+.idx-banner.owl-carousel.hidden-xs
+	.item
+		img.img-responsive(src=url + "banner.jpeg", alt="")
+	.item
+		img.img-responsive(src=url + "banner.jpeg", alt="")
+
+// 手機版版 banner
+.idx-banner.owl-carousel.visible-xs
+	.item
+		img.img-responsive(src=url + "banner-m.png", alt="")
+	.item
+		img.img-responsive(src=url + "banner-m.png", alt="")
