@@ -1,0 +1,45 @@
+<div class="header_banner" style="background-image:url(./dist/images/header_banner_001.jpg);">
+  <div class="info">
+    <h1>原料產品</h1>
+    <p>PCR PET/PETG</p>
+  </div>
+</div>
+<div class="detail_div product_detail">
+  <div class="outer">
+    <h2>COSPRO r-APET 聚酯瓶片<br>COSPRO r-APET Bottle Grade</h2>
+    <div class="img_list">
+      <div class="item"><img src="/ezfiles/828/1828/pictures/455/m/mczh-tw700x700_large7500.jpg"></div>
+      <div class="item"><img src="/ezfiles/828/1828/pictures/455/m/mczh-tw700x700_large7502.jpg"></div>&nbsp;
+    </div>
+    <p>該改性聚酯切片是通過化學法回收聚酯後製備而成的， 可應用於生產食品級或非食品級瓶用包裝容器等產品。</p>
+    <p>This r-APET chip is made from chemical recycled PET scrap, applicable to manufacture food grade or other plastic
+      bottle packaging. </p>
+    <h3><b>性能特點 PROPERTIES</b></h3>
+    <p class="big">粘度穩定 Excellent viscosity stability in operation</p>
+    <p class="big">耐熱性好 Good Heat resistance </p>
+    <p class="big">優良的加工性能 Excellent processability</p>
+    <p class="big">採用化學回收法，節能環保Chemical recycling, eco-friendly and saving energy</p>
+
+    <img src="./dist/images/p005.png" class="responsive initial">
+
+
+  </div>
+</div>
+<script>
+  $(function () {
+    $('body').addClass('body_detail');
+    $('body').addClass('body_product_detail');
+    if ($('.mlarge.mcarousel.vert.mfl').length > 0) {
+      if ($('.img_list').length > 0) {
+
+        var html = '';
+        $('.mlarge.mcarousel.vert.mfl .figBS').each(function (index, element) {
+          var img = $(this).find('img').attr('src');
+          html = html + '<div class="item"><img src="' + img + '"></div>';
+        });
+        $('.img_list').prepend(html);
+      }
+      $('.mlarge.mcarousel.vert.mfl').hide();
+    }
+  });
+</script>

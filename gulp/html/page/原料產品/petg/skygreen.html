@@ -1,0 +1,59 @@
+<div class="header_banner" style="background-image:url(./dist/images/header_banner_001.jpg);">
+  <div class="info">
+  <h1>原料產品</h1>
+  <p>PETG</p>
+  </div>
+  </div>
+  <div class="detail_div product_detail">
+  <div class="outer">
+  <h2>SkyGreen  S系列</h2>
+  <div class="img_list"><div class="item"><img src="/ezfiles/828/1828/pictures/713/m/mczh-tw700x700_large4377.jpg"></div>&nbsp;</div>
+  <ul class="product_detail_desc">
+    <li>
+        <div>特性 Features</div>
+          <div>自然色<br>
+               通過醫療包裝用途認證<br>
+               ISO 10993 （2003） • FDA DMF＃16525<br>
+               IS011607-1（2006） • USP VI類聚合物<br>
+               Natural color<br>
+               Approval for medical packaging uses<br>
+              ISO 10993 ( 2003 )   .  FDA DMF # 16525 <br>
+              ISO 11607-1 ( 2006 ) . USP  VI  class compounds
+          </div>
+       </li>
+    <li>
+        <div>應用範圍 Applications</div>
+          <div>板材及片材、注塑及擠吹成型、異型材料及擠吹容器 <br>
+          Film and sheet, injection and extrusion blow moulding, profile extrusion and extrusion blowed containers</div>
+      </li>
+    <li>
+        <div>應用實績 Application examples</div>
+          <div>醫療器械、包裝產品包裝 、吹瓶、收縮膜、透鏡片裝飾膜、透明盒、IC管、通過醫療包裝用途認證<br>
+              Medical equipment, bottles, shrink film, lenses decoration film, transparent  box, IC tube, articles which need medical use approval.
+          </div>  
+    </li>
+  </ul>    
+  
+  
+  </div>
+  </div>
+  <script>
+  $(function(){
+    $('body').addClass('body_detail');
+    $('body').addClass('body_product_detail');
+    if($('.mlarge.mcarousel.vert.mfl').length>0){
+      if($('.img_list').length>0){
+  
+        var html ='';
+        $('.mlarge.mcarousel.vert.mfl .figBS').each(function(index, element) {
+          var  img = $(this).find('img').attr('src');
+          html = html +'<div class="item"><img src="'+img+'"></div>';
+        });
+        $('.img_list').prepend(html);
+      }
+      $('.mlarge.mcarousel.vert.mfl').hide();
+    }
+  });
+  
+  
+  </script>

@@ -1,0 +1,43 @@
+<div class="header_banner" style="background-image:url(./dist/images/header_banner_001.jpg);">
+  <div class="info">
+    <h1>原料產品</h1>
+    <p>PCR PET/PETG</p>
+  </div>
+</div>
+<div class="detail_div product_detail">
+  <div class="outer">
+    <h2>COSPRO r-PET 薄膜/長纖<br>
+      COSPRO r-PET Film/ Fiber Grade</h2>
+    <div class="img_list">
+      <div class="item"><img src="/ezfiles/828/1828/pictures/742/m/mczh-tw700x700_large7499.jpg"></div>&nbsp;
+    </div>
+    <p>該聚酯切片是通過化學法回收聚酯後製備而成，具備雜質少，粘度穩定，透明 度高…等優點，主要應用於製作包裝容器、聚酯薄膜、紡織服裝…等。</p>
+    <p>This r-PET chip is made from chemical recycled PET scrap, contains very few impurity, with good viscosity
+      stability &amp; transparency, applicable to produce plastic container, PET film, textile &amp; garments etc. nts
+      etc.</p>
+    <h3><b>性能特點 PROPERTIES</b></h3>
+    <p class="big">粘度穩定 Excellent viscosity stability in operation</p>
+    <p class="big">亮度和透明度高 Good brightness &amp; transparency</p>
+    <p class="big">優良的加工性能 Excellent processability</p>
+    <p class="big">採用化學回收法，節能環保 Chemical recycling, eco-friendly and saving energy</p>
+    <img class="responsive initial" src="./dist/images/p003.png">
+  </div>
+</div>
+<script>
+  $(function () {
+    $('body').addClass('body_detail');
+    $('body').addClass('body_product_detail');
+    if ($('.mlarge.mcarousel.vert.mfl').length > 0) {
+      if ($('.img_list').length > 0) {
+
+        var html = '';
+        $('.mlarge.mcarousel.vert.mfl .figBS').each(function (index, element) {
+          var img = $(this).find('img').attr('src');
+          html = html + '<div class="item"><img src="' + img + '"></div>';
+        });
+        $('.img_list').prepend(html);
+      }
+      $('.mlarge.mcarousel.vert.mfl').hide();
+    }
+  });
+</script>

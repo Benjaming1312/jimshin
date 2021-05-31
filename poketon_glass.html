@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="zh-hant">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha512-DUC8yqWf7ez3JD1jszxCWSVB0DMP78eOyBpMa5aJki1bIRARykviOuImIczkxlj1KhVSyS16w2FSQetkD4UU2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Bootstrap--><script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <!-- Swiper--><script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.1.2/swiper-bundle.min.js" integrity="sha512-YwVwcoCpxYOLJeE6O+b1nzpao2knl8A1X71Z+UtJohpGM98p+wIB1SfzzI5iZbAs9IDNVHGQV57euFUiUtRxRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.1.2/swiper-bundle.min.css" integrity="sha512-mVBP1jI3ciijKmBuJHz4RfFBY25gQG5tT8rWqRoNZqtkaL4Rdyh6UZWqbRi30ULanGgqoj+owIpyZU4h00ctBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- owlCarousel-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+    <!-- noto sans tc-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanstc.css"/>
+    <!-- aos--><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- test scenario-->
+    <link href="./dist/css/usercss.css" rel="stylesheet"/>
+    <script src="./dist/js/userjs.js"></script>
+    <!-- favico-->
+    <link rel="SHORTCUT ICON" href="./dist/images/favico.ico" type="image/x-icon"/>
+    <link rel="Bookmark" href="./dist/images/favico.ico"/>
+    <title>錦欣貿易股份有限公司 </title>
+  </head>
+  <body><div class="header_div">
+  <div class="service_phone"><b><a href="tel:0222980132">服務專線:(02)2298-0132</a></b></div>
+  <div class="outer">
+    <div class="brand">
+      <a href="./"><img src="./dist/images/logo.svg"></a>
+    </div>
+    <div class="nav_menu">
+      <ul class="navi">
+        <li><a href="./#about_us">關於我們<br><small>ABOUT US</small></a></li>
+        <li><a href="javascript:;" class="had_submenu">原料產品<br><small>PRODUCTS</small></a>
+          <div class="dropdown wide">
+            <div class="box">
+              <div class="product_navi">
+                <div class="item">
+                  <div class="item_title"><a href="./petg_list.html">PETG</a></div>
+                  <div class="list_item">
+                    <a href="./petg_kkn.html">K/KN系列<br>(K/KN Series)</a>
+                    <a href="./petg_skygreen.html">S系列<br>(S Series)</a>
+                    <a href="./petg_skygreen_jn.html">JN系列<br>(JN Series)</a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_title"><a href="/m/412-1828-1471.php?Lang=zh-tw">PCTG</a></div>
+                  <div class="list_item">
+                    <a href="./">PN 系列<br>(PN Series)</a>
+                    <a href="/m/412-1828-1471.php?Lang=zh-tw">ECOZEN系列<br>(ECOZEN Series)</a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_title">功能性母粒(助劑)<br> Functional masterbatches</div>
+                  <div class="list_item">
+                    <a href="./">片材用<br>(Masterbatch for sheet)</a>
+                    <a href="./">定向拉伸膜和收縮膜用<br>(Masterbatch for oriented<br> film and
+                      shrink film)</a>
+                    <a href="./">生物基母粒<br>(Biobased masterbatch)</a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_title"><a href="/m/412-1828-1397.php?Lang=zh-tw">POKETONE(POK)</a></div>
+                  <div class="list_item">
+                    <a href="./">注塑用(一般級)<br>injection molding <br>(general grade)</a>
+                    <a href="./">注塑用(食品接觸)<br> injection molding <br>(FDA grade)</a>
+                    <a href="./">玻纖加強<br>POKETONE with Glass fiber</a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_title"><a href="/m/412-1828-1592.php?Lang=zh-tw">PCR PET/PETG (PET再生粒)</a></div>
+                  <div class="list_item">
+                    <a href="./">PCR r-PET 薄膜/長纖</a>
+                    <a href="./">PCR r-APET 聚酯瓶片</a>
+                    <a href="./">PCR r-PETG</a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_title"><a href="#">熱塑性彈性體</a></div>
+                  <div class="list_item">
+                    <a href="/m/412-1828-1607.php?Lang=zh-tw">三菱 MITSUBISHI<br>(TEFABLOC)</a>
+                    <a href="./">SK CHEMICALS </a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_title"><a href="#">聚氯乙烯 (PVC)</a></div>
+                  <div class="list_item">
+                    <a href="./">VINNOLIT</a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_title">醋酸纖維素(CA)</div>
+                  <div class="list_item">
+                    <a href="./">ROTUBA</a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_title">電子、工業用膠<br>(Adhesive)</div>
+                  <div class="list_item">
+                    <a href="#">CHEMTROS</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="javascript:;" class="had_submenu">品牌介紹<br><small>BRANDS</small></a>
+          <div class="dropdown wide">
+            <div class="box">
+              <div class="product_navi">
+                <div class="item">
+                  <div class="item_title">SK CHEMICALS</div>
+                  <div class="list_item">
+                    <a href="/m/412-1828-1398.php?Lang=zh-tw">PETG (SKYGREEN)</a>
+                    <a href="/m/412-1828-1471.php?Lang=zh-tw">PCTG (ECOZEN)</a>
+                    <a href="./">PPS (ECOTRAN)</a>
+                    <a href="./">TPEE (SKYPEL)</a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_title">SUKANO(蘇卡諾)</div>
+                  <div class="list_item">
+                    <a href="./">片材用<br>(masterbatch for sheet)</a>
+                    <a href="./">定向拉伸膜和收縮膜用<br>(Masterbatch for oriented<br> film and
+                      shrink film)</a>
+                    <a href="./">生物基母粒<br>(Biobased masterbatch)</a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_title">HYOSUNG(曉星)</div>
+                  <div class="list_item">
+                    <a href="/m/412-1828-1397.php?Lang=zh-tw">POKETONE(聚酮、POK)</a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_title">COSPRO</div>
+                  <div class="list_item">
+                    <a href="/m/412-1828-1592.php?Lang=zh-tw">PCR PET/PETG (GRS認證)</a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_title">MITSUBISHI(三菱)</div>
+                  <div class="list_item">
+                    <a href="/m/412-1828-1607.php?Lang=zh-tw#">TEFABLOC<br> (TPEE、TPS、 TPO 、TPO、TPV)</a>
+                    <a href="./">THERMORUN (TPO) </a>
+                    <a href="./">TREXPRENE (TPV) </a>
+                    <a href="./">DURABIO™</a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_title">VINNOLIT</div>
+                  <div class="list_item">
+                    <a href="./">PVC</a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_title">CHEMTROS</div>
+                  <div class="list_item">
+                    <a href="./">CCM攝像頭模組用膠<br>CCM module</a>
+                    <a href="./">披覆膠、灌封膠和散熱膠<br>Thermal glue</a>
+                    <a href="./">喇叭組裝用膠<br>speaker glue</a>
+                    <a href="./">電子零件固定用膠<br>Conformal Coating</a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_title">ROTUBA</div>
+                  <div class="list_item">
+                    <a href="./">醋酸纖維素(CA)</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="./office.html">服務據點<br><small>LOCATION</small></a></li>
+        <li><a href="./contact.html">聯絡我們<br><small>CONTACT US</small></a></li>
+        <li class="other">
+          <ul>
+            <li class="search">
+              <div class="search_div">
+                <form class="formBS" role="search" name="SearchMoForm" method="post"
+                  action="/bin/index.php?Plugin=mec&amp;Action=mobile_mecsearch/bin/index.php?Plugin=mec&amp;Action=mobile_mecsearch&amp;Lang=en">
+                  <div class="input-group">
+                    <button type="submit" class="btn"><img
+                        src="./dist/images/icon_search_gray.svg"></button>
+                    <input id="sch_key" name="SchKey" type="text" class="form-control" value="" placeholder="SEARCH">
+
+                  </div>
+                </form>
+              </div>
+            </li>
+            <li class="tw"><a href="/m/index.php?Lang=zh-tw">繁中</a></li>
+            <li class="en"><a href="/m/index.php?Lang=zh-cn">简体</a></li>
+          </ul>
+
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+    <div class="main"><div class="header_banner" style="background-image:url(./dist/images/header_banner_001.jpg);">
+  <div class="info">
+    <h1>原料產品</h1>
+    <p>POKETONE(POK)</p>
+  </div>
+</div>
+<div class="detail_div product_detail">
+  <div class="outer">
+    <h2>POKETONE 玻纖加強<br>
+      POKETONE with Glass fiber</h2>
+    <p>除了POKETONE原有優異的耐磨性、耐化性外，更滿足了客戶對於材料剛性的需求。</p>
+    <p>In addition to abrasion resistance and chemical resistance, POKETONE with glass fiber also satisfies customers'
+      needs for material rigidity.</p>
+    <div class="img_list">
+      <div class="item"><img src="/ezfiles/828/1828/pictures/794/m/mczh-tw700x700_large5151.jpg"></div>
+      <div class="item"><img src="/ezfiles/828/1828/pictures/794/m/mczh-tw700x700_large5231.jpg"></div>
+      <div class="product_detail_table">
+        <table border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse;" width="1000">
+          <tbody>
+            <tr style="height:22px;">
+              <td rowspan="3"
+                style="width: 198px; border-width: 1pt; border-style: solid; border-color: black; background: rgb(231, 230, 230); padding: 0cm 1.4pt; height: 22px;">
+                <p align="center" style="text-align:center;"><span style="font-family:微軟正黑體,sans-serif;"><span
+                      style="font-family:微軟正黑體,sans-serif;">項目</span></span></p>
+
+              </td>
+              <td rowspan="3"
+                style="width: 133px; border-top: 1pt solid black; border-right: 1pt solid black; border-bottom: 1pt solid black; border-left: none; background: rgb(231, 230, 230); padding: 0cm 1.4pt; height: 22px;">
+                <p align="center" style="text-align:center;"><span style="font-size:14px;"><span
+                      style="color:black;"><span style="font-family:微軟正黑體,sans-serif;">測試標準</span></span></span></p>
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">standard</span></span></p>
+              </td>
+              <td rowspan="3"
+                style="width: 80px; border-top: 1pt solid black; border-right: 1pt solid black; border-bottom: 1pt solid black; border-left: none; background: rgb(231, 230, 230); padding: 0cm 1.4pt; height: 22px;">
+                <p align="center" style="text-align:center;"><span style="font-size:14px;"><span
+                      style="color:black;"><span style="font-family:微軟正黑體,sans-serif;">單位</span></span></span></p>
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">Unit</span></span></p>
+              </td>
+              <td colspan="3"
+                style="width: 304px; border-top: 1pt solid black; border-right: 1pt solid black; border-bottom: 1pt solid black; border-left: none; background: rgb(231, 230, 230); padding: 0cm 1.4pt; height: 22px;">
+                <p align="center" style="text-align:center;"><span style="font-size:14px;"><span
+                      style="color:black;"><span style="font-family:微軟正黑體,sans-serif;">玻纖加強（工業用）</span></span></span>
+                </p>
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">POKETONE with Glass fiber</span></span></p>
+              </td>
+            </tr>
+            <tr style="height:22px;">
+              <td
+                style="width:93px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:#E7E6E6;padding:0cm 1.4pt 0cm 1.4pt;height:22px;">
+                <p align="center" style="text-align:center;"><span style="font-size:12px;"><span
+                      style="color:black;"><span style="font-family:微軟正黑體,sans-serif;">M33AG6A</span></span></span>
+                </p>
+              </td>
+              <td
+                style="width:115px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:#E7E6E6;padding:0cm 1.4pt 0cm 1.4pt;height:22px;">
+                <p align="center" style="text-align:center;"><span style="font-size:12px;"><span
+                      style="color:black;"><span style="font-family:微軟正黑體,sans-serif;">M93AG8H</span></span></span>
+                </p>
+              </td>
+              <td
+                style="width:96px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:#E7E6E6;padding:0cm 1.4pt 0cm 1.4pt;height:22px;">
+                <p align="center" style="text-align:center;"><span style="font-size:12px;"><span
+                      style="color:black;"><span style="font-family:微軟正黑體,sans-serif;">M93AG9A</span></span></span>
+                </p>
+              </td>
+            </tr>
+            <tr style="height:22px;">
+              <td
+                style="width:93px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:#E7E6E6;padding:0cm 1.4pt 0cm 1.4pt;height:22px;">
+                <p align="center" style="text-align:center;"><span style="font-size:12px;"><span
+                      style="color:black;"><span style="font-family:微軟正黑體,sans-serif;">GF30%</span></span></span></p>
+              </td>
+              <td
+                style="width:115px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:#E7E6E6;padding:0cm 1.4pt 0cm 1.4pt;height:22px;">
+                <p align="center" style="text-align:center;"><span style="font-size:12px;"><span
+                      style="color:black;"><span style="font-family:微軟正黑體,sans-serif;">GF40%</span></span></span></p>
+              </td>
+              <td
+                style="width:96px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;background:#E7E6E6;padding:0cm 1.4pt 0cm 1.4pt;height:22px;">
+                <p align="center" style="text-align:center;"><span style="font-size:12px;"><span
+                      style="color:black;"><span style="font-family:微軟正黑體,sans-serif;">GF50%</span></span></span></p>
+              </td>
+            </tr>
+            <tr style="height:24px;">
+              <td
+                style="width: 151px; border-right: 1pt solid black; border-bottom: 1pt solid black; border-left: 1pt solid black; border-top: none; padding: 0cm 1.4pt; height: 24px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;"><span id="cke_bm_459S"
+                        style="display: none;">&nbsp;</span>密度</span></span></p>
+              </td>
+              <td
+                style="width:115px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.4pt 0cm 1.4pt;height:24px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">ASTM D792</span></span></p>
+              </td>
+              <td
+                style="width:72px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.4pt 0cm 1.4pt;height:24px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">g/cm<sup>3</sup></span></span></p>
+              </td>
+              <td
+                style="width:93px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.4pt 0cm 1.4pt;height:24px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">1.46</span></span></p>
+              </td>
+              <td
+                style="width:115px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.4pt 0cm 1.4pt;height:24px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">1.54</span></span></p>
+              </td>
+              <td
+                style="width:96px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.4pt 0cm 1.4pt;height:24px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">1.67</span></span></p>
+              </td>
+            </tr>
+            <tr style="height:22px;">
+              <td
+                style="width: 151px; border-right: 1pt solid black; border-bottom: 1pt solid black; border-left: 1pt solid black; border-top: none; padding: 0cm 1.4pt; height: 22px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">拉伸強度</span></span></p>
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">Tensile strength</span></span></p>
+              </td>
+              <td
+                style="width:115px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.4pt 0cm 1.4pt;height:22px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">ASTM D638</span></span></p>
+              </td>
+              <td
+                style="width:72px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.4pt 0cm 1.4pt;height:22px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">MPa</span></span></p>
+              </td>
+              <td
+                style="width:93px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.4pt 0cm 1.4pt;height:22px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">140</span></span></p>
+              </td>
+              <td
+                style="width:115px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.4pt 0cm 1.4pt;height:22px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">165</span></span></p>
+              </td>
+              <td
+                style="width:96px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.4pt 0cm 1.4pt;height:22px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">180</span></span></p>
+              </td>
+            </tr>
+            <tr style="height:22px;">
+              <td
+                style="width: 151px; border-right: 1pt solid black; border-bottom: 1pt solid black; border-left: 1pt solid black; border-top: none; padding: 0cm 1.4pt; height: 22px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">斷裂伸長率</span></span></p>
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">Elongation at break</span></span></p>
+              </td>
+              <td
+                style="width:115px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.4pt 0cm 1.4pt;height:22px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">ASTM D638</span></span></p>
+              </td>
+              <td
+                style="width:72px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.4pt 0cm 1.4pt;height:22px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">%</span></span></p>
+              </td>
+              <td
+                style="width:93px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.4pt 0cm 1.4pt;height:22px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">4</span></span></p>
+              </td>
+              <td
+                style="width:115px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.4pt 0cm 1.4pt;height:22px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">2.5</span></span></p>
+              </td>
+              <td
+                style="width:96px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.4pt 0cm 1.4pt;height:22px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">2.2</span></span></p>
+              </td>
+            </tr>
+            <tr style="height:22px;">
+              <td
+                style="width: 151px; border-right: 1pt solid black; border-bottom: 1pt solid black; border-left: 1pt solid black; border-top: none; padding: 0cm 1.4pt; height: 22px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">彎曲強度</span></span></p>
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">Elongation at break</span></span></p>
+              </td>
+              <td
+                style="width:115px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.4pt 0cm 1.4pt;height:22px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">ASTM D790</span></span></p>
+              </td>
+              <td
+                style="width:72px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.4pt 0cm 1.4pt;height:22px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">MPa</span></span></p>
+              </td>
+              <td
+                style="width:93px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.4pt 0cm 1.4pt;height:22px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">190</span></span></p>
+              </td>
+              <td
+                style="width:115px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.4pt 0cm 1.4pt;height:22px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">215</span></span></p>
+              </td>
+              <td
+                style="width:96px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.4pt 0cm 1.4pt;height:22px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">230</span></span></p>
+              </td>
+            </tr>
+            <tr style="height:22px;">
+              <td
+                style="width: 151px; border-right: 1pt solid black; border-bottom: 1pt solid black; border-left: 1pt solid black; border-top: none; padding: 0cm 1.4pt; height: 22px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">彎曲模量</span></span></p>
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">Flexural modulus</span></span></p>
+              </td>
+              <td
+                style="width:115px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.4pt 0cm 1.4pt;height:22px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">ASTM D790</span></span></p>
+              </td>
+              <td
+                style="width:72px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.4pt 0cm 1.4pt;height:22px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">MPa</span></span></p>
+              </td>
+              <td
+                style="width:93px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.4pt 0cm 1.4pt;height:22px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">6,600</span></span></p>
+              </td>
+              <td
+                style="width:115px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.4pt 0cm 1.4pt;height:22px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">9,000</span></span></p>
+              </td>
+              <td
+                style="width:96px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.4pt 0cm 1.4pt;height:22px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">11,100</span></span></p>
+              </td>
+            </tr>
+            <tr style="height:63px;">
+              <td
+                style="width: 151px; border-right: 1pt solid black; border-bottom: 1pt solid black; border-left: 1pt solid black; border-top: none; padding: 0cm 1.4pt; height: 63px;">
+                <p align="center" style="text-align:center;">衝擊強度</p>
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">Notched Charpy&nbsp;</span></span></p>
+              </td>
+              <td
+                style="width:115px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.4pt 0cm 1.4pt;height:63px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">ISO 179/1eA</span></span></p>
+              </td>
+              <td
+                style="width:72px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.4pt 0cm 1.4pt;height:63px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">kJ/m<sup>2</sup></span></span></p>
+              </td>
+              <td
+                style="width:93px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.4pt 0cm 1.4pt;height:63px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">12</span></span></p>
+              </td>
+              <td
+                style="width:115px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.4pt 0cm 1.4pt;height:63px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">13</span></span></p>
+              </td>
+              <td
+                style="width:96px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.4pt 0cm 1.4pt;height:63px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">13</span></span></p>
+              </td>
+            </tr>
+            <tr style="height:22px;">
+              <td
+                style="width: 151px; border-right: 1pt solid black; border-bottom: 1pt solid black; border-left: 1pt solid black; border-top: none; padding: 0cm 1.4pt; height: 22px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">熔點</span></span></p>
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">Melting point</span></span></p>
+              </td>
+              <td
+                style="width:115px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.4pt 0cm 1.4pt;height:22px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">ASTM D3418</span></span></p>
+              </td>
+              <td
+                style="width:72px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.4pt 0cm 1.4pt;height:22px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">℃</span></span></p>
+              </td>
+              <td
+                style="width:93px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.4pt 0cm 1.4pt;height:22px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">222</span></span></p>
+              </td>
+              <td
+                style="width:115px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.4pt 0cm 1.4pt;height:22px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">222</span></span></p>
+              </td>
+              <td
+                style="width:96px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.4pt 0cm 1.4pt;height:22px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">222</span></span></p>
+              </td>
+            </tr>
+            <tr style="height:42px;">
+              <td
+                style="width: 151px; border-right: 1pt solid black; border-bottom: 1pt solid black; border-left: 1pt solid black; border-top: none; padding: 0cm 1.4pt; height: 42px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">熔融指數</span></span></p>
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">Melt Flow Index</span></span></p>
+                <p align="center" style="text-align:center;"><span
+                    style="font-size: 9pt; font-family: 微軟正黑體, sans-serif;"></span><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">(240</span>℃, 2.16kg)</span></p>
+              </td>
+              <td
+                style="width:115px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.4pt 0cm 1.4pt;height:42px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">ASTM D1238</span></span></p>
+              </td>
+              <td
+                style="width:72px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.4pt 0cm 1.4pt;height:42px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">g/10min</span></span></p>
+              </td>
+              <td
+                style="width:93px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.4pt 0cm 1.4pt;height:42px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">20</span></span></p>
+              </td>
+              <td
+                style="width:115px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.4pt 0cm 1.4pt;height:42px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">19</span></span></p>
+              </td>
+              <td
+                style="width:96px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.4pt 0cm 1.4pt;height:42px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">24</span></span></p>
+              </td>
+            </tr>
+            <tr style="height:42px;">
+              <td
+                style="width: 151px; border-right: 1pt solid black; border-bottom: 1pt solid black; border-left: 1pt solid black; border-top: none; padding: 0cm 1.4pt; height: 42px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">阻燃性</span></span></p>
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">flame retardance</span></span></p>
+                <p align="center" style="text-align:center;"><span
+                    style="font-size: 9pt; font-family: 微軟正黑體, sans-serif;"></span><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">(</span>厚度=0.8mm)</span></p>
+              </td>
+              <td
+                style="width:115px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.4pt 0cm 1.4pt;height:42px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">UL94</span></span></p>
+              </td>
+              <td
+                style="width:72px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.4pt 0cm 1.4pt;height:42px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">Class</span></span></p>
+              </td>
+              <td
+                style="width:93px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.4pt 0cm 1.4pt;height:42px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">HB</span></span></p>
+              </td>
+              <td
+                style="width:115px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.4pt 0cm 1.4pt;height:42px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">HB</span></span></p>
+              </td>
+              <td
+                style="width:96px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 1.4pt 0cm 1.4pt;height:42px;">
+                <p align="center" style="text-align:center;"><span style="color:black;"><span
+                      style="font-family:微軟正黑體,sans-serif;">HB</span></span></p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <span id="cke_bm_459E" style="display: none;">&nbsp;</span>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  $(function () {
+    $('body').addClass('body_detail');
+    $('body').addClass('body_product_detail');
+    if ($('.mlarge.mcarousel.vert.mfl').length > 0) {
+      if ($('.img_list').length > 0) {
+
+        var html = '';
+        $('.mlarge.mcarousel.vert.mfl .figBS').each(function (index, element) {
+          var img = $(this).find('img').attr('src');
+          html = html + '<div class="item"><img src="' + img + '"></div>';
+        });
+        $('.img_list').prepend(html);
+      }
+      $('.mlarge.mcarousel.vert.mfl').hide();
+    }
+  });
+</script>
+    </div><button class="toggle_btn">
+<span></span>
+<span></span>
+<span></span>
+</button><div class="footer_div">
+  <div class="links_div">
+    <div class="outer">
+      <div class="col01">
+        <div class="item">
+          <h3>公司簡介</h3>
+          <div class="link">
+            <div class="sub_item">
+              <a href="/m/index.php?Lang=zh-tw#about_us">關於我們</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <h3>服務據點</h3>
+          <div class="link">
+            <div class="sub_item">
+              <a href="/m/404-1828-8092.php?Lang=zh-tw#anchor01">台灣</a>
+              <a href="/m/404-1828-8092.php?Lang=zh-tw#anchor02">上海</a>
+              <a href="/m/404-1828-8092.php?Lang=zh-tw#anchor03">廣州</a>
+              <a href="/m/404-1828-8092.php?Lang=zh-tw#anchor04">越南</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <h3>原料產品</h3>
+          <div class="link">
+            <div class="sub_item">
+              <a href="/m/412-1828-1398.php?Lang=zh-tw">PETG</a>
+              <a href="/m/412-1828-1471.php?Lang=zh-tw">PCTG</a>
+              <a href="/m/412-1828-1607.php?Lang=zh-tw">熱塑性彈性體</a>
+              <a href="/m/404-1828-9305.php?Lang=zh-tw">PVC(聚氯乙烯)</a>
+            </div>
+            <div class="sub_item">
+              <a href="/m/404-1828-9304.php?Lang=zh-tw">醋酸纖維素(CA)</a>
+              <a href="/m/404-1828-9351.php?Lang=zh-tw">功能性母粒(助劑)</a>
+              <a href="/m/412-1828-1397.php?Lang=zh-tw">POKETONE(POK)</a>
+              <a href="/m/412-1828-1592.php?Lang=zh-tw">PCR PET (PET再生粒)</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <h3>品牌介紹</h3>
+          <div class="link">
+            <div class="sub_item">
+              <a href="/m/404-1828-9351.php?Lang=zh-tw">SK CHEMICALS</a>
+              <a href="/m/404-1828-9351.php?Lang=zh-tw">SUKANO(蘇卡諾)</a>
+              <a href="/m/412-1828-1397.php?Lang=zh-tw">HYOSUNG(曉星)</a>
+              <a href="/m/404-1828-9595.php?Lang=zh-tw">MITSUBISHI(三菱)</a>
+            </div>
+            <div class="sub_item">
+              <a href="/m/404-1828-9305.php?Lang=zh-tw">VINNOLIT</a>
+              <a href="/m/404-1828-9300.php?Lang=zh-tw">CHEMTROS</a>
+              <a href="/m/404-1828-9304.php?Lang=zh-tw">ROTUBA</a>
+              <a href="/m/412-1828-1592.php?Lang=zh-tw">COSPRO</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col02">
+        <div class="logo"><img src="./dist/images/logo.svg"></div>
+        <div class="company">
+          電話：<a href="tel:0222980132" target="_blank">02-2298-0132</a><br />
+          傳真：02-2298-0138<br />
+          E-mail：<a href="mailto:service@jimshin.com.tw" target="_blank">service@jimshin.com.tw</a><br />
+          地址：<a href="https://goo.gl/maps/WWAdbZt2cR8ByfEo8" target="_blank">24892 新北市新莊區五權一路3號3樓之12</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="info">
+    <span>2020 © 錦欣貿易股份有限公司 JimShin Trading Co., Ltd</span>
+    <a href="https://www.e-creation.com.tw/" target="_blank">DESIGN BY 藝創媒體</a>
+  </div>
+</div>
+
+<div id="mobile-body-overly"></div>
+<div id="mobile-nav" class="mobile_navi">
+  <div class="outer">
+    <a href="/m/index.php?Lang=zh-tw" class="brand"><img src="./dist/images/logo.svg"></a>
+    <ul class="navi_ul">
+
+    </ul>
+  </div>
+</div>
+
+
+<div class="float_div">
+  <a href="mailto:service@jimshin.com.tw" class="mailto" target="_blank"><img
+      src="./dist/images/icon_mail_white.svg"></a>
+  <a href="#top" class="gotop"><img src="./dist/images/icon_arrow_up_white.svg"></a>
+</div>
+
+<link rel="stylesheet" type="text/css" href="/ezfiles/828/1828/img/1084/aos.css" />
+<link rel="stylesheet" type="text/css" href="/ezfiles/828/1828/img/1084/swiper-bundle.css" />
+<link rel="stylesheet" type="text/css" href="/ezfiles/828/1828/img/1084/style.css" />
+
+
+<script type="text/javascript" src="/ezfiles/828/1828/img/1084/aos.js"></script>
+<script type="text/javascript" src="/ezfiles/828/1828/img/1084/swiper-bundle.js"></script>
+<script type="text/javascript" src="/ezfiles/828/1828/img/1084/script.js"></script>
+  </body>
+</html>

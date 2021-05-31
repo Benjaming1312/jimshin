@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="zh-hant">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha512-DUC8yqWf7ez3JD1jszxCWSVB0DMP78eOyBpMa5aJki1bIRARykviOuImIczkxlj1KhVSyS16w2FSQetkD4UU2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Bootstrap--><script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <!-- Swiper--><script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.1.2/swiper-bundle.min.js" integrity="sha512-YwVwcoCpxYOLJeE6O+b1nzpao2knl8A1X71Z+UtJohpGM98p+wIB1SfzzI5iZbAs9IDNVHGQV57euFUiUtRxRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.1.2/swiper-bundle.min.css" integrity="sha512-mVBP1jI3ciijKmBuJHz4RfFBY25gQG5tT8rWqRoNZqtkaL4Rdyh6UZWqbRi30ULanGgqoj+owIpyZU4h00ctBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- owlCarousel-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+    <!-- noto sans tc-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanstc.css"/>
+    <!-- aos--><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- test scenario-->
+    <link href="./dist/css/usercss.css" rel="stylesheet"/>
+    <script src="./dist/js/userjs.js"></script>
+    <!-- favico-->
+    <link rel="SHORTCUT ICON" href="./dist/images/favico.ico" type="image/x-icon"/>
+    <link rel="Bookmark" href="./dist/images/favico.ico"/>
+    <title>錦欣貿易股份有限公司 </title>
+  </head>
+  <body><div class="header_div">
+  <div class="service_phone"><b><a href="tel:0222980132">服務專線:(02)2298-0132</a></b></div>
+  <div class="outer">
+    <div class="brand">
+      <a href="./"><img src="./dist/images/logo.svg"></a>
+    </div>
+    <div class="nav_menu">
+      <ul class="navi">
+        <li><a href="./#about_us">關於我們<br><small>ABOUT US</small></a></li>
+        <li><a href="javascript:;" class="had_submenu">原料產品<br><small>PRODUCTS</small></a>
+          <div class="dropdown wide">
+            <div class="box">
+              <div class="product_navi">
+                <div class="item">
+                  <div class="item_title"><a href="./petg_list.html">PETG</a></div>
+                  <div class="list_item">
+                    <a href="./petg_kkn.html">K/KN系列<br>(K/KN Series)</a>
+                    <a href="./petg_skygreen.html">S系列<br>(S Series)</a>
+                    <a href="./petg_skygreen_jn.html">JN系列<br>(JN Series)</a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_title"><a href="/m/412-1828-1471.php?Lang=zh-tw">PCTG</a></div>
+                  <div class="list_item">
+                    <a href="./">PN 系列<br>(PN Series)</a>
+                    <a href="/m/412-1828-1471.php?Lang=zh-tw">ECOZEN系列<br>(ECOZEN Series)</a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_title">功能性母粒(助劑)<br> Functional masterbatches</div>
+                  <div class="list_item">
+                    <a href="./">片材用<br>(Masterbatch for sheet)</a>
+                    <a href="./">定向拉伸膜和收縮膜用<br>(Masterbatch for oriented<br> film and
+                      shrink film)</a>
+                    <a href="./">生物基母粒<br>(Biobased masterbatch)</a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_title"><a href="/m/412-1828-1397.php?Lang=zh-tw">POKETONE(POK)</a></div>
+                  <div class="list_item">
+                    <a href="./">注塑用(一般級)<br>injection molding <br>(general grade)</a>
+                    <a href="./">注塑用(食品接觸)<br> injection molding <br>(FDA grade)</a>
+                    <a href="./">玻纖加強<br>POKETONE with Glass fiber</a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_title"><a href="/m/412-1828-1592.php?Lang=zh-tw">PCR PET/PETG (PET再生粒)</a></div>
+                  <div class="list_item">
+                    <a href="./">PCR r-PET 薄膜/長纖</a>
+                    <a href="./">PCR r-APET 聚酯瓶片</a>
+                    <a href="./">PCR r-PETG</a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_title"><a href="#">熱塑性彈性體</a></div>
+                  <div class="list_item">
+                    <a href="/m/412-1828-1607.php?Lang=zh-tw">三菱 MITSUBISHI<br>(TEFABLOC)</a>
+                    <a href="./">SK CHEMICALS </a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_title"><a href="#">聚氯乙烯 (PVC)</a></div>
+                  <div class="list_item">
+                    <a href="./">VINNOLIT</a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_title">醋酸纖維素(CA)</div>
+                  <div class="list_item">
+                    <a href="./">ROTUBA</a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_title">電子、工業用膠<br>(Adhesive)</div>
+                  <div class="list_item">
+                    <a href="#">CHEMTROS</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="javascript:;" class="had_submenu">品牌介紹<br><small>BRANDS</small></a>
+          <div class="dropdown wide">
+            <div class="box">
+              <div class="product_navi">
+                <div class="item">
+                  <div class="item_title">SK CHEMICALS</div>
+                  <div class="list_item">
+                    <a href="/m/412-1828-1398.php?Lang=zh-tw">PETG (SKYGREEN)</a>
+                    <a href="/m/412-1828-1471.php?Lang=zh-tw">PCTG (ECOZEN)</a>
+                    <a href="./">PPS (ECOTRAN)</a>
+                    <a href="./">TPEE (SKYPEL)</a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_title">SUKANO(蘇卡諾)</div>
+                  <div class="list_item">
+                    <a href="./">片材用<br>(masterbatch for sheet)</a>
+                    <a href="./">定向拉伸膜和收縮膜用<br>(Masterbatch for oriented<br> film and
+                      shrink film)</a>
+                    <a href="./">生物基母粒<br>(Biobased masterbatch)</a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_title">HYOSUNG(曉星)</div>
+                  <div class="list_item">
+                    <a href="/m/412-1828-1397.php?Lang=zh-tw">POKETONE(聚酮、POK)</a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_title">COSPRO</div>
+                  <div class="list_item">
+                    <a href="/m/412-1828-1592.php?Lang=zh-tw">PCR PET/PETG (GRS認證)</a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_title">MITSUBISHI(三菱)</div>
+                  <div class="list_item">
+                    <a href="/m/412-1828-1607.php?Lang=zh-tw#">TEFABLOC<br> (TPEE、TPS、 TPO 、TPO、TPV)</a>
+                    <a href="./">THERMORUN (TPO) </a>
+                    <a href="./">TREXPRENE (TPV) </a>
+                    <a href="./">DURABIO™</a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_title">VINNOLIT</div>
+                  <div class="list_item">
+                    <a href="./">PVC</a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_title">CHEMTROS</div>
+                  <div class="list_item">
+                    <a href="./">CCM攝像頭模組用膠<br>CCM module</a>
+                    <a href="./">披覆膠、灌封膠和散熱膠<br>Thermal glue</a>
+                    <a href="./">喇叭組裝用膠<br>speaker glue</a>
+                    <a href="./">電子零件固定用膠<br>Conformal Coating</a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_title">ROTUBA</div>
+                  <div class="list_item">
+                    <a href="./">醋酸纖維素(CA)</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="./office.html">服務據點<br><small>LOCATION</small></a></li>
+        <li><a href="./contact.html">聯絡我們<br><small>CONTACT US</small></a></li>
+        <li class="other">
+          <ul>
+            <li class="search">
+              <div class="search_div">
+                <form class="formBS" role="search" name="SearchMoForm" method="post"
+                  action="/bin/index.php?Plugin=mec&amp;Action=mobile_mecsearch/bin/index.php?Plugin=mec&amp;Action=mobile_mecsearch&amp;Lang=en">
+                  <div class="input-group">
+                    <button type="submit" class="btn"><img
+                        src="./dist/images/icon_search_gray.svg"></button>
+                    <input id="sch_key" name="SchKey" type="text" class="form-control" value="" placeholder="SEARCH">
+
+                  </div>
+                </form>
+              </div>
+            </li>
+            <li class="tw"><a href="/m/index.php?Lang=zh-tw">繁中</a></li>
+            <li class="en"><a href="/m/index.php?Lang=zh-cn">简体</a></li>
+          </ul>
+
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+    <div class="main"><div class="header_banner" style="background-image:url(./dist/images/header_banner_001.jpg);">
+  <div class="info">
+  <h1>品牌介紹</h1>
+  <p>VINNOLIT</p>
+  </div>
+  </div>
+  <div class="detail_div product_detail">
+  <div class="outer">
+  <h2>德國Vinnolit PVC樹脂型號特性與行業應用<br>
+  Vinnolit PVC resins characteristics and applications</h2>
+  <p>Vinnolit是德國最大的PVC一體化企業，於1993年成立，PVC糊樹脂和PVC樹脂的總產能約每年80萬噸。日前員工約1400人，年銷售額超過九億歐元。並已通過IS09001管理和IS014001環保認證。</p>
+  <p>Vinnolit是全球最大的PVC糊樹脂生產廠，年產能超過30萬噸，Vinnolit為了配合不同客戶的生產工藝和最終產品性能要求，研發了一系列的特殊性能產品，現時銷售的糊樹脂型號超過30種。</p>
+  <p>Vinnolit, established in 1993, is the largest integrated PVC manufacturer in Germany. The total production capacity of suspension and emulsion PVC resins is 800,000 MT per year. Current employees numbers 1400 and annual sales amount to 900 M euro and has obtained ISO 9001 and ISO 14001 environmental certification.</p>
+  <p>Vinnolit is the largest emulsion PVC resins producer globally, annual capacity exceeds 300,000 MT. In order to satisfy customers’ diverse production conditions and the performance requirement of end products, Vinnolit has developed and is selling over 30 different grades of specialty emulation resins.</p>
+  <p>&nbsp;</p>
+  <div class="product_detail_table">
+  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse;" width="1100">
+  <tbody>
+  <tr style="height:27px;">
+  <td style="width:93px;border:solid black 1.0pt;background:#17365D;padding:0cm 5.4pt 0cm 5.4pt;height:27px;">
+  <p align="center" style="text-align:center;line-height:115%;"><span style="color:white;"><span style="font-family:微軟正黑體,serif;"><span style="font-size:12pt;">型號</span></span></span><span style="color:white;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  <p align="center" style="text-align:center;line-height:115%;"><span style="color:#ffffff;"><span style="font-family:calibri,sans-serif;"><span style="font-size:10.0pt;">Grade</span></span></span></p>
+  </td>
+  <td style="width:55px;border:solid black 1.0pt;border-left:none;background:#17365D;padding:0cm 5.4pt 0cm 5.4pt;height:27px;">
+  <p style="line-height:115%;"><span style="color:white;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;">K</span></span></span><span style="color:white;"><span style="font-family:微軟正黑體,serif;"><span style="font-size:12pt;">值</span></span></span></p>
+  <span style="color:#ffffff;"></span>
+  <p style="line-height:115%;"><span style="color:#ffffff;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  <p style="line-height:115%;"><span style="color:#ffffff;"><span style="font-family:calibri,sans-serif;"><span style="font-size:10.0pt;">K value</span></span></span></p>
+  <p style="line-height:115%;">&nbsp;</p>
+  </td>
+  <td style="width:100px;border:solid black 1.0pt;border-left:none;background:#17365D;padding:0cm 5.4pt 0cm 5.4pt;height:27px;">
+  <p align="center" style="text-align:center;line-height:115%;"><span style="color:#ffffff;"><span style="font-family:微軟正黑體,serif;"><span style="font-size:12pt;">相對聚合度</span></span><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  <p align="center" style="text-align:center;line-height:115%;"><span style="color:#ffffff;"><span style="font-family:calibri,sans-serif;"><span style="font-size:10.0pt;">Degree of  <br>polymerizatio</span></span></span></p>
+  </td>
+  <td style="width:451px;border:solid black 1.0pt;border-left:none;background:#17365D;padding:0cm 5.4pt 0cm 5.4pt;height:27px;">
+  <p align="center" style="text-align:center;line-height:115%;"><span style="color:white;"><span style="font-family:微軟正黑體,serif;"><span style="font-size:12pt;">特性和應用</span></span></span><span style="color:white;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  <p align="center" style="text-align:center;line-height:115%;"><span style="color:#ffffff;"><span style="font-family:calibri,sans-serif;"><span style="font-size:10.0pt;">Features and Applications</span></span></span></p>
+  </td>
+  </tr>
+  <tr style="height:26px;">
+  <td style="width:93px;border:solid black 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="center" style="text-align:center;line-height:115%;"><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;">E68CT/CF</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  </td>
+  <td style="width:55px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="center" style="text-align:center;line-height:115%;"><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;">68</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  </td>
+  <td style="width:100px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="center" style="text-align:center;line-height:115%;"><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;">1120</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  </td>
+  <td style="width:451px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="left" style="line-height: 115%;"><span style="color:black;"><span style="font-family:微軟正黑體,serif;"><span style="font-size:12pt;">漿料粘度低、優良發泡性能、泡孔平均、顏色白。用於高發泡、深壓紋牆紙。</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  <p align="left" style="line-height: 115%;"><span style="color:black;"><span style="font-family:微軟正黑體,sans-serif;"><span style="font-size:8.0pt;">Plastisol exhibits good shelf-life, outstanding foaming characteristics, easy to detach from mould, suitable for compact coating, foaming layer and top layer of artificial leather.&nbsp;&nbsp;</span></span></span></p>
+  </td>
+  </tr>
+  <tr style="height:26px;">
+  <td style="width:93px;border:solid black 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="center" style="text-align:center;line-height:115%;"><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;">E68CF</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  </td>
+  <td style="width:55px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="center" style="text-align:center;line-height:115%;"><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;">68</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  </td>
+  <td style="width:100px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="center" style="text-align:center;line-height:115%;"><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;">1120</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  </td>
+  <td style="width:451px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="left" style="line-height: 115%;"><span style="color:black;"><span style="font-family:微軟正黑體,serif;"><span style="font-size:12pt;">漿料穩定、容易脫模、優良發泡性能。應用於人造革發泡、面層和搪膠。</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  <p align="left" style="line-height: 115%;"><span style="color:black;"><span style="font-family:微軟正黑體,sans-serif;"><span style="font-size:8.0pt;">Plastisol exhibits good shelf-life, outstanding foaming characteristics, easy to detach from mould, suitable for compact coating, foaming layer and top layer of artificial leather.&nbsp;</span></span></span></p>
+  </td>
+  </tr>
+  <tr style="height:26px;">
+  <td style="width:93px;border:solid black 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="center" style="text-align:center;line-height:115%;"><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;">E70CQ</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  </td>
+  <td style="width:55px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="center" style="text-align:center;line-height:115%;"><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;">70</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  </td>
+  <td style="width:100px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="center" style="text-align:center;line-height:115%;"><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;">1230</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  </td>
+  <td style="width:451px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="left" style="line-height: 115%;"><span style="color:black;"><span style="font-family:微軟正黑體,serif;"><span style="font-size:12pt;">高假塑性、增加漿料粘度。用於汽車底塗、刮塗和人造革發泡層。</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  <p align="left" style="line-height: 115%;"><span style="color:black;"><span style="font-family:微軟正黑體,sans-serif;"><span style="font-size:8.0pt;">Plastisol exhibits psuedoplastic behaviour and viscosity is increased.&nbsp;&nbsp; It is used for auto-underbody coating, knife coating, and foaming layer of artificial leather.</span></span></span></p>
+  </td>
+  </tr>
+  <tr style="height:26px;">
+  <td style="width:93px;border:solid black 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="center" style="text-align:center;line-height:115%;"><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;">P70/HT</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  </td>
+  <td style="width:55px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="center" style="text-align:center;line-height:115%;"><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;">70</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  </td>
+  <td style="width:100px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="center" style="text-align:center;line-height:115%;"><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;">1230</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  </td>
+  <td style="width:451px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="left" style="line-height: 115%;"><span style="color:black;"><span style="font-family:微軟正黑體,serif;"><span style="font-size:12pt;">高透明、高亮度、優良抗水</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;">/</span></span></span><span style="color:black;"><span style="font-family:微軟正黑體,serif;"><span style="font-size:12pt;">耐候性，漿料容易脫泡、良好黏附力和成品低吸水性能。</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  <p align="left" style="line-height: 115%;"><span style="font-family:微軟正黑體,sans-serif;"><span style="font-size:8.0pt;">Vinnolit® P 70 HT&nbsp; can be easily converted into a plastisol with excellent low water absorption characteristics and has outstanding weathering properties combined with very high thermal stability. Plastisols formed has good gloss and transparency.&nbsp;</span></span></p>
+  </td>
+  </tr>
+  <tr style="height:26px;">
+  <td style="width:93px;border:solid black 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="center" style="text-align:center;line-height:115%;"><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;">P74CC</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  </td>
+  <td style="width:55px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="center" style="text-align:center;line-height:115%;"><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;">74</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  </td>
+  <td style="width:100px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="center" style="text-align:center;line-height:115%;"><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;">1570</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  </td>
+  <td style="width:451px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="left" style="line-height: 115%;"><span style="color:black;"><span style="font-family:微軟正黑體,serif;"><span style="font-size:12pt;">極低霧化、優良發泡性能、優良壓紋效果。用於車革面層（真空成型）、發泡層</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  <p align="left" style="line-height: 115%;"><span style="color:black;"><span style="font-family:微軟正黑體,sans-serif;"><span style="font-size:8.0pt;">Low atomization, good foamability, suitable for automotive applications such as foam and top coats in vacuum-thermoformed artificial leather with good emboss retention.</span></span></span></p>
+  </td>
+  </tr>
+  <tr style="height:26px;">
+  <td style="width:93px;border:solid black 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="center" style="text-align:center;line-height:115%;"><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;">E80/TT</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  </td>
+  <td style="width:55px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="center" style="text-align:center;line-height:115%;"><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;">80</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  </td>
+  <td style="width:100px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="center" style="text-align:center;line-height:115%;"><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;">&gt;2000</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  </td>
+  <td style="width:451px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="left" style="line-height: 115%;"><span style="color:black;"><span style="font-family:微軟正黑體,serif;"><span style="font-size:12pt;">高聚合型號、漿料粘度低、透明、低吸水性、半啞光效果。用於人造革或地板面層。</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  <p align="left" style="line-height: 115%;"><span style="font-family:微軟正黑體,sans-serif;"><span style="font-size:8.0pt;">High molecular weight, plastisol made has low viscosity, good transparency even at thick film applications, and excellent low water absorption.&nbsp; It is perfectly useful for textile coatings, artificial leather and flooring top coats.</span></span></p>
+  </td>
+  </tr>
+  <tr style="height:26px;">
+  <td style="width:93px;border:solid black 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="center" style="text-align:center;line-height:115%;"><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;">C65V&amp;EXT</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  </td>
+  <td style="width:55px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="center" style="text-align:center;line-height:115%;"><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;">65</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  </td>
+  <td style="width:100px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="center" style="text-align:center;line-height:115%;"><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;">975</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  </td>
+  <td style="width:451px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p style="line-height:115%;"><span style="color:black;"><span style="font-family:微軟正黑體,serif;"><span style="font-size:12pt;">通用型摻混樹脂、降低漿料粘度、控制流變性、增強製品機械性能。用於所有漿料。</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  <p style="line-height:115%;"><span style="font-family:微軟正黑體,sans-serif;"><span style="font-size:8.0pt;">Vinnolit® C 65 V &amp; EXT is a suspension homopolymer whose small particle size and narrow particle size distribution are most suited as a blend component in all paste making.&nbsp; Due to its extremely low plasticizer absorption at room temperature, it lowers viscosity of plastisols and reduces dilatancy if present.</span></span></p>
+  </td>
+  </tr>
+  <tr style="height:26px;">
+  <td style="width:93px;border:solid black 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="center" style="text-align:center;line-height:115%;"><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;">C100V</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  </td>
+  <td style="width:55px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="center" style="text-align:center;line-height:115%;"><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;">-</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  </td>
+  <td style="width:100px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="center" style="text-align:center;line-height:115%;"><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;">-</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  </td>
+  <td style="width:451px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="left" style="line-height: 115%;"><span style="color:black;"><span style="font-family:微軟正黑體,serif;"><span style="font-size:12pt;">極高聚合度摻混樹脂、表面啞光效果或紋理效果。用於特殊塗料、薄膜。</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  <p align="left" style="line-height: 115%;"><span style="font-family:微軟正黑體,sans-serif;"><span style="font-size:8.0pt;">Its a highly polymerised blending resin.&nbsp; Plastisols made exhibit matt finishes which is used in special coatings and films.</span></span></p>
+  </td>
+  </tr>
+  <tr style="height:26px;">
+  <td style="width:93px;border:solid black 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="center" style="text-align:center;line-height:115%;"><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;">PA5470/5</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  </td>
+  <td style="width:55px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="center" style="text-align:center;line-height:115%;"><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;">69</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  </td>
+  <td style="width:100px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="center" style="text-align:center;line-height:115%;"><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;">1175</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  </td>
+  <td style="width:451px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="left" style="line-height: 115%;"><span style="color:black;"><span style="font-family:微軟正黑體,serif;"><span style="font-size:12pt;">氯醋樹脂、高假塑性、低溫固化、增加黏合強度。用於人造革黏合層和汽車底漆。</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  <p align="left" style="line-height: 115%;"><span style="color:black;"><span style="font-family:微軟正黑體,sans-serif;"><span style="font-size:8.0pt;">The vinyl acetate content in the copolymer gives medium-viscosity plastisols with slightly pseudo-plastic flow properties and can be processed at lower gelling temperatures.&nbsp; It is used in adhering layer of artificial leather and auto-underbody coating.</span></span></span></p>
+  </td>
+  </tr>
+  <tr style="height:26px;">
+  <td style="width:93px;border:solid black 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="center" style="text-align:center;line-height:115%;"><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;">C12/62V</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  </td>
+  <td style="width:55px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="center" style="text-align:center;line-height:115%;"><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;">62</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  </td>
+  <td style="width:100px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="center" style="text-align:center;line-height:115%;"><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;">840</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  </td>
+  <td style="width:451px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="left" style="line-height: 115%;"><span style="color:black;"><span style="font-family:微軟正黑體,serif;"><span style="font-size:12pt;">氯醋摻混樹脂、適合低溫應用。用於汽車底漆、油墨、皮革表面處理劑。</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  <p align="left" style="line-height: 115%;"><span style="color:black;"><span style="font-family:微軟正黑體,sans-serif;"><span style="font-size:8.0pt;">Vinnolit® C 12/62 V is a vinyl chloride/ vinyl acetate copolymer extender resin suitable for low temperature use.&nbsp; It is used in auto-underbody coating, inks, and leather surface treatment coating.</span></span></span></p>
+  </td>
+  </tr>
+  <tr style="height:26px;">
+  <td style="width:93px;border:solid black 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="center" style="text-align:center;line-height:115%;"><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;">SA1062/7</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  </td>
+  <td style="width:55px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="center" style="text-align:center;line-height:115%;"><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;">62</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  </td>
+  <td style="width:100px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="center" style="text-align:center;line-height:115%;"><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;">840</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  </td>
+  <td style="width:451px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="left" style="line-height: 115%;"><span style="color:black;"><span style="font-family:微軟正黑體,serif;"><span style="font-size:12pt;">氯醋摻混樹脂、低溫固化、增加黏合強度。用於特殊油墨和汽車底塗。</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  <p align="left" style="line-height: 115%;"><span style="font-family:微軟正黑體,sans-serif;"><span style="font-size:8.0pt;">Vinnolit® SA 1062/7 is a white colored vinyl chloride/ vinyl acetate copolymer extender resin. It exhibits improved adhesion to various substrates, such as metal and synthetic fibers.&nbsp; Suited for automotive underbody coating, carpet backing and laminating pastes.</span></span></p>
+  </td>
+  </tr>
+  <tr style="height:26px;">
+  <td style="width:93px;border:solid black 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="center" style="text-align:center;line-height:115%;"><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;">VK-710</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  </td>
+  <td style="width:55px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="center" style="text-align:center;line-height:115%;"><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;">-</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  </td>
+  <td style="width:100px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="center" style="text-align:center;line-height:115%;"><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;">-</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  </td>
+  <td style="width:451px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="left" style="line-height: 115%;"><span style="color:black;"><span style="font-family:微軟正黑體,serif;"><span style="font-size:12pt;">氯乙烯</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;">-</span></span></span><span style="color:black;"><span style="font-family:微軟正黑體,serif;"><span style="font-size:12pt;">丙烯酸酯接枝共聚物、抗衝擊性能。用於各種特殊軟性和硬性</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;">PVC</span></span></span><span style="color:black;"><span style="font-family:微軟正黑體,serif;"><span style="font-size:12pt;">製品。</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  <p align="left" style="line-height: 115%;"><span style="font-family:微軟正黑體,sans-serif;"><span style="font-size:8.0pt;">Vinnolit® VK 710 is a thermoplastic elastomer (TPE) based on polyvinyl chloride (PVC) and polyacrylate (ACR, roughly 50%) possessing properties of PVC and rubber.&nbsp;&nbsp; It is used for all kinds of flexible PVC and hard PVC with impact resistance applications.</span></span></p>
+  </td>
+  </tr>
+  <tr style="height:26px;">
+  <td style="width:93px;border:solid black 1.0pt;border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="center" style="text-align:center;line-height:115%;"><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;">K-240</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  </td>
+  <td style="width:55px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="center" style="text-align:center;line-height:115%;"><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;">-</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  </td>
+  <td style="width:100px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="center" style="text-align:center;line-height:115%;"><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;">-</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  </td>
+  <td style="width:451px;border-top:none;border-left:none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0cm 5.4pt 0cm 5.4pt;height:26px;">
+  <p align="left" style="line-height: 115%;"><span style="color:black;"><span style="font-family:微軟正黑體,serif;"><span style="font-size:12pt;">高聚合度樹脂、啞光效果。用於特殊薄膜、防黏連助劑。</span></span></span><span style="color:black;"><span style="font-family:microsoft yahei,sans-serif;"><span style="font-size:12pt;"></span></span></span></p>
+  <p align="left" style="line-height: 115%;"><span style="color:black;"><span style="font-family:微軟正黑體,sans-serif;"><span style="font-size:8.0pt;">Vinnolit® K 240 is a high molecular weight specialty product based on micro suspension PVC exhibiting good matting characteristic.&nbsp; It’s used in films and anti-adhesion additives</span></span></span></p>
+  </td>
+  </tr>
+  </tbody>
+  </table>
+  <div style="clear:both;">&nbsp;</div>
+  <p>&nbsp;</p>
+  </div>
+  </div>
+  </div>
+  <script>
+  $(function(){
+    $('body').addClass('body_detail');
+    $('body').addClass('body_product_detail');
+    if($('.mlarge.mcarousel.vert.mfl').length>0){
+      if($('.img_list').length>0){
+  
+        var html ='';
+        $('.mlarge.mcarousel.vert.mfl .figBS').each(function(index, element) {
+          var  img = $(this).find('img').attr('src');
+          html = html +'<div class="item"><img src="'+img+'"></div>';
+        });
+        $('.img_list').prepend(html);
+      }
+      $('.mlarge.mcarousel.vert.mfl').hide();
+    }
+  });
+  
+  
+  </script>
+    </div><button class="toggle_btn">
+<span></span>
+<span></span>
+<span></span>
+</button><div class="footer_div">
+  <div class="links_div">
+    <div class="outer">
+      <div class="col01">
+        <div class="item">
+          <h3>公司簡介</h3>
+          <div class="link">
+            <div class="sub_item">
+              <a href="/m/index.php?Lang=zh-tw#about_us">關於我們</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <h3>服務據點</h3>
+          <div class="link">
+            <div class="sub_item">
+              <a href="/m/404-1828-8092.php?Lang=zh-tw#anchor01">台灣</a>
+              <a href="/m/404-1828-8092.php?Lang=zh-tw#anchor02">上海</a>
+              <a href="/m/404-1828-8092.php?Lang=zh-tw#anchor03">廣州</a>
+              <a href="/m/404-1828-8092.php?Lang=zh-tw#anchor04">越南</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <h3>原料產品</h3>
+          <div class="link">
+            <div class="sub_item">
+              <a href="/m/412-1828-1398.php?Lang=zh-tw">PETG</a>
+              <a href="/m/412-1828-1471.php?Lang=zh-tw">PCTG</a>
+              <a href="/m/412-1828-1607.php?Lang=zh-tw">熱塑性彈性體</a>
+              <a href="/m/404-1828-9305.php?Lang=zh-tw">PVC(聚氯乙烯)</a>
+            </div>
+            <div class="sub_item">
+              <a href="/m/404-1828-9304.php?Lang=zh-tw">醋酸纖維素(CA)</a>
+              <a href="/m/404-1828-9351.php?Lang=zh-tw">功能性母粒(助劑)</a>
+              <a href="/m/412-1828-1397.php?Lang=zh-tw">POKETONE(POK)</a>
+              <a href="/m/412-1828-1592.php?Lang=zh-tw">PCR PET (PET再生粒)</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <h3>品牌介紹</h3>
+          <div class="link">
+            <div class="sub_item">
+              <a href="/m/404-1828-9351.php?Lang=zh-tw">SK CHEMICALS</a>
+              <a href="/m/404-1828-9351.php?Lang=zh-tw">SUKANO(蘇卡諾)</a>
+              <a href="/m/412-1828-1397.php?Lang=zh-tw">HYOSUNG(曉星)</a>
+              <a href="/m/404-1828-9595.php?Lang=zh-tw">MITSUBISHI(三菱)</a>
+            </div>
+            <div class="sub_item">
+              <a href="/m/404-1828-9305.php?Lang=zh-tw">VINNOLIT</a>
+              <a href="/m/404-1828-9300.php?Lang=zh-tw">CHEMTROS</a>
+              <a href="/m/404-1828-9304.php?Lang=zh-tw">ROTUBA</a>
+              <a href="/m/412-1828-1592.php?Lang=zh-tw">COSPRO</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col02">
+        <div class="logo"><img src="./dist/images/logo.svg"></div>
+        <div class="company">
+          電話：<a href="tel:0222980132" target="_blank">02-2298-0132</a><br />
+          傳真：02-2298-0138<br />
+          E-mail：<a href="mailto:service@jimshin.com.tw" target="_blank">service@jimshin.com.tw</a><br />
+          地址：<a href="https://goo.gl/maps/WWAdbZt2cR8ByfEo8" target="_blank">24892 新北市新莊區五權一路3號3樓之12</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="info">
+    <span>2020 © 錦欣貿易股份有限公司 JimShin Trading Co., Ltd</span>
+    <a href="https://www.e-creation.com.tw/" target="_blank">DESIGN BY 藝創媒體</a>
+  </div>
+</div>
+
+<div id="mobile-body-overly"></div>
+<div id="mobile-nav" class="mobile_navi">
+  <div class="outer">
+    <a href="/m/index.php?Lang=zh-tw" class="brand"><img src="./dist/images/logo.svg"></a>
+    <ul class="navi_ul">
+
+    </ul>
+  </div>
+</div>
+
+
+<div class="float_div">
+  <a href="mailto:service@jimshin.com.tw" class="mailto" target="_blank"><img
+      src="./dist/images/icon_mail_white.svg"></a>
+  <a href="#top" class="gotop"><img src="./dist/images/icon_arrow_up_white.svg"></a>
+</div>
+
+<link rel="stylesheet" type="text/css" href="/ezfiles/828/1828/img/1084/aos.css" />
+<link rel="stylesheet" type="text/css" href="/ezfiles/828/1828/img/1084/swiper-bundle.css" />
+<link rel="stylesheet" type="text/css" href="/ezfiles/828/1828/img/1084/style.css" />
+
+
+<script type="text/javascript" src="/ezfiles/828/1828/img/1084/aos.js"></script>
+<script type="text/javascript" src="/ezfiles/828/1828/img/1084/swiper-bundle.js"></script>
+<script type="text/javascript" src="/ezfiles/828/1828/img/1084/script.js"></script>
+  </body>
+</html>
