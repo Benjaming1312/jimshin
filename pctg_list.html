@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="zh-hant">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha512-DUC8yqWf7ez3JD1jszxCWSVB0DMP78eOyBpMa5aJki1bIRARykviOuImIczkxlj1KhVSyS16w2FSQetkD4UU2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Bootstrap--><script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <!-- Swiper--><script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.1.2/swiper-bundle.min.js" integrity="sha512-YwVwcoCpxYOLJeE6O+b1nzpao2knl8A1X71Z+UtJohpGM98p+wIB1SfzzI5iZbAs9IDNVHGQV57euFUiUtRxRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.1.2/swiper-bundle.min.css" integrity="sha512-mVBP1jI3ciijKmBuJHz4RfFBY25gQG5tT8rWqRoNZqtkaL4Rdyh6UZWqbRi30ULanGgqoj+owIpyZU4h00ctBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- owlCarousel-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+    <!-- noto sans tc-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanstc.css"/>
+    <!-- aos--><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- test scenario-->
+    <link href="./dist/css/usercss.css" rel="stylesheet"/>
+    <script src="./dist/js/userjs.js"></script>
+    <!-- favico-->
+    <link rel="SHORTCUT ICON" href="./dist/images/favico.ico" type="image/x-icon"/>
+    <link rel="Bookmark" href="./dist/images/favico.ico"/>
+    <title>錦欣貿易股份有限公司 </title>
+  </head>
+  <body><div class="header_div">
+  <div class="service_phone"><b><a href="tel:0222980132">服務專線:(02)2298-0132</a></b></div>
+  <div class="outer">
+    <div class="brand">
+      <a href="./"><img src="./dist/images/logo.svg"></a>
+    </div>
+    <div class="nav_menu">
+      <ul class="navi">
+        <li><a href="./#about_us">關於我們<br><small>ABOUT US</small></a></li>
+        <li><a href="javascript:;" class="had_submenu">原料產品<br><small>PRODUCTS</small></a>
+          <div class="dropdown wide">
+            <div class="box">
+              <div class="product_navi">
+                <div class="item">
+                  <div class="item_title"><a href="./petg_list.html">PETG</a></div>
+                  <div class="list_item">
+                    <a href="./petg_kkn.html">K/KN系列<br>(K/KN Series)</a>
+                    <a href="./petg_skygreen.html">S系列<br>(S Series)</a>
+                    <a href="./petg_skygreen_jn.html">JN系列<br>(JN Series)</a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_title"><a href="./pctg_list.html">PCTG</a></div>
+                  <div class="list_item">
+                    <a href="./pctg_pn.html">PN 系列<br>(PN Series)</a>
+                    <a href="./pctg_list.html">ECOZEN系列<br>(ECOZEN Series)</a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_title">功能性母粒(助劑)<br> Functional masterbatches</div>
+                  <div class="list_item">
+                    <a href="./functional_masterbatch.html">片材用<br>(Masterbatch for sheet)</a>
+                    <a href="./functional_oriented.html">定向拉伸膜和收縮膜用<br>(Masterbatch for oriented<br> film and
+                      shrink film)</a>
+                    <a href="./functional_biobased.html">生物基母粒<br>(Biobased masterbatch)</a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_title"><a href="./poketon_list.html">POKETONE(POK)</a></div>
+                  <div class="list_item">
+                    <a href="./poketon_injection.html">注塑用(一般級)<br>injection molding <br>(general grade)</a>
+                    <a href="./poketon_fda.html">注塑用(食品接觸)<br> injection molding <br>(FDA grade)</a>
+                    <a href="./poketon_glass.html">玻纖加強<br>POKETONE with Glass fiber</a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_title"><a href="./pcr_list.html">PCR PET/PETG (PET再生粒)</a></div>
+                  <div class="list_item">
+                    <a href="./pcr_rpet.html">PCR r-PET 薄膜/長纖</a>
+                    <a href="./pcr_rapet.html">PCR r-APET 聚酯瓶片</a>
+                    <a href="./pcr_rpetg.html">PCR r-PETG</a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_title"><a href="#">熱塑性彈性體</a></div>
+                  <div class="list_item">
+                    <a href="./mitsubishi_list.html">三菱 MITSUBISHI<br>(TEFABLOC)</a>
+                    <a href="./skypel.html">SK CHEMICALS </a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_title"><a href="#">聚氯乙烯 (PVC)</a></div>
+                  <div class="list_item">
+                    <a href="./pvc.html">VINNOLIT</a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_title">醋酸纖維素(CA)</div>
+                  <div class="list_item">
+                    <a href="./ca.html">ROTUBA</a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_title">電子、工業用膠<br>(Adhesive)</div>
+                  <div class="list_item">
+                    <a href="#">CHEMTROS</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="javascript:;" class="had_submenu">品牌介紹<br><small>BRANDS</small></a>
+          <div class="dropdown wide">
+            <div class="box">
+              <div class="product_navi">
+                <div class="item">
+                  <div class="item_title">SK CHEMICALS</div>
+                  <div class="list_item">
+                    <a href="./petg_list.html">PETG (SKYGREEN)</a>
+                    <a href="./pctg_ecozen.html">PCTG (ECOZEN)</a>
+                    <a href="./pps.html">PPS (ECOTRAN)</a>
+                    <a href="./skypel.html">TPEE (SKYPEL)</a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_title">SUKANO(蘇卡諾)</div>
+                  <div class="list_item">
+                    <a href="./functional_masterbatch.html">片材用<br>(masterbatch for sheet)</a>
+                    <a href="./functional_oriented.html">定向拉伸膜和收縮膜用<br>(Masterbatch for oriented<br> film and
+                      shrink film)</a>
+                    <a href="./functional_biobased.html">生物基母粒<br>(Biobased masterbatch)</a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_title">HYOSUNG(曉星)</div>
+                  <div class="list_item">
+                    <a href="./poketon_list.html">POKETONE(聚酮、POK)</a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_title">COSPRO</div>
+                  <div class="list_item">
+                    <a href="./pcr_list.html">PCR PET/PETG (GRS認證)</a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_title">MITSUBISHI(三菱)</div>
+                  <div class="list_item">
+                    <a href="./mitsubishi_list.html">TEFABLOC<br> (TPEE、TPS、 TPO 、TPO、TPV)</a>
+                    <a href="./mitsubishi_tpo.html">THERMORUN (TPO) </a>
+                    <a href="./mitsubishi_tpv.html">TREXPRENE (TPV) </a>
+                    <a href="./mitsubishi_durabio.html">DURABIO™</a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_title">VINNOLIT</div>
+                  <div class="list_item">
+                    <a href="./pvc.html">PVC</a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_title">CHEMTROS</div>
+                  <div class="list_item">
+                    <a href="./ccm.html">CCM攝像頭模組用膠<br>CCM module</a>
+                    <a href="./glue.html">披覆膠、灌封膠和散熱膠<br>Thermal glue</a>
+                    <a href="./speaker.html">喇叭組裝用膠<br>speaker glue</a>
+                    <a href="./coating.html">電子零件固定用膠<br>Conformal Coating</a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item_title">ROTUBA</div>
+                  <div class="list_item">
+                    <a href="./ca.html">醋酸纖維素(CA)</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="./office.html">服務據點<br><small>LOCATION</small></a></li>
+        <li><a href="./contact.html">聯絡我們<br><small>CONTACT US</small></a></li>
+        <li class="other">
+          <ul>
+            <li class="tw"><a href="/m/index.php?Lang=zh-tw">繁中</a></li>
+            <li class="en"><a href="/m/index.php?Lang=zh-cn">简体</a></li>
+          </ul>
+
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+    <div class="main"><div class="header_banner" style="background-image:url(./dist/images/header_banner_001.jpg);">
+  <div class="info">
+    <h1>原料產品</h1>
+    <p>PCTG</p>
+  </div>
+</div>
+<div class="detail_div product_list">
+  <div class="outer">
+    <h2>PCTG - 工業材料新指標</h2>
+    <img src="./dist/images/product_POKETONE_img001.jpg" class="responsive">
+
+    <p>ECOZEN是什麼材料？它是透明耐高溫生物基共聚酯ECOZEN是韓國SK化工公司研發的一種新產品，它是PETG/PCTG基礎上升級的耐高溫透明的生物基塑膠。</p>
+    <p class="big">ECOZEN具有優良的性能，除了具備PETG/PCTG所有的優良性能外，還具有耐高溫100°的特性，從而在食品包裝、嬰幼兒用品等方面具有廣泛的應用前景。
+      ECOZEN可以用於代替玻璃、PC、PMMA、PVC、透明ABS、透明PP、PS、AS等材料。
+    </p>
+    <p>What kind of material is ECOZEN ? It is a transparent, high temperature resistant bio-copolyester developed by
+      Korean SK Chemical. A new and premium product developed base on PETG/PCTG which exhibits higher temperature
+      resistance bio-based plastic.</p>
+
+    <ul class="product_info_ul">
+      <li><b>高安全性 Safety</b><br>
+        特別適用於嬰兒食品容器使用，因為沒有具有內分泌干擾物如BPA（雙酚A）。<br>
+        It is particular suitable for use in baby bottles because it is
+        non- toxic and BPA-free which is known to disturb human’s endocrine system.
+
+      </li>
+      <li><b>易生產性 Good Processability</b><br>
+        ECOZEN可以在低溫下加工，相對於PC可縮短加工時間，提高了生產效率。<br>
+        Ecozen can be processed at lower temperature relative to PC, and cycle time is shortened while productivity is
+        raised.
+      </li>
+      <li><b>光學性佳 High Clarity</b><br>
+        ECOZEN具有高透明度，因此適用於PET瓶，水瓶，化妝品容器等。同時因為ECOZEN是透明的，因此可配製成任何需要的顏色。<br>
+        Ecozen has high transparency and good colorability and is used in PET containers, water bottles, and cosmetic
+        containers.
+      </li>
+      <li><b>功能特性 Functional characteristics</b><br>
+        1.高耐熱性（85~110℃），專門用於高耐熱產品<br>
+        2.高耐化學性，ECOZEN產品可廣泛應用於各類洗滌劑及化妝品的香水或霜類等產品<br>
+        1.High heat resistance ( 85~110℃ ) allows high temperature applications.<br>
+        2.Good chemical resistance allows Ecozen to be used in detergents, body cream, and perfumes jars and bottles.
+
+      </li>
+    </ul>
+
+    <div class="module module-special md_style1">
+      <div class="minner">
+        <header class="mt mthide">
+
+
+        </header>
+
+        <section class="mb">
+
+          <div class="row listBS">
+
+
+
+            <div class="d-item v-td col-sm-4">
+              <div class="mbox">
+                <div class="d-txt">
+                  <h5>
+
+
+                    <a href="./pctg_ecozen.html">
+                      ECOZEN T95、T110、T120
+                    </a>
+
+                  </h5>
+                  <div class="mdetail">
+
+                    特性：耐衝擊增強，優良的透明度。<br>
+                    Increase Impact resistance and good clarity.
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+
+
+            <div class="d-item v-td col-sm-4">
+              <div class="mbox">
+                <div class="d-txt">
+                  <h5>
+
+
+                    <a href="./pctg_pn.html">
+                      SkyGreen PN系列
+                    </a>
+
+                  </h5>
+                  <div class="mdetail">
+
+                    特性：低IV及高透明度，具高流動性、優良的透明度。<br>
+                    Low IV and high clarity, good flow properties.
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+
+          </div>
+
+
+
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(function () {
+    $('body').addClass('body_detail');
+    $('body').addClass('body_product_list');
+    if ($('.module.module-special.md_style1').length > 0) {
+      $('.module.module-special.md_style1').appendTo('.detail_div .outer');
+    }
+  });
+</script>
+    </div><button class="toggle_btn">
+<span></span>
+<span></span>
+<span></span>
+</button><div class="footer_div">
+  <div class="links_div">
+    <div class="outer">
+      <div class="col01">
+        <div class="item">
+          <h3>公司簡介</h3>
+          <div class="link">
+            <div class="sub_item">
+              <a href="/m/index.php?Lang=zh-tw#about_us">關於我們</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <h3>服務據點</h3>
+          <div class="link">
+            <div class="sub_item">
+              <a href="/m/404-1828-8092.php?Lang=zh-tw#anchor01">台灣</a>
+              <a href="/m/404-1828-8092.php?Lang=zh-tw#anchor02">上海</a>
+              <a href="/m/404-1828-8092.php?Lang=zh-tw#anchor03">廣州</a>
+              <a href="/m/404-1828-8092.php?Lang=zh-tw#anchor04">越南</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <h3>原料產品</h3>
+          <div class="link">
+            <div class="sub_item">
+              <a href="/m/412-1828-1398.php?Lang=zh-tw">PETG</a>
+              <a href="/m/412-1828-1471.php?Lang=zh-tw">PCTG</a>
+              <a href="/m/412-1828-1607.php?Lang=zh-tw">熱塑性彈性體</a>
+              <a href="/m/404-1828-9305.php?Lang=zh-tw">PVC(聚氯乙烯)</a>
+            </div>
+            <div class="sub_item">
+              <a href="/m/404-1828-9304.php?Lang=zh-tw">醋酸纖維素(CA)</a>
+              <a href="/m/404-1828-9351.php?Lang=zh-tw">功能性母粒(助劑)</a>
+              <a href="/m/412-1828-1397.php?Lang=zh-tw">POKETONE(POK)</a>
+              <a href="/m/412-1828-1592.php?Lang=zh-tw">PCR PET (PET再生粒)</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <h3>品牌介紹</h3>
+          <div class="link">
+            <div class="sub_item">
+              <a href="/m/404-1828-9351.php?Lang=zh-tw">SK CHEMICALS</a>
+              <a href="/m/404-1828-9351.php?Lang=zh-tw">SUKANO(蘇卡諾)</a>
+              <a href="/m/412-1828-1397.php?Lang=zh-tw">HYOSUNG(曉星)</a>
+              <a href="/m/404-1828-9595.php?Lang=zh-tw">MITSUBISHI(三菱)</a>
+            </div>
+            <div class="sub_item">
+              <a href="/m/404-1828-9305.php?Lang=zh-tw">VINNOLIT</a>
+              <a href="/m/404-1828-9300.php?Lang=zh-tw">CHEMTROS</a>
+              <a href="/m/404-1828-9304.php?Lang=zh-tw">ROTUBA</a>
+              <a href="/m/412-1828-1592.php?Lang=zh-tw">COSPRO</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col02">
+        <div class="logo"><img src="./dist/images/logo.svg"></div>
+        <div class="company">
+          電話：<a href="tel:0222980132" target="_blank">02-2298-0132</a><br />
+          傳真：02-2298-0138<br />
+          E-mail：<a href="mailto:service@jimshin.com.tw" target="_blank">service@jimshin.com.tw</a><br />
+          地址：<a href="https://goo.gl/maps/WWAdbZt2cR8ByfEo8" target="_blank">24892 新北市新莊區五權一路3號3樓之12</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="info">
+    <span>2020 © 錦欣貿易股份有限公司 JimShin Trading Co., Ltd</span>
+    <a href="https://www.e-creation.com.tw/" target="_blank">DESIGN BY 藝創媒體</a>
+  </div>
+</div>
+
+<div id="mobile-body-overly"></div>
+<div id="mobile-nav" class="mobile_navi">
+  <div class="outer">
+    <a href="/m/index.php?Lang=zh-tw" class="brand"><img src="./dist/images/logo.svg"></a>
+    <ul class="navi_ul">
+
+    </ul>
+  </div>
+</div>
+
+
+<div class="float_div">
+  <a href="mailto:service@jimshin.com.tw" class="mailto" target="_blank"><img
+      src="./dist/images/icon_mail_white.svg"></a>
+  <a href="#top" class="gotop"><img src="./dist/images/icon_arrow_up_white.svg"></a>
+</div>
+
+<link rel="stylesheet" type="text/css" href="/ezfiles/828/1828/img/1084/aos.css" />
+<link rel="stylesheet" type="text/css" href="/ezfiles/828/1828/img/1084/swiper-bundle.css" />
+<link rel="stylesheet" type="text/css" href="/ezfiles/828/1828/img/1084/style.css" />
+
+
+<script type="text/javascript" src="/ezfiles/828/1828/img/1084/aos.js"></script>
+<script type="text/javascript" src="/ezfiles/828/1828/img/1084/swiper-bundle.js"></script>
+<script type="text/javascript" src="/ezfiles/828/1828/img/1084/script.js"></script>
+  </body>
+</html>
