@@ -204,7 +204,9 @@
     }
     function set_menu_toggle() {
       $('.toggle_btn').insertAfter('#overlay');
-      $('.toggle_btn').click(function () {
+      $('.toggle_btn').click(function (e) {
+        e.preventDefault()
+        e.stopPropagation()
         $(this).toggleClass('active');
         $('#navbar').toggleClass('collapse');
         $('body').toggleClass('mobile_nav_active');
